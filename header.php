@@ -15,30 +15,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <?php $theme_css_file = get_option("bootswatch_theme_css_file", "bootswatch_theme"); ?>
 <?php if($theme_css_file == ''): ?>
-<link rel="stylesheet" id="bootstrap_theme" href="<?php print template_url() ?>css/default.css" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap_theme" href="<?php print template_url() ?>css/bootstrap.min.css" type="text/css" media="all">
 <?php else: ?>
 <link rel="stylesheet" id="bootstrap_theme" href="<?php print $theme_css_file; ?>" type="text/css" media="all">
 <?php endif; ?>
-<link rel="stylesheet" href="{TEMPLATE_URL}css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="{TEMPLATE_URL}css/modern-business.css" type="text/css" media="all">
+<link rel="stylesheet" href="{TEMPLATE_URL}font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="{TEMPLATE_URL}js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{TEMPLATE_URL}js/default.js"></script>
 </head><body>
-<div role="navigation" class="navbar navbar-default navbar-static" id="menu">
+
+<nav role="navigation" class="navbar navbar-default navbar-static"  id="menu">
   <div class="container">
     <div class="edit" field="boostrap3-template-navbar-brand" rel="global">
-      <div class="mw-row">
-        <div class="mw-col" style="width: 20%">
-          <div class="mw-col-container">
-            <module type="logo" id="logo_header" default-text="Bootstrap" class="navbar-header" />
-          </div>
-        </div>
-        <div class="mw-col"  style="width: 80%">
-          <div class="mw-col-container">
-            <module type="menu" name="header_menu" id="main-navigation"  template="navbar"   />
-          </div>
-        </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand"  href="<?php print site_url(); ?>">
+          <img src="{TEMPLATE_URL}img/logo_unitile.png" alt="Logo image for Unitile company" />
+        </a>
       </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <module type="menu" name="header_menu" id="main-navigation" template="topmenu" />
+      </div><!--/.navbar-collapse -->
     </div>
   </div>
-</div>
+</nav>
  

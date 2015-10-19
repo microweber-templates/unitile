@@ -12,17 +12,18 @@
 
 ?>
 <?php include template_dir(). "header.php"; ?>
-
-<div class="container edit" id="home-layout"  rel="page" field="content">
-  <div class="row clearfix">
-    <div class="col-md-12 column">
-      <div class="jumbotron">
-        <h1> Hello, world! </h1>
-        <p> This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique. </p>
-        <p> <a class="btn btn-primary btn-large" href="#">Learn more</a> </p>
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="baner-text">
+        <h1>Evolving workplaces, evolve nations. Stellar Raised access floor systems</h1>
+        <p>Raised floor installation for emergency control rooms, telecommunication central offices, operation control centers has become essential for heavy duty, maintenance-free and a durable structural element of the facility. Incorporation of Raised flooring access systems, and our cavalry of UNITILE ensures a safe and better environment to accommodate the needs of tomorrow. The combination of a wide range of access panels in conjunction with an exquisite range provides the most economic series of performance grades, capable of performing in the most demanding applications at different areas of businesses.</p>      
+        <p class="pull-right"><a class="btn btn-primary btn-sm" href="#" role="button">»</a></p>
       </div>
     </div>
   </div>
+</div>
+<div class="container edit" id="home-layout"  rel="page" field="content">
   <div class="mw-row clearfix">
     <div class="mw-col" style="width:33.33%">
       <div class="mw-col-container">

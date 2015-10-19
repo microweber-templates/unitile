@@ -1,13 +1,11 @@
 <?php
 
 /*
-
   type: layout
   content_type: static
   name: Home 2
   position: 22
   description: Home layout
-
 */
 
 ?>

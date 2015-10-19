@@ -20,10 +20,13 @@
     <div class="container">
       <div id="footer-bottom">
         <div class="row">
-          <div class="col-md-8">
-            <div class="edit" rel="footer" field="footer-copyright">Copyright &copy; <span class="unselectable" contentEditable="false"><?php print date('Y'); ?></span>, All rights reserved </div>
+          <div class="col-md-12">
+            <center>
+            <div class="edit" rel="footer" field="footer-copyright">Copyright &copy; <span class="unselectable" contentEditable="false"><?php print date('Y'); ?></span>, All rights reserved  <span class="muted"><?php print powered_by_link(); ?> | <a href="<?php print admin_url() ?>">Admin</a></span></div>
+            <div class="col-md-4"></div>
+            </center>
           </div>
-          <div class="col-md-4"><span class="muted pull-right"><?php print powered_by_link(); ?> | <a href="<?php print admin_url() ?>">Admin</a></span></div>
+          
         </div>
       </div>
     </div>
