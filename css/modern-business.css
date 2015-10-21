@@ -9,44 +9,22 @@
 html,
 body {
     height: 100%;
+    color: #666666;
 }
 
 body {
     /*padding-top: 50px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
-@media (min-width: 768px)
+
 .navbar {
-     border-radius: 0px; 
+    border-radius: 0px; 
 }
 .navbar {
     position: relative;
     min-height: 50px;
     margin-bottom: 0px;
 }
-.navbar-default {
-    background-color: #ffffff;
-    border-bottom: 5px solid #086daf;
-    border-radius: 0px;
-}
-.home-btn{
-  float: left;
-}
-.home-btn a{
-    display: block;
-    background: url('../img/home-btn.png') no-repeat;
-    width: 65px;
-    height: 35px;
-    overflow: hidden;
-    line-height: 85px;
-    padding-right: 70px;
-}
-.home-btn a:hover, .home-btn a:focus{
-  border-bottom: none;
-}
-.module-navigation-default a:hover, .module-navigation-default a:focus, .module-navigation-default li:hover > a {
-    background-color: inherit;
 
-}
 .top-menu{
     position: relative;
     bottom: -17px;
@@ -65,9 +43,53 @@ body {
     background-color: inherit;
     border-bottom: 7px solid #086daf;
 }
+
+@media(min-width:768px) {
+    .navbar-default {
+        background-color: #ffffff;
+        border-bottom: 5px solid #086daf;
+        border-radius: 0px;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: #222;
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+.home-btn{
+      float: left;
+    }
+.home-btn a{
+    display: block;
+    background: url('../img/home-btn.png') no-repeat;
+    width: 65px;
+    height: 35px;
+    overflow: hidden;
+    line-height: 85px;
+    padding-right: 70px;
+}
+.home-btn a:hover, .home-btn a:focus{
+  border-bottom: none;
+}
 .header-contact{
-  color: #919294;
-  margin-top: -10px;
+    color: #919294;
+    margin-top: -10px;
 }
 .header-contact li{
     padding-right: 15px;
@@ -80,6 +102,10 @@ body {
     line-height: 115px;
     margin-top: -13px;
 }
+.module-navigation-default a:hover, .module-navigation-default a:focus, .module-navigation-default li:hover > a {
+    background-color: inherit;
+}
+
 .img-portfolio {
     margin-bottom: 30px;
 }
@@ -182,12 +208,18 @@ footer {
     width: 45%;
     color: #fff;
     background: rgba(0,0,0,0.6);
-    padding: 30px;
+    padding: 30px 30px 0px 30px;
     margin: auto;
     border-bottom: 2px solid #086daf;
     position: relative;
     left: 25%;
-    bottom: -110px;
+    bottom: -70px;
+}
+.margin-none{
+  margin: 0 !important;
+}
+.baner-text{
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 .baner-text h1{
     font-size: 24px;
@@ -200,13 +232,17 @@ footer {
     line-height: 35px;
 }
 .baner-text p{
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .baner-text .btn{
   position: relative;
   bottom: 0px;
   right: -30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .btn-group-sm>.btn, .btn-sm {
@@ -377,4 +413,154 @@ footer {
 }
 #footer-top-wrapper{
   padding-top: 5%;
+}
+#welcome-layout{
+  background: url('../img/welcome-bgr.png') no-repeat center top;
+}
+.home-title{
+  color: #0067ad;
+}
+.home-title h2{
+  font-size: 30px;
+}
+h3.home-title{
+  
+}
+.narrow-font{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 17px;
+}
+.about-icon{
+  background: url('../img/icon/w-icon_about.png') no-repeat;
+  width: 28px;
+  height: 28px;
+}
+.why-icon{
+  background: url("../img/icon/w-icon_why.png") no-repeat;
+  width: 28px;
+  height: 28px;
+}
+.testimonials-icon{
+  background: url('../img/icon/w-icon_t.png') no-repeat;
+  width: 28px;
+  height: 31px;
+}
+span.bordered-bottom{
+    display: inline-block;
+    border-bottom: 0.05em solid #666;
+    width: 85%;
+    padding-bottom:3px;
+}
+.home-title .title-under{
+  display: block;
+  background: url('../img/home_titlie_bottom.png') no-repeat;
+  width: 305px;
+  height: 22px;
+  padding-bottom: 3.5%;
+}
+.home-title div.center{
+  font-size: 20px;
+}
+.btn {
+  border-radius: 0px;
+}
+.btn-default{
+
+}
+.btn-default:active, .btn-default:hover{
+  background-color: #008ae7;
+  border-color: #0067ad;
+  color: #fff;
+}
+.testimonials{
+  min-height: 250px;
+}
+.right-border{
+  border-right: 1px solid #fff;
+  padding-bottom: 25px;
+}
+#video-layout{
+  background: url('../img/video-bgr.jpg')center top;
+  min-height: 488px;
+}
+#video-layout .row{
+  margin-top: 20px;
+}
+#video-layout h3{
+  color: #fff;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  border-bottom: 0.05em solid
+}
+#video-layout .right-border{
+  border-right: 1px solid #fff;
+  padding-bottom: 25px;
+}
+
+#products-layout h3{
+  color: #086daf;
+  font-weight: bold;
+}
+.products-title-under{
+    display: block;
+    background: url('../img/home-product-bottom.png') no-repeat;
+    width: 162px;
+    height: 18px;
+    padding-bottom: 3.5%;
+}
+#products-layout a{
+  display: block;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+}
+#products-layout a:hover{
+  background: #086daf;
+  color: #fff;
+  border-bottom: 1px solid #086daf;
+}
+#products-layout a img{
+  padding: 2px;
+  border: 1px solid #ccc;
+}
+#products-layout a:hover img{
+  border: 1px solid #086daf;
+  opacity: 0.6;
+}
+#products-layout a h5{
+  padding: 7px;
+  font-size: 18px;
+}
+#products-layout a p{
+  color:#666;
+  margin: 10px;
+}
+#products-layout a:hover p{
+  color:#fff;
+}
+#products-layout a div.btn-group p {
+  margin-bottom: -1px;
+}
+
+/*project-layout*/
+#project-layout{}
+#project-layout h3{
+  color: #086daf;
+  font-weight: bold;
+}
+.padding-left-no{
+  padding-left: 0px;
+}
+.padding-bottom-30{
+  padding-bottom: 30px;
+}
+#clients-layout h3{
+  color: #086daf;
+  font-weight: bold;
+}
+.clients-title-under{
+    display: block;
+    background: url('../img/home-product-bottom.png') no-repeat;
+    width: 162px;
+    height: 18px;
+    padding-bottom: 3.5%;
 }

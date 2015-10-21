@@ -21,11 +21,14 @@
 <?php endif; ?>
 <link rel="stylesheet" href="{TEMPLATE_URL}css/modern-business.css" type="text/css" media="all">
 <link rel="stylesheet" href="{TEMPLATE_URL}font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+
 <script type="text/javascript" src="{TEMPLATE_URL}js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{TEMPLATE_URL}js/default.js"></script>
+
 </head><body>
 
-<nav role="navigation" class="navbar navbar-default navbar-static"  id="menu">
+<nav role="navigation" class="navbar navbar-default navbar-static"  id="menu" >
   <div class="container">
     <div class="edit" field="boostrap3-template-navbar-brand" rel="global">
       <div class="navbar-header">
