@@ -23,4 +23,3 @@ description: Small Navigation
   }
 ?>
 
-<script>mw.moduleCSS("<?php print $config['url_to_module']; ?>style.css");</script>

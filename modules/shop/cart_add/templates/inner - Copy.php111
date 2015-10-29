@@ -1,0 +1,44 @@
+<?php
+
+/*
+
+type: layout
+
+name: One price
+
+description: Add to cart default
+
+*/
+ ?>
+<?php
+
+if(!isset($params['content-id'])){
+	$params['content-id'] = CONTENT_ID;
+}
+
+if(isset($params['content-id'])){
+  $product = get_content_by_id($params["content-id"]);
+  $title =  $product['title'];
+}
+else{
+  $title =  _e("Product", true);
+}
+ 
+?>
+<?php
+$firstPrice = false;
+ $count = 0;
+  $num = count($data);
+  if(is_array($data)):
+?>
+<?php foreach($data  as $key => $v ): ?>
+<?php $count++; ?>
+<?php if($count == 1){ $firstPrice = $v; ?>
+<script>LocalPrice = "<?php print $v; ?>";</script>
+<div class="item-single-price"><?php print currency_format($firstPrice); ?> </div>
+<?php }  ?>
+<?php endforeach ; ?>
+<?php endif; ?>
+<button class="btn btn-default btn-add-to-cart" type="button" onclick="mw.cart.add_item('<?php print $params['content-id'] ?>')">Add to cart</button>
+
+<button class="btn btn-default btn-add-to-cart" type="button" onclick="mw.cart.add_item('<?php print $params['content-id'] ?>',LocalPrice,function(){window.location.href='checkout'});">Buy Now</button>

@@ -1,0 +1,134 @@
+/* CSS Document */
+
+
+.sidebar-lined-border-right {
+	background-image: url(../img/border-line-sidebar-tall.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+.sidebar-boxes-wrapper {
+	width: 260px;
+}
+.sidebar-boxes-spacer {
+	height: 35px;
+}
+/* Add to cart box */
+
+
+
+
+.sidebar-box.sidebar-box-styled-add {
+	color: white;
+	background-color: #076daf;
+}
+.sidebar-box.sidebar-box-styled-add .sidebar-box-styled-add-item-title {
+	color: #fff;
+	font-family: "Helvetica";
+	font-size: 21px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0
+}
+.sidebar-box.sidebar-box-styled-add .padding-element {
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+}
+.sidebar-box.sidebar-box-styled-add .sidebar-box-styled-add-item-price-holder {
+	text-align: center;
+	background-image: url(../img/border_bottom_line_1.png);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+}
+.sidebar-box.sidebar-box-styled-add .sidebar-box-styled-add-item-btns-holder {
+	margin-top: 8px;
+	text-align: center;
+}
+.sidebar-box.sidebar-box-styled-add .item-single-price {
+	color: #fff;
+	font-family: "Helvetica";
+	font-size: 28px;
+}
+.sidebar-box.sidebar-box-styled-add .btn-add-to-cart {
+	border: 1px solid #004797;
+	background-color: #fff;
+	color: #004797;
+	font-family: "Helvetica";
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.sidebar-box.sidebar-box-styled-add .sidebar-box-styled-add-item-title-holder {
+	background-image: url(../img/cart_top_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 45px;
+	text-align: center;
+	position: relative;
+}
+.sidebar-box.sidebar-box-styled-add .sidebar-box-styled-add-item-title-holder-ornament {
+	height: 7px;
+	background-image: url(../img/arrow-small-poiting-top.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.sidebar-box.sidebar-box-styled-add .sidebar-box-styled-add-item-title-holder-ornament-right {
+	width: 17px;
+	height: 19px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background-image: url(../img/arrow-small-poiting-top-right.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+.sidebar-box.sidebar-box-styled-add .sidebar-box-styled-add-item-title {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* Collaterals box */
+.sidebar-collaterals-menu {
+	border-top: 1px solid #015198;
+}
+.sidebar-collaterals-menu .sidebar-collaterals-menu-nav-title-holder {
+	width: 141px;
+	height: 38px;
+	line-height: 40px;
+	background-color: #076daf;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+.sidebar-collaterals-menu ul:first-child {
+	border: 1px solid #e1e1e1;
+}
+.sidebar-collaterals-menu ul {
+	list-style-position: inside;
+	list-style: none;
+}
+.sidebar-collaterals-menu .sidebar-collaterals-menu-li {
+	line-height: 35px;
+	border-bottom: 1px solid #e1e1e1;
+}
+.sidebar-collaterals-menu .sidebar-collaterals-menu-li:last-child {
+	border-bottom: none;
+}
+.sidebar-collaterals-menu .sidebar-collaterals-menu-li {
+	padding-left: 10px;
+}
+.sidebar-collaterals-menu .sidebar-collaterals-menu-li a {
+	color: #736e6e;
+	font-size: 16px;
+}
+.sidebar-collaterals-menu .sidebar-collaterals-menu-li a:before {
+	content: '<';
+	margin-right: 10px;
+	font-size: 12px;
+	font-family: Arial, Verdana, Geneva, sans-serif;
+}
+.sidebar-collaterals-menu .sidebar-collaterals-menu-li a:hover {
+	color: #076daf;
+	text-decoration: none;
+}

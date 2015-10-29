@@ -55,8 +55,8 @@
               <div class="col-sm-4">
                 <img src="{TEMPLATE_URL}img/whyus.jpg" class="img-responsive">
               </div>
-              <div class="col-sm-8">
-                <ul>
+              <div class="col-sm-8 padding-left-no">
+                <ul class="front">
                   <li>Meticulously tested and researched products by in-house team.</li>
                   <li>Innovation and complete customer satisfaction is our driving force.</li>
                   <li>Exemplary vision of armed professionals ensuring uncompromised expertise solutions.</li>
@@ -104,9 +104,9 @@
         </a>
       </div>
       <div class="col-md-6 col-sm-6">
-        <h3>UNITILE CORPORATE PROFILE</h3>
+        <h3>FACTORY UNIT WALKTHROUGH</h3>
         <a href="#">
-          <img src="{TEMPLATE_URL}img/video.jpg" class="img img-responsive">
+          <img src="{TEMPLATE_URL}img/video2.jpg" class="img img-responsive">
         </a>
       </div>
     </div>
@@ -116,11 +116,24 @@
 <!-- Star Products Layout -->
 <div class="container edit" id="products-layout"  rel="page" field="content">
   <div class="container">
-    <div class="element"> 
+    <div class="element">
       <center>
         <h3 align="center" class="symbol">PRODUCTS</h3>
         <span class="products-title-under"></span>
       </center>
+
+
+      <div id="home-p-tabs">
+
+        <div id="hpt-nav">
+
+            <a href="javascript:;" id="hpt-raised">Raised Access Floor Systems</a>
+            <a href="javascript:;" id="htp-data">Data Center Accessories</a>
+
+        </div>
+
+      </div>
+
       <div class="mw-row row">
         <div class="col-md-3 col-sm-3">
           <center>

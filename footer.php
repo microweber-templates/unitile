@@ -4,13 +4,14 @@
     <div class="container">
       <div class="edit" rel="global" field="bootstrap3-site-footer">
         <div class="mw-row">
-          <div class="mw-col" style="width: 30%">
-            <div class="mw-col-container"> <a href="http://facebook.com/Microweber" target="_blank"><img src="<?php print template_url(); ?>img/mw.soc.fb_b.png" /></a> <a href="http://twitter.com/Microweber" target="_blank"><img src="<?php print template_url(); ?>img/mw.soc.tt_b.png" /></a> <a href="http://youtube.com/Microweber" target="_blank"><img src="<?php print template_url(); ?>img/mw.soc.yt_b.png" /></a> </div>
+          <div class="mw-col" style="width: 40%">
+            
           </div>
-          <div class="mw-col" style="width: 70%">
-            <div class="mw-col-container">
-              <module type="menu" name="footer_menu" id="footer-navigation" template="small" />
-            </div>
+          <div class="mw-col" style="width: 30%">
+            
+          </div>
+          <div class="mw-col social" style="width: 30%">
+            
           </div>
         </div>
       </div>
@@ -22,7 +23,7 @@
         <div class="row">
           <div class="col-md-12">
             <center>
-            <div class="edit" rel="footer" field="footer-copyright">Copyright &copy; <span class="unselectable" contentEditable="false"><?php print date('Y'); ?></span>, All rights reserved  <span class="muted"><?php print powered_by_link(); ?> | <a href="<?php print admin_url() ?>">Admin</a></span></div>
+            <div class="edit" rel="footer" field="footer-copyright" style="color:white; font-size:12px;">&copy; <span class="unselectable" contentEditable="false"><?php print date('Y'); ?></span> Unitileindia. All Rights Reserved | Designed and Devoloped by <a href="#"><img src="{TEMPLATE_URL}img/logo-design.png"></a></div>
             <div class="col-md-4"></div>
             </center>
           </div>
