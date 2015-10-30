@@ -21,6 +21,7 @@
 <?php endif; ?>
 <link rel="stylesheet" href="{TEMPLATE_URL}css/modern-business.css" type="text/css" media="all">
 <link rel="stylesheet" href="{TEMPLATE_URL}css/boxes.css" type="text/css" media="all">
+<link rel="stylesheet" href="{TEMPLATE_URL}css/teamcard.css" type="text/css" media="all">
 
 <link rel="stylesheet" href="{TEMPLATE_URL}font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>

@@ -171,6 +171,14 @@ body,input,textarea {
     line-height: 115px;
     margin-top: -13px;
 }
+
+.module-navigation a{
+    color: #444343;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial,  sans-serif;
+}
+
 .module-navigation-default a:hover, .module-navigation-default a:focus, .module-navigation-default li:hover > a {
     background-color: inherit;
 }
@@ -628,9 +636,63 @@ span.bordered-bottom{
 }
 #products-layout .mw-row.row a{
   display: block;
-  border-bottom: 1px solid #ccc;
+  position: relative;
   text-decoration: none;
+  height: 435px;
+  margin-bottom: 85px;
 }
+
+
+#products-layout .mw-row.row a .pbtns{
+    border-bottom: 1px solid #B3A7A2;
+    position: absolute;
+    bottom: -85px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.pbtn{
+    display: inline-block;
+    font-size:20px;
+    color: #a9a9a9;
+    height:40px;
+    text-transform: uppercase;
+    border: 1px solid #B3A7A2;
+    border-bottom:none;
+    border-radius:2px 0 0 0;
+    padding: 8px 45px 8px 10px;
+    position: relative;
+}
+
+.pbtn:after{
+    position: absolute;
+    right:0;
+    top: 0;
+    display: block;
+    width: 35px;
+    height: 40px;
+    content: "";
+    border-left: 1px solid #B3A7A2;
+    text-align: center;
+    background: url(../img/site/ar1.png) no-repeat center;
+}
+
+#products-layout a:hover .pbtn{
+  background:#3383E4;
+  color: white;
+  border-color:#226BAD;
+}
+#products-layout a:hover .pbtn:after{
+  background: url(../img/site/ar2.png) no-repeat center;
+    border-color:#226BAD;
+}
+
+#products-layout .mw-row.row a:hover .pbtns{
+    border-color:#226BAD; 
+}
+
+
 #products-layout a:hover{
   background: #086daf;
   color: #fff;

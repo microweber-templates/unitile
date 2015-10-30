@@ -39,7 +39,7 @@
       <div class="col-md-4 col-sm-4">
         <div class="mw-col-container">
           <div class="element">
-            <h3 class="home-title"><i class="fa fa-fw about-icon pull-left"></i><span class="bordered-bottom"> ABOUT US </h3>
+            <h3 class="home-title"><i class="fa fa-fw about-icon pull-left"></i><span class="bordered-bottom"> ABOUT US </span></h3>
             <p> UNITILE is name to reckon within the field of modern Construction & Building Materials industry in India. Since the inception in 1994, over two decades, Comprehensive experience has been the key for UNITILE to successful and efficacious flooring solutions for the modernised world. Providing exceptional product quality , industry leading delivery times and an unsurpassed technical support services has backed up our revolution for modern structure of today’s data centre ...</p>
             <div class="btn-group pull-right">
               <button  type="button" class="btn btn-default" href="#">View details  &nbsp;&nbsp;&nbsp;<span class="fa fa-chevron-right"></span></button>
@@ -50,7 +50,7 @@
       <div class="col-md-4 col-sm-4">
         <div class="mw-col-container">
           <div class="element">
-            <h3 class="home-title"><i class="fa fa-fw why-icon pull-left"></i><span class="bordered-bottom"> WHY US</h3>
+            <h3 class="home-title"><i class="fa fa-fw why-icon pull-left"></i><span class="bordered-bottom"> WHY US</span></h3>
             <div class="row">
               <div class="col-sm-4">
                 <img src="{TEMPLATE_URL}img/whyus.jpg" class="img-responsive">
@@ -73,7 +73,7 @@
       <div class="col-md-4 col-sm-4">
         <div class="mw-col-container">
           <div class="element">
-            <h3 class="home-title"><i class="fa fa-fw testimonials-icon pull-left"></i><span class="bordered-bottom"> TESTIMONIALS </h3>
+            <h3 class="home-title"><i class="fa fa-fw testimonials-icon pull-left"></i><span class="bordered-bottom"> TESTIMONIALS </span></h3>
             <div class="testimonials">
               <i class="fa fa-fw fa-quote-left"></i> 
               <center>
@@ -141,8 +141,8 @@
               <img src="{TEMPLATE_URL}img/product_img_1.jpg" class="img img-responsive">
               <h5>Unitile Steel Cementitious</h5>
               <p>Unitile steel cementitious panels are non-combustible in nature and are coated with electrostatic epoxy paint with folded edges along the perimeter. Not only it enhances the load carrying performance of the system but also provides a squeak free floor.</p>
-              <div class="btn-group">
-                <button  type="button" class="btn btn-default" href="#">View details  &nbsp;&nbsp;&nbsp;<span class="fa fa-chevron-right"></span></button>
+              <div class="pbtns">
+                <span class="pbtn" href="#">Read more</span>
               </div>
             </a>
           </center>
@@ -153,8 +153,8 @@
               <img src="{TEMPLATE_URL}img/product_img_1.jpg" class="img img-responsive">
               <h5>Unitile Wood Core</h5>
               <p>Unitile Wood Core Floor panels consists of engineered modular panels constructed around a high density chipboard core . This unique engineering exhibits fine dimensional tolerances for modular control, accurate alignment of grids & inter-changeability of panels.</p>
-              <div class="btn-group">
-                <button  type="button" class="btn btn-default" href="#">View details  &nbsp;&nbsp;&nbsp;<span class="fa fa-chevron-right"></span></button>
+              <div class="pbtns">
+                <span class="pbtn" href="#">Read more</span>
               </div>
             </a>
           </center>
@@ -165,8 +165,8 @@
               <img src="{TEMPLATE_URL}img/product_img_2.jpg" class="img img-responsive">
               <h5>Unitile Calcium Sulphate</h5>
               <p>Unitile Calcium sulphate floor panels’ base & top surface of the core is factory bonded using an appropriate combination of surface finishes such as Aluminum, Galvanized sheet steel, High Pressure Laminate offering an excellent acoustical sound deadening value.</p>
-              <div class="btn-group">
-                <button  type="button" class="btn btn-default" href="#">View details  &nbsp;&nbsp;&nbsp;<span class="fa fa-chevron-right"></span></button>
+              <div class="pbtns">
+                <span class="pbtn" href="#">Read more</span>
               </div>
             </a>
           </center>
@@ -177,8 +177,8 @@
               <img src="{TEMPLATE_URL}img/product_img_3.jpg" class="img img-responsive">
               <h5>Unitile Topstone</h5>
               <p>Unitile Calcium sulphate floor panels’ base & top surface of the core is factory bonded using an appropriate combination of surface finishes such as Aluminum, Galvanized sheet steel, High Pressure Laminate offering an excellent acoustical sound deadening value.</p>
-              <div class="btn-group">
-                <button  type="button" class="btn btn-default" href="#">View details &nbsp;&nbsp;&nbsp;<span class="fa fa-chevron-right"></span></button>
+              <div class="pbtns">
+                <span class="pbtn" href="#">Read more</span>
               </div>
             </a>
           </center>

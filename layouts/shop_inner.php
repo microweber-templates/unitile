@@ -32,15 +32,11 @@
         <!------------ Sidebar -------------->
         <div class="col-sm-4">
           <div class="sidebar-boxes-wrapper">
-            
             <module type="shop/cart_add" template="sidebar" />
-            
             <div class="sidebar-boxes-spacer"></div>
-            
             <module type="menu" template="collaterals" menu-name="collaterals-<?php print CONTENT_ID ?>" />
-
-            
-            
+            <div class="sidebar-boxes-spacer"></div>
+            <module type="staticbox/download"  />
           </div>
         </div>
       </div>
