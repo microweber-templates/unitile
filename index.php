@@ -125,6 +125,18 @@
 
       <div id="home-p-tabs">
 
+      <script>
+
+      $(document).ready(function(){
+         mw.tabs({
+            nav:'#hpt-nav a',
+            tabs:'.xprotab'
+         });
+      });
+
+
+      </script>
+
         <div id="hpt-nav">
 
             <a href="javascript:;" id="hpt-raised">Raised Access Floor Systems</a>
@@ -134,7 +146,7 @@
 
       </div>
 
-      <div class="mw-row row">
+      <div class="xprotab"><div class="mw-row row">
         <div class="col-md-3 col-sm-3">
           <center>
             <a href="#">
@@ -183,6 +195,9 @@
             </a>
           </center>
         </div>
+      </div></div>
+      <div class="xprotab">
+      2
       </div>
     </div>
   </div>
@@ -228,7 +243,11 @@
           <img src="{TEMPLATE_URL}img/proj_2.png" class="img img-responsive">
         </div>
         <div class="col-md-12 col-sm-12" >
-          <img src="{TEMPLATE_URL}img/sertification.png" class="img img-responsive">
+        <div class="cslider">
+            <div><img src="{TEMPLATE_URL}img/sertification.png" >     </div>
+            <div><img src="{TEMPLATE_URL}img/sertification.png" >     </div>
+        </div>
+
         </div>
       </div>
     </div>
@@ -242,20 +261,19 @@
       <h3>CLIENTS</h3>
       <span class="clients-title-under"></span>
     </center>
-    <div class="mw-row">
-      <div class="col-sm-3 col-md-3">
-        <img src="{TEMPLATE_URL}img/clients_1.jpg" class="img img-responsive">
-      </div>
-      <div class="col-sm-3 col-md-3">
-        <img src="{TEMPLATE_URL}img/clients_2.jpg" class="img img-responsive">
-      </div>
-      <div class="col-sm-3 col-md-3">
-        <img src="{TEMPLATE_URL}img/clients_3.jpg" class="img img-responsive">
-      </div>
-      <div class="col-sm-3 col-md-3">
-        <img src="{TEMPLATE_URL}img/clients_3.jpg" class="img img-responsive">
-      </div>
-    </div>
+
+       <div class="xslider">
+        <div><img src="{TEMPLATE_URL}img/clients_1.jpg" class="img img-responsive"> </div>
+        <div><img src="{TEMPLATE_URL}img/clients_2.jpg" class="img img-responsive"> </div>
+        <div><img src="{TEMPLATE_URL}img/clients_3.jpg" class="img img-responsive"> </div>
+        <div><img src="{TEMPLATE_URL}img/clients_3.jpg" class="img img-responsive"> </div>
+        <div><img src="{TEMPLATE_URL}img/clients_1.jpg" class="img img-responsive"> </div>
+        <div><img src="{TEMPLATE_URL}img/clients_2.jpg" class="img img-responsive"> </div>
+        <div><img src="{TEMPLATE_URL}img/clients_3.jpg" class="img img-responsive"> </div>
+        <div><img src="{TEMPLATE_URL}img/clients_3.jpg" class="img img-responsive"> </div>
+       </div>
+
+
   </div>
 </div>
 <!-- End Client Layout -->

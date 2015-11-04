@@ -9,7 +9,12 @@
 
 $(window).load(function(){
 
-
+    $(".xslider").owlCarousel({
+        items:4
+    })
+    $(".cslider").owlCarousel({
+        items:1
+    })
 
    // Simple way to enable the 'placeholder' attribute for browsers that doesn't support it
    if('placeholder' in document.createElement('input') === false){

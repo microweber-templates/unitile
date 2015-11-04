@@ -86,7 +86,8 @@ body,input,textarea {
     margin: 0 -5px;
     background: white;
     border-radius: 0 0 0 3px;
-    text-decoration: none
+    text-decoration: none;
+    outline: none;
 }
 
 #hpt-nav a + a{ border-left: 1px solid #9C8F8D; border-radius: 0 0 3px 0; }
@@ -108,7 +109,10 @@ body,input,textarea {
 #hpt-nav a:first-child:after{background-image: url(../img/site/ht1.png);}
 #hpt-nav a:last-child:after{background-image: url(../img/site/ht2.png);}
 
-#hpt-nav a:first-child:hover:after{background-image: url(../img/site/ht1hover.png);}
+#hpt-nav a:first-child:hover:after,
+#hpt-nav a.active:first-child:after{background-image: url(../img/site/ht1hover.png);}
+
+#hpt-nav a.active:last-child:after,
 #hpt-nav a:last-child:hover:after{background-image: url(../img/site/ht2hover.png);}
 
 
@@ -689,7 +693,7 @@ span.bordered-bottom{
 }
 
 #products-layout .mw-row.row a:hover .pbtns{
-    border-color:#226BAD; 
+    border-color:#226BAD;
 }
 
 

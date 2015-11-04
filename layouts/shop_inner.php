@@ -1,6 +1,11 @@
 <?php include template_dir(). "header.php"; ?>
 
-<section id="content">
+
+<section id="content" class="shop-page shop-page-inner">
+
+
+        <?php include template_dir(). 'layouts' . DS."shop_top.php"; ?>
+
   <div class="product-inner-container">
     <div class="container">
       <div class="row">

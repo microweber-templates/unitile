@@ -14,7 +14,11 @@ position: 4
 ?>
 <?php include template_dir(). "header.php"; ?>
 
-<section id="content">
+<section id="content" class="shop-page">
+
+        <?php include template_dir(). 'layouts' . DS."shop_top.php"; ?>
+
+
   <div class="container">
     <div class="row" id="shop-products-conteiner">
       <div class="col-sm-12 edit"  field="content" rel="page">

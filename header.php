@@ -27,6 +27,8 @@
 <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 
 <script type="text/javascript" src="{TEMPLATE_URL}js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="{TEMPLATE_URL}js/owl.carousel.2.0.0-beta.2.4/assets/owl.carousel.css" rel="stylesheet" type="text/css">    
+<script type="text/javascript" src="{TEMPLATE_URL}js/owl.carousel.2.0.0-beta.2.4/owl.carousel.min.js"></script>
 <script type="text/javascript" src="{TEMPLATE_URL}js/default.js"></script>
 
 </head><body>
