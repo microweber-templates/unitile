@@ -4,7 +4,7 @@
 .sidebar-lined-border-right {
 	background-image: url(../img/border-line-sidebar-tall.png);
 	background-repeat: no-repeat;
-	background-position: center right;
+	background-position: top right;
 }
 .sidebar-boxes-wrapper {
 	width: 260px;

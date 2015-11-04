@@ -22,7 +22,7 @@ $menu_filter['ul_class'] = 'nav pull-right';
       if($mt != false){
         print ($mt);
         ?>
-      	<div class="home-btn pull-right"><a hraf="<?php print site_url(); ?>">home</a></div>
+      	<div class="home-btn pull-right"><a href="<?php print site_url(); ?>">home</a></div>
       <?php
       }
       else {

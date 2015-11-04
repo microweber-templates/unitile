@@ -1,0 +1,56 @@
+.styled-headings h2 {
+    color: #015197;
+    font-size: 18px;
+
+}
+
+.styled-headings h2:after {
+    content: ' ';
+    width: 100%;
+    height: 23px;
+    background-image: url(../img/tsvry4ka_1.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    display: block;
+    visibility: visible;
+}
+
+.mw-checkout-holder h4 {
+    color: #0067ad;
+    font-family: "Helvetica";
+    font-size: 22px;
+}
+
+.mw-cart-zbig-table {
+    border: 1px solid #015198;
+    border-top: 2px solid #015198;
+}
+
+.mw-cart-big-table > thead > tr > th {
+    color: #0067ad;
+    font-family: "Helvetica";
+    font-size: 19px;
+    font-weight: normal;;
+    border-bottom: 1px solid #015198;
+
+}
+
+.mw-cart-big-table > tbody > tr {
+    border-top: 1px solid #015198;
+
+}
+
+.mw-cart-big-table > tbody > tr > td {
+    border-top: none;
+    color: #0067ad;
+    font-family: "Helvetica";
+    font-size: 18px;
+    font-weight: normal;
+    vertical-align: middle;
+
+}
+
+.mw-order-item-image {
+    border: 1px solid #c5c5c5;
+    xxxheight: 95px;
+}

@@ -74,7 +74,10 @@
         <div class="mw-col-container">
           <div class="element">
             <h3 class="home-title"><i class="fa fa-fw testimonials-icon pull-left"></i><span class="bordered-bottom"> TESTIMONIALS </span></h3>
-            <div class="testimonials">
+            <module type="testimonials" />
+			<?php 
+			
+			/*<div class="testimonials">
               <i class="fa fa-fw fa-quote-left"></i> 
               <center>
                 <p class="center">Cancelbots or other computer <br> programs that have the purpose <br> or effect of disabling,</p>
@@ -83,7 +86,9 @@
               <center> 
                 <p><small><strong>Cynthia Whorton-BCIITV.com</strong></small><br><small><cite title="Source Title">Opetation Manager</cite></small></p>
               </center>
-            </div>
+            </div>*/ 
+			
+			?>
             <div class="btn-group pull-right">
               <button  type="button" class="btn btn-default" href="#">View details  &nbsp;&nbsp;&nbsp;<span class="fa fa-chevron-right"></span></button>
             </div>
@@ -114,7 +119,7 @@
 </div>
 <!-- End Video Layout -->
 <!-- Star Products Layout -->
-<div class="container edit" id="products-layout"  rel="page" field="content">
+<div class="container products-layout" id="products-layout"  rel="page" field="content">
   <div class="container">
     <div class="element">
       <center>
@@ -145,8 +150,19 @@
         </div>
 
       </div>
+ <div class="xprotab">
+       <module type="shop/products" limit=4 hide_paging=true id="home-products-1" />
+      </div>
+      <div class="xprotab" style="display:none">
+             <module type="shop/products" limit=4 hide_paging=true id="home-products-2" />
 
-      <div class="xprotab"><div class="mw-row row">
+      
+      <?php
+	  
+	  /*
+	  
+	  
+	  <div class="mw-row row">
         <div class="col-md-3 col-sm-3">
           <center>
             <a href="#">
@@ -195,10 +211,19 @@
             </a>
           </center>
         </div>
-      </div></div>
-      <div class="xprotab">
-      2
       </div>
+	  
+	  
+	  */
+	  
+	  
+	  
+	   ?>
+      
+      
+      
+      </div>
+     
     </div>
   </div>
 </div>  
