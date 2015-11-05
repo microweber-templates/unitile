@@ -857,3 +857,33 @@ span.bordered-bottom {
     z-index: 1;
     margin-left: -8px;
 }
+
+.cxmenu{
+   text-align: center;
+}
+
+.cxmenu a{
+    height:37px;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.cxmenu a:hover,
+.cxmenu a.active{
+    background: #0067AD;
+    color: white;
+}
+
+.cxmenu a:hover{
+    background-color: #0067AD;
+    color: white;
+}
+
+.cxmenu a:first-child{
+    border-radius: 3px 0 0 0;
+}
+.cxmenu a:last-child{
+    border-radius: 0 3px 0 0;
+}
