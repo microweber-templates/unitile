@@ -4,16 +4,18 @@
 
 type: layout
 
-name: portfolio
+name: Projects small grid
 
-description: portfolio
+description: Clients
 
 */
-?>
+
+  ?>
 <?php if (!empty($data)): ?>
 <?php
 $count = 0;
 $len =  count($data);
+ 
 ?>
 <?php
     foreach ($data as $item): 
@@ -22,13 +24,12 @@ $len =  count($data);
 ?>
 <?php if($count == 1 or ($count-1) % 3 == 0) { ?>
 
-<div class="row">
+<div class="row padding-left-no padding-bottom-30">
   <?php } ?>
-  <div class="col-md-4 portfolio-item">
+  <div class="col-md-4 project-small-item">
     <?php if($item['link']):  ?>
-    <a href="<?php print $item['link'] ?>" class="post-list-item-img" style="background-image:url('<?php print $item['tn_image']; ?>')"><span><?php print $item['title'] ?></span></a>
+    <a href="<?php print $item['link'] ?>" class="project-small-list-item-img" style="background-image:url('<?php print $item['tn_image']; ?>')"><span><?php print $item['title'] ?></span></a>
     <?php endif; ?>
-    
   </div>
   <?php if($count % 3 == 0 or $count == $len){ ?>
 </div>

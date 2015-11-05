@@ -1,4 +1,3 @@
-
 .team-member-post-link-image {
     display: block;
     width: 180px;
@@ -7,20 +6,17 @@
     position: relative;
     text-align: center;
     border: 1px solid #076daf;
-
 }
 
 .team-member-post-link-image-2 {
     display: block;
-   
     background-color: #efecec;
     position: relative;
     text-align: center;
     width: 140px;
-height: 120px;
-border: 1px solid #076daf;
-background-color: #fff;
-
+    height: 120px;
+    border: 1px solid #076daf;
+    background-color: #fff;
 }
 
 .team-member-post-link-title {
@@ -34,10 +30,10 @@ background-color: #fff;
     text-decoration: none;
     width: 100%;
     background-color: rgba(0, 27, 61, 0.7);
-    font-family:'helvetica_narrow_ceregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'helvetica_narrow_ceregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     vertical-align: middle;
-     
 }
+
 
 /*
 

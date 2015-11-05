@@ -158,6 +158,20 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
           <option value="<?php print $item['shipping_country'] ?>"  <?php if(isset($billing_selected_country) and $billing_selected_country == $item['shipping_country']): ?> selected="selected" <?php endif; ?>><?php print $item['shipping_country'] ?></option>
           <?php endforeach ; ?>
         </select>
+        <?php 
+		 
+		 
+		 if($billing_states) { ?>
+        <label> payment_state </label>
+        <select name="payment_state" class="field-full form-control mw-checkout-fields">
+          <option value="">
+          <?php _e("Choose state"); ?>
+          </option>
+          <?php foreach($billing_states  as $item): ?>
+          <option value="<?php print $item ?>"  <?php if(isset($selected_country) and $vals['shipping_payment_state'] == $item): ?> selected="selected" <?php endif; ?>><?php print $item ?></option>
+          <?php endforeach ; ?>
+        </select>
+        <?php } ?>
         <h2 style="margin-top:0">
           <?php _e("Billing Information"); ?>
         </h2>
@@ -174,17 +188,6 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
                                value="<?php if ($vals['shipping_payment_city']) {
                                    print $vals['shipping_payment_city'];
                                } ?>"/>
-        <?php if($billing_states) { ?>
-        <label> payment_state </label>
-        <select name="payment_state" class="field-full form-control mw-checkout-fields">
-          <option value="">
-          <?php _e("Choose state"); ?>
-          </option>
-          <?php foreach($billing_states  as $item): ?>
-          <option value="<?php print $item ?>"  <?php if(isset($selected_country) and $vals['shipping_payment_state'] == $item): ?> selected="selected" <?php endif; ?>><?php print $item ?></option>
-          <?php endforeach ; ?>
-        </select>
-        <?php } ?>
         <label> payment_zip </label>
         <input name="payment_zip" class="field-full form-control mw-checkout-fields" type="text"
                                value="<?php if (isset($vals['shipping_payment_zip'])) {

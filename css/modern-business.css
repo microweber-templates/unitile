@@ -767,10 +767,14 @@ span.bordered-bottom {
     height:20px;
 }
 
+.contact-blox{
+    float: left;
+}
+
 .contact-block{
     float: left;
     width:190px;
-    border: 1px solid #086DAF;
+    border: 1px solid #154C94;
     height:245px;
     position: relative;
 }
@@ -787,12 +791,16 @@ span.bordered-bottom {
     left: 50%;
     margin-left: -23px;
     content: "";
-    background-color: #086DAF;
+    background-color: #154C94;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+.contact-block:hover:after{
+    background-color: #1F60B9;
 }
 
 .contact-block li{
@@ -810,12 +818,17 @@ span.bordered-bottom {
 .contact-block-top{
     height:30px;
     text-align: center;
-    background:#086DAF;
+    background:#154C94;
+
     position: relative;
     z-index: 1;
     color: white;
     text-align: center;
     padding-top: 4px;
+}
+
+.contact-block:hover .contact-block-top{
+     background:#086DAF;
 }
 
 .contact-block:before{
@@ -857,6 +870,53 @@ span.bordered-bottom {
     z-index: 1;
     margin-left: -8px;
 }
+
+.x-title{
+    background-image: url(../img/site/title_left_left.png), url(../img/site/title_right_right.png);
+    background-position: left 0px, right 0;
+    background-repeat: no-repeat, no-repeat;
+    position: relative;
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container{
+    width: auto;
+    max-width: 1240px;
+}
+
+.x-title:after,
+.x-title:before{
+    display: block;
+    position: absolute;
+    bottom: 22px;
+    background: white;
+    content: "";
+    width: 15px;
+    height: 10px;
+    z-index: 1;
+}
+.x-title:after{left:0;}
+.x-title:before{right:0;}
+
+.x-title-content{
+    text-align: center;
+    display: inline-block;
+    background-image: url(../img/site/title_left_right.png), url(../img/site/title_left_right.png);
+    background-position: left 0px, 93% 0;
+    background-position: left 0px, calc(100% - 10px) 0;
+    background-position: left 0px, -webkit-calc(100% - 10px) 0;
+    background-repeat: no-repeat, no-repeat;
+    background-color: white;
+    padding: 18px 33px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #015197;
+}
+
+
 
 .cxmenu{
    text-align: center;

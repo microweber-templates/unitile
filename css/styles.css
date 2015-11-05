@@ -1,7 +1,6 @@
 .styled-headings h2 {
     color: #015197;
     font-size: 18px;
-
 }
 
 .styled-headings h2:after {
@@ -30,14 +29,13 @@
     color: #0067ad;
     font-family: "Helvetica";
     font-size: 19px;
-    font-weight: normal;;
+    font-weight: normal;
+    ;
     border-bottom: 1px solid #015198;
-
 }
 
 .mw-cart-big-table > tbody > tr {
     border-top: 1px solid #015198;
-
 }
 
 .mw-cart-big-table > tbody > tr > td {
@@ -47,10 +45,61 @@
     font-size: 18px;
     font-weight: normal;
     vertical-align: middle;
-
 }
 
 .mw-order-item-image {
     border: 1px solid #c5c5c5;
     xxxheight: 95px;
+}
+
+
+/* projects page */
+
+.portfolio-item .post-list-item-img {
+    height: 235px;
+    width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #efecec;
+    position: relative;
+}
+
+.portfolio-item .post-list-item-img span {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(239, 236, 236, 0.7);
+    color: #0067ad;
+    font-family: "Helvetica";
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.project-small-item .project-small-list-item-img {
+    height: 100px;
+    width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #efecec;
+    position: relative;
+}
+
+.project-small-item .project-small-list-item-img span {
+    display: none;
+}
+
+.project-small-item .project-small-list-item-img:hover span {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(8, 9, 4, 0.7);
+    color: #fff;
+    font-family: "Helvetica";
+    font-size: 15px;
+    font-weight: normal;
+    padding-left: 10px;
+    display: block;
 }

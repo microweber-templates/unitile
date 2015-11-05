@@ -239,7 +239,11 @@
             <img src="{TEMPLATE_URL}img/proj_1.png" class="img img-responsive" >
           </span>
         </div>
-        <div class="col-md-12 col-sm-12 padding-left-no" >
+        <module type="posts" template="projects" id="projects_list_galery_home" limit=9 hide_paging=true />
+        <?php
+		
+		/*
+		<div class="col-md-12 col-sm-12 padding-left-no" >
           <div class="col-md-4 col-sm-4 padding-bottom-30 box">
             <img src="{TEMPLATE_URL}img/project-img_1.jpg" class="img img-responsive">
           </div>
@@ -261,6 +265,9 @@
             <img src="{TEMPLATE_URL}img/project-img_6.jpg" class="img img-responsive">
           </div>
         </div>
+		*/
+		
+		 ?>
       </div>
       <div class="col-md-4 col-sm-4">
         <h3>CERTIFICATIONS</h3>
