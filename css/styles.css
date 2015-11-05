@@ -103,3 +103,27 @@
     padding-left: 10px;
     display: block;
 }
+
+.project-details-inner-block {
+    border: 1px solid #999;
+}
+
+.project-details-inner-block-title {
+    background-color: #0067ad;
+    padding: 5px;
+    margin: 0px;
+    color: #fff;
+    color: #fff;
+    font-family: 'helvetica_narrow_ceregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: .3px;
+}
+
+.project-details-inner-block-content {
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

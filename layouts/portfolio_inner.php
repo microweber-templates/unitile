@@ -19,17 +19,24 @@
           <div class="edit"  field="content_body" rel="content">
             <h3>Project Description</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-            <h3>Project Details</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <module type="pictures" template="bootstrap_carousel"  rel="content"  />
+          
+          <div class="edit"  field="project_details" rel="content">
+          <div class="project-details-inner-block">
+            <h3 class="project-details-inner-block-title">Project Details</h3>
+            <div class="project-details-inner-block-content">
             <ul>
               <li>Lorem Ipsum</li>
               <li>Dolor Sit Amet</li>
               <li>Consectetur</li>
               <li>Adipiscing Elit</li>
             </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <module type="pictures" template="bootstrap_carousel"  rel="content"  />
+          </div>
         </div>
       </div>
     </div>
