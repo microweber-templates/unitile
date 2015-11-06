@@ -1,22 +1,9 @@
 .margin-spacer-element-20 {
 	margin-bottom: 20px;
+    clear: both;
 }
-
-
-.styled-headings h2 {
-    color: #015197;
-    font-size: 18px;
-}
-
-.styled-headings h2:after {
-    content: ' ';
-    width: 100%;
-    height: 23px;
-    background-image: url(../img/tsvry4ka_1.png);
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    display: block;
-    visibility: visible;
+.no-margin-top {
+    margin-top: 0px;
 }
 
 .mw-checkout-holder h4 {

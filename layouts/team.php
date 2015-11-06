@@ -21,7 +21,7 @@ description: Team
       <div class="col-md-6 " id="team-page-left">
         <?php  include template_dir(). "layouts/team_left.php";  ?>
       </div>
-      <div class="col-md-6" id="team-page-right">
+      <div class="col-md-6 styled-headings" id="team-page-right">
         <?php
 	  $post = next_post();
   //dd($post);

@@ -1,0 +1,46 @@
+.heading-style-1 {
+    color: #076daf;
+    font-family: 'helvetica_narrow_ceregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 25px !important;
+}
+.heading-style-2 {
+    color: #076daf;
+    font-family: 'helvetica_narrow_ceregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 22px !important;
+}
+.styled-headings h1 {
+    color: #0067ad;
+    font-family: 'helvetica_narrow_ceregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 37px;
+}
+
+.styled-headings h2 {
+    color: #015197;
+    font-size: 18px;
+}
+
+.styled-headings h2:after {
+    content: ' ';
+    width: 100%;
+    height: 23px;
+    background-image: url(../img/tsvry4ka_1.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    display: block;
+    visibility: visible;
+}
+
+.styled-headings h4 {
+    color: #015197;
+    font-size: 16px;
+    font-family: 'helvetica_narrow_ceregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.styled-headings h4:after {
+    content: ' ';
+    width: 100%;
+    height: 16px;
+    border-bottom: 1px solid #0067ad;
+    display: block;
+    visibility: visible;
+}

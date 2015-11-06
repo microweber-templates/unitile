@@ -6,6 +6,7 @@
     position: relative;
     text-align: center;
     border: 1px solid #076daf;
+    background-size: cover;
 }
 
 .team-member-post-link-image-2 {
