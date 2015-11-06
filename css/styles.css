@@ -167,6 +167,14 @@
     border-left: 1px solid #5c5c5c;
 }
 
+.shop-category-tab-nav .mw-ui-col.tab-link-active {
+    background-color: #086daf;
+    color: white;
+}
+.shop-category-tab-nav .mw-ui-col.tab-link-active a {
+    color: white;
+}
+
 .shop-top-posts-list-category-row-holder {
     border-top: 1px solid #0067ad;
 }

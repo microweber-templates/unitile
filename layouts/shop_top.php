@@ -22,7 +22,11 @@ $categories = get_categories($cat_params);
       $(document).ready(function(){
          mw.tabs({
             nav:'#shop-category-tab-nav a',
-            tabs:'.shop-top-posts-list-category-row'
+            tabs:'.shop-top-posts-list-category-row',
+			onclick:function(a){
+			 $('.tab-link-active','#shop-category-tab-nav').removeClass('tab-link-active');
+		 	  $(this).parent().addClass('tab-link-active');
+			}
          });
       });
 
@@ -32,7 +36,7 @@ $categories = get_categories($cat_params);
   <div id="shop-category-tab-nav" class="shop-category-tab-nav">
     <div class="mw-ui-row">
       <?php foreach($categories as $category){ ?>
-      <div class="mw-ui-col category-tab-switch-link-holder"> <a href="javascript:;" id="category-tab-<?php print  url_title($category['title']) ?>" class="category-tab-switch-link"><?php print ($category['title']) ?></a> </div>
+      <div class="mw-ui-col category-tab-switch-link-holder <?php if(category_id()==$category['id']) { ?> tab-link-active<?php } ?>"> <a href="javascript:;" id="category-tab-<?php print  url_title($category['title']) ?>" class="category-tab-switch-link"><?php print ($category['title']) ?></a> </div>
       <?php } ?>
       </ol>
     </div>
@@ -49,9 +53,18 @@ $categories = get_categories($cat_params);
 	$posts = get_content('limit=10&category='.$category['id']);
  	$sub_categories = get_categories('parent_id='.$category['id']);
  	$is_tab_active = false;
-	if($count == 0){ 
-	$is_tab_active = true;
+	$cur_cat = category_id();
+	if($cur_cat != false){
+			if(category_id()==$category['id']){
+				$is_tab_active = true;
+			}
+	} else {
+		if($count == 0){ 
+		$is_tab_active = true;
+		}
 	}
+	
+	
  	?>
     <div class="shop-top-posts-list-category-row" <?php if(!$is_tab_active){ ?>  style="display:none"   <?php } ?> >
       <div class="mw-ui-row">
