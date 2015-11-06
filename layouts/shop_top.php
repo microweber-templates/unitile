@@ -1,9 +1,11 @@
-<div class="container">
-<module type="breadcrumb" template="unitile-breadcrumb" />
 
-<!-- TABS -->
-<div class="shop-category-tab-nav-holder">
-  <?php
+<div class="container">
+<div class="margin-spacer-element-20"></div>
+  <module type="breadcrumb" template="unitile-breadcrumb" />
+  <div class="margin-spacer-element-20"></div>
+  <!-- TABS -->
+  <div class="shop-category-tab-nav-holder">
+    <?php
 
 
 $cat_params = array();
@@ -17,7 +19,7 @@ $categories = get_categories($cat_params);
 
  
 ?>
-  <script>
+    <script>
 
       $(document).ready(function(){
          mw.tabs({
@@ -32,23 +34,23 @@ $categories = get_categories($cat_params);
 
 
       </script>
-  <?php if(!empty($categories)){ ?>
-  <div id="shop-category-tab-nav" class="shop-category-tab-nav">
-    <div class="mw-ui-row">
-      <?php foreach($categories as $category){ ?>
-      <div class="mw-ui-col category-tab-switch-link-holder <?php if(category_id()==$category['id']) { ?> tab-link-active<?php } ?>"> <a href="javascript:;" id="category-tab-<?php print  url_title($category['title']) ?>" class="category-tab-switch-link"><?php print ($category['title']) ?></a> </div>
-      <?php } ?>
-      </ol>
-    </div>
-    <?php } ?>
-  </div>
-</div>
-<div class="shop-top-posts-list-category-row-holder">
-  <div class="shop-top-posts-list-category-row-holder-items">
     <?php if(!empty($categories)){ ?>
-    <?php $count=0;?>
-    <?php foreach($categories as $category){ ?>
-    <?php 
+    <div id="shop-category-tab-nav" class="shop-category-tab-nav">
+      <div class="mw-ui-row">
+        <?php foreach($categories as $category){ ?>
+        <div class="mw-ui-col category-tab-switch-link-holder <?php if(category_id()==$category['id']) { ?> tab-link-active<?php } ?>"> <a href="javascript:;" id="category-tab-<?php print  url_title($category['title']) ?>" class="category-tab-switch-link"><?php print ($category['title']) ?></a> </div>
+        <?php } ?>
+        </ol>
+      </div>
+      <?php } ?>
+    </div>
+  </div>
+  <div class="shop-top-posts-list-category-row-holder">
+    <div class="shop-top-posts-list-category-row-holder-items">
+      <?php if(!empty($categories)){ ?>
+      <?php $count=0;?>
+      <?php foreach($categories as $category){ ?>
+      <?php 
 	$skip_posts = array();
 	$posts = get_content('limit=10&category='.$category['id']);
  	$sub_categories = get_categories('parent_id='.$category['id']);
@@ -66,35 +68,37 @@ $categories = get_categories($cat_params);
 	
 	
  	?>
-    <div class="shop-top-posts-list-category-row" <?php if(!$is_tab_active){ ?>  style="display:none"   <?php } ?> >
-      <div class="mw-ui-row">
-        <?php if(!empty($sub_categories)){ ?>
-        <?php foreach($sub_categories as $sub_category){ ?>
-        <?php $sub_posts = get_content('limit=100&category='.$sub_category['id']); ?>
-        <div class="mw-ui-col">
-          <ul class="shop-top-nav-cat-sub-menu">
-            <li> <a href="javascript:;"><?php print  $sub_category['title'] ?></a> </li>
-            <?php if(!empty($sub_posts)){ ?>
-            <?php foreach($sub_posts as $post){ ?>
-            <li> <a class="shop-top-posts-list-category-row-sub-post-item" href="<?php print content_link( $post['id'] ) ?>"><?php print  $post['title'] ?></a></li>
-            <?php $skip_posts[] = $post['id']; ?>
-            <?php } ?>
-            <?php } ?>
-          </ul>
+      <div class="shop-top-posts-list-category-row" <?php if(!$is_tab_active){ ?>  style="display:none"   <?php } ?> >
+        <div class="mw-ui-row">
+          <?php if(!empty($sub_categories)){ ?>
+          <?php foreach($sub_categories as $sub_category){ ?>
+          <?php $sub_posts = get_content('limit=100&category='.$sub_category['id']); ?>
+          <div class="mw-ui-col">
+            <ul class="shop-top-nav-cat-sub-menu">
+              <li> <a href="javascript:;"><?php print  $sub_category['title'] ?></a> </li>
+              <?php if(!empty($sub_posts)){ ?>
+              <?php foreach($sub_posts as $post){ ?>
+              <li> <a class="shop-top-posts-list-category-row-sub-post-item" href="<?php print content_link( $post['id'] ) ?>"><?php print  $post['title'] ?></a></li>
+              <?php $skip_posts[] = $post['id']; ?>
+              <?php } ?>
+              <?php } ?>
+            </ul>
+          </div>
+          <?php } ?>
+          <?php } ?>
+          <?php if(!empty($posts)){ ?>
+          <?php foreach($posts as $post){ ?>
+          <?php if(!in_array($post['id'],$skip_posts)){ ?>
+          <div class="mw-ui-col <?php if(content_id()==$post['id']) { ?> link-active<?php } ?> "> <a <?php if(content_id()==$post['id']) { ?> class="active" <?php } ?> href="<?php print content_link( $post['id'] ) ?>"><?php print  $post['title'] ?></a> </div>
+          <?php } ?>
+          <?php } ?>
+          <?php } ?>
         </div>
-        <?php } ?>
-        <?php } ?>
-        <?php if(!empty($posts)){ ?>
-        <?php foreach($posts as $post){ ?>
-        <?php if(!in_array($post['id'],$skip_posts)){ ?>
-        <div class="mw-ui-col <?php if(content_id()==$post['id']) { ?> link-active<?php } ?> "> <a <?php if(content_id()==$post['id']) { ?> class="active" <?php } ?> href="<?php print content_link( $post['id'] ) ?>"><?php print  $post['title'] ?></a> </div>
-        <?php } ?>
-        <?php } ?>
-        <?php } ?>
       </div>
+      <?php $count++;?>
+      <?php } ?>
+      <?php } ?>
     </div>
-    <?php $count++;?>
-    <?php } ?>
-    <?php } ?>
   </div>
+  <div class="margin-spacer-element-20"></div>
 </div>

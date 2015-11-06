@@ -1,3 +1,8 @@
+.margin-spacer-element-20 {
+	margin-bottom: 20px;
+}
+
+
 .styled-headings h2 {
     color: #015197;
     font-size: 18px;
@@ -130,6 +135,13 @@
 
 
 /* product inner page */
+
+.product-inner-page-title {
+    color: #076daf;
+	font-family: 'helvetica_narrow_ceregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+font-size: 24px;
+}
 
 .shop-category-tab-nav-holder {
     max-width: 840px;
