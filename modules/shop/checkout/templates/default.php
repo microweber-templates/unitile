@@ -39,6 +39,9 @@ description: Default cart template
     </div>
     
     
+       <module type="shop/cart" template="summary" id="cart_checkout_<?php print $params['id'] ?>"
+                    data-checkout-link-enabled="n"/>
+    
     <div class="mw-ui-row shipping-and-payment mw-shop-checkout-payments-info-holder">
        
        
