@@ -33,6 +33,7 @@ $vals['shipping_payment_address'] = '';
 $vals['shipping_payment_city'] = '';
 $vals['shipping_payment_state'] = '';
 $vals['shipping_payment_zip'] = '';
+$vals['shipping_payment_phone'] = '';
 
 
 
@@ -68,136 +69,193 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
 ?>
 
 <div class="<?php print $config['module_class'] ?>">
-  <div id="shipping_country_unite">
+  <div id="shipping_country_unite" class="shipping_country_unite_wrapper_shipping_form">
     <div class="mw-row">
-      <div class="mw-col"> Shipping info
-        <label>
-          <?php _e("Choose country:"); ?>
-        </label>
-        <?php   ?>
-        <select name="shipping_country" class="field-full form-control mw-checkout-fields">
-          <option value="">
-          <?php _e("Choose country"); ?>
-          </option>
-          <?php foreach($data  as $item): ?>
-          <option value="<?php print $item['shipping_country'] ?>"  <?php if(isset($selected_country) and $selected_country == $item['shipping_country']): ?> selected="selected" <?php endif; ?>><?php print $item['shipping_country'] ?></option>
-          <?php endforeach ; ?>
-        </select>
-        <?php if($states) { ?>
-        <label> State </label>
-        <select name="state" class="field-full form-control mw-checkout-fields">
-          <option value="">
-          <?php _e("Choose state"); ?>
-          </option>
-          <?php foreach($states  as $item): ?>
-          <option value="<?php print $item ?>"  <?php if(isset($selected_country) and $vals['shipping_state'] == $item): ?> selected="selected" <?php endif; ?>><?php print $item ?></option>
-          <?php endforeach ; ?>
-        </select>
-        <?php } ?>
+      <div class="mw-col shipping_country_unite_wrapper_shipping_form_col_left">
         <h2 style="margin-top:0">
           <?php _e("Shipping Information"); ?>
         </h2>
         <hr/>
-        <label>
-          <?php _e("First Name"); ?>
-        </label>
-        <input name="first_name" class="field-full form-control mw-checkout-fields" type="text"
+        <div class="mw-ui-field-holder">
+          <label>
+            <?php _e("Choose country:"); ?>
+          </label>
+          <?php   ?>
+          <div class="form-group has-feedback has-feedback-left">
+            <select name="shipping_country" class="field-full form-control mw-checkout-fields">
+              <option value="">
+              <?php _e("Choose country"); ?>
+              </option>
+              <?php foreach($data  as $item): ?>
+              <option value="<?php print $item['shipping_country'] ?>"  <?php if(isset($selected_country) and $selected_country == $item['shipping_country']): ?> selected="selected" <?php endif; ?>><?php print $item['shipping_country'] ?></option>
+              <?php endforeach ; ?>
+            </select>
+            <i class="glyphicon glyphicon-user form-control-feedback"></i> </div>
+        </div>
+        <?php if($states) { ?>
+        <div class="mw-ui-field-holder">
+          <label> State </label>
+          <div class="form-group has-feedback has-feedback-left">
+            <select name="state" class="field-full form-control mw-checkout-fields">
+              <option value="">
+              <?php _e("Choose state"); ?>
+              </option>
+              <?php foreach($states  as $item): ?>
+              <option value="<?php print $item ?>"  <?php if(isset($selected_country) and $vals['shipping_state'] == $item): ?> selected="selected" <?php endif; ?>><?php print $item ?></option>
+              <?php endforeach ; ?>
+            </select>
+            <i class="glyphicon glyphicon-user form-control-feedback"></i> </div>
+        </div>
+        <?php } ?>
+        <div class="mw-ui-field-holder">
+          <label>
+            <?php _e("First Name"); ?>
+          </label>
+          <div class="form-group has-feedback has-feedback-left">
+            <input name="first_name" class="field-full form-control mw-checkout-fields" placeholder="First name" type="text"
                                value="<?php if (isset($vals['shipping_first_name'])) {
                                    print $vals['shipping_first_name'];
                                } ?>"/>
-        <label>
-          <?php _e("Last Name"); ?>
-        </label>
-        <input name="last_name" class="field-full form-control mw-checkout-fields" type="text"
+            <i class="glyphicon glyphicon-user form-control-feedback"></i> </div>
+        </div>
+        <div class="mw-ui-field-holder">
+          <label>
+            <?php _e("Last Name"); ?>
+          </label>
+          <div class="form-group has-feedback has-feedback-left">
+            <input name="last_name" class="field-full form-control mw-checkout-fields" placeholder="<?php _e("Last Name"); ?>" type="text"
                                value="<?php if ($vals['shipping_last_name']) {
                                    print $vals['shipping_last_name'];
                                } ?>"/>
-        <label>
-          <?php _e("Email"); ?>
-        </label>
-        <input name="email" class="field-full form-control mw-checkout-fields" type="text"
+            <i class="glyphicon glyphicon-user form-control-feedback"></i> </div>
+        </div>
+        <div class="mw-ui-field-holder">
+          <label>
+            <?php _e("Email"); ?>
+          </label>
+          <div class="form-group has-feedback has-feedback-left">
+            <input name="email" class="field-full form-control mw-checkout-fields" placeholder="<?php _e("Email"); ?>" type="text"
                                value="<?php if (isset($vals['shipping_email'])) {
                                    print $vals['shipping_email'];
                                } ?>"/>
-        <label>
-          <?php _e("Phone"); ?>
-        </label>
-        <input name="phone" class="field-full form-control mw-checkout-fields" type="text"
+            <i class="glyphicon glyphicon-user form-control-feedback"></i> </div>
+        </div>
+        <div class="mw-ui-field-holder">
+          <label>
+            <?php _e("Phone"); ?>
+          </label>
+          <div class="form-group has-feedback has-feedback-left">
+            <input name="phone" class="field-full form-control mw-checkout-fields" placeholder="<?php _e("Phone"); ?>" type="text"
                                value="<?php if (isset($vals['shipping_phone'])) {
                                    print $vals['shipping_phone'];
                                } ?>"/>
-        <label>city </label>
-        <input name="city" class="field-full form-control mw-checkout-fields" type="text"
+            <i class="glyphicon glyphicon-user form-control-feedback"></i> </div>
+        </div>
+        <div class="mw-ui-field-holder">
+          <label>city</label>
+          <div class="form-group has-feedback has-feedback-left">
+            <input name="city" class="field-full form-control mw-checkout-fields" type="text"
                                value="<?php if ($vals['shipping_city']) {
                                    print $vals['shipping_city'];
                                } ?>"/>
-        <label> zip </label>
-        <input name="zip" class="field-full form-control mw-checkout-fields" type="text"
+            <i class="glyphicon glyphicon-user form-control-feedback"></i> </div>
+        </div>
+        <div class="mw-ui-field-holder">
+          <label>zip</label>
+          <div class="form-group has-feedback has-feedback-left">
+            <input name="zip" class="field-full form-control mw-checkout-fields" type="text"
                                value="<?php if (isset($vals['shipping_zip'])) {
                                    print $vals['shipping_zip'];
                                } ?>"/>
-        <label> address </label>
-        <textarea class="field-full form-control mw-checkout-fields" name="address"><?php if (isset($vals['shipping_address'])) {
+            <i class="glyphicon glyphicon-user form-control-feedback"></i> </div>
+        </div>
+        <div class="mw-ui-field-holder">
+          <div class="form-group has-feedback has-feedback-left">
+            <label> address </label>
+            <textarea class="field-full form-control mw-checkout-fields" name="address"><?php if (isset($vals['shipping_address'])) {
                                    print $vals['shipping_address'];
-                               } ?>
+                               } ?> 
 </textarea>
+            <i class="glyphicon glyphicon-user form-control-feedback"></i> </div>
+        </div>
       </div>
-      <div class="mw-col"> Billing info
-        <label>
-          <?php _e("Choose country:"); ?>
-        </label>
-        <?php 
-		
- 
-		?>
-        <select name="payment_country" class="field-full form-control mw-checkout-fields">
-          <option value="">
-          <?php _e("Choose country"); ?>
-          </option>
-          <?php foreach($data  as $item): ?>
-          <option value="<?php print $item['shipping_country'] ?>"  <?php if(isset($billing_selected_country) and $billing_selected_country == $item['shipping_country']): ?> selected="selected" <?php endif; ?>><?php print $item['shipping_country'] ?></option>
-          <?php endforeach ; ?>
-        </select>
-        <?php 
-		 
-		 
-		 if($billing_states) { ?>
-        <label> payment_state </label>
-        <select name="payment_state" class="field-full form-control mw-checkout-fields">
-          <option value="">
-          <?php _e("Choose state"); ?>
-          </option>
-          <?php foreach($billing_states  as $item): ?>
-          <option value="<?php print $item ?>"  <?php if(isset($selected_country) and $vals['shipping_payment_state'] == $item): ?> selected="selected" <?php endif; ?>><?php print $item ?></option>
-          <?php endforeach ; ?>
-        </select>
-        <?php } ?>
+      <div class="mw-col shipping_country_unite_wrapper_shipping_form_col_right">
         <h2 style="margin-top:0">
           <?php _e("Billing Information"); ?>
         </h2>
         <hr/>
-        <label>
-          <?php _e("Full Name"); ?>
-        </label>
-        <input name="payment_name" class="field-full form-control mw-checkout-fields" type="text"
+        <div class="mw-ui-field-holder">
+          <label>
+            <?php _e("Choose country:"); ?>
+          </label>
+          <?php 
+		
+ 
+		?>
+          <select name="payment_country" class="field-full form-control mw-checkout-fields">
+            <option value="">
+            <?php _e("Choose country"); ?>
+            </option>
+            <?php foreach($data  as $item): ?>
+            <option value="<?php print $item['shipping_country'] ?>"  <?php if(isset($billing_selected_country) and $billing_selected_country == $item['shipping_country']): ?> selected="selected" <?php endif; ?>><?php print $item['shipping_country'] ?></option>
+            <?php endforeach ; ?>
+          </select>
+        </div>
+        <?php 
+		 
+		 
+		 if($billing_states) { ?>
+        <div class="mw-ui-field-holder">
+          <label> payment_state </label>
+          <select name="payment_state" class="field-full form-control mw-checkout-fields">
+            <option value="">
+            <?php _e("Choose state"); ?>
+            </option>
+            <?php foreach($billing_states  as $item): ?>
+            <option value="<?php print $item ?>"  <?php if(isset($selected_country) and $vals['shipping_payment_state'] == $item): ?> selected="selected" <?php endif; ?>><?php print $item ?></option>
+            <?php endforeach ; ?>
+          </select>
+        </div>
+        <?php } ?>
+        <div class="mw-ui-field-holder">
+          <label>
+            <?php _e("Full Name"); ?>
+          </label>
+          <input name="payment_name" class="field-full form-control mw-checkout-fields" placeholder="<?php _e("Billing Name"); ?>" type="text"
                                value="<?php if (isset($vals['shipping_payment_name'])) {
                                    print $vals['shipping_payment_name'];
                                } ?>"/>
-        <label>payment_city </label>
-        <input name="payment_city" class="field-full form-control mw-checkout-fields" type="text"
+        </div>
+        <div class="mw-ui-field-holder">
+          <label>
+            <?php _e("Phone"); ?>
+          </label>
+          <input name="payment_phone" class="field-full form-control mw-checkout-fields" placeholder="<?php _e("Billing Phone"); ?>" type="text"
+                               value="<?php if (isset($vals['shipping_payment_phone'])) {
+                                   print $vals['shipping_payment_phone'];
+                               } ?>"/>
+        </div>
+        <div class="mw-ui-field-holder">
+          <label>payment_city </label>
+          <input name="payment_city" class="field-full form-control mw-checkout-fields" placeholder="<?php _e("Billing City"); ?>" type="text"
                                value="<?php if ($vals['shipping_payment_city']) {
                                    print $vals['shipping_payment_city'];
                                } ?>"/>
-        <label> payment_zip </label>
-        <input name="payment_zip" class="field-full form-control mw-checkout-fields" type="text"
+        </div>
+        <div class="mw-ui-field-holder">
+          <label> payment_zip </label>
+          <input name="payment_zip" class="field-full form-control mw-checkout-fields" placeholder="<?php _e("Billing zip"); ?>" type="text"
                                value="<?php if (isset($vals['shipping_payment_zip'])) {
                                    print $vals['shipping_payment_zip'];
                                } ?>"/>
-        <label> payment_address </label>
-        <textarea class="field-full form-control mw-checkout-fields" name="payment_address"><?php if (isset($vals['shipping_payment_address'])) {
+        </div>
+        <div class="mw-ui-field-holder">
+          <label> payment_address </label>
+          <textarea class="field-full form-control mw-checkout-fields" placeholder="<?php _e("Billing Address"); ?>" name="payment_address"><?php if (isset($vals['shipping_payment_address'])) {
                                    print $vals['shipping_payment_address'];
                                } ?>
 </textarea>
+        </div>
       </div>
     </div>
   </div>
