@@ -178,6 +178,8 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
 </textarea>
             <i class="glyphicon glyphicon-user form-control-feedback"></i> </div>
         </div>
+                <span class="unitile-mw-ui-field-holder-item-bg-element-col"><span class="unitile-mw-ui-field-holder-bg-element-inner"></span></span>
+
       </div>
       <div class="mw-col shipping_country_unite_wrapper_shipping_form_col_right">
         <h2 style="margin-top:0">
@@ -256,6 +258,10 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
                                } ?>
 </textarea>
         </div>
+        
+        
+        <span class="unitile-mw-ui-field-holder-item-bg-element-col"><span class="unitile-mw-ui-field-holder-bg-element-inner"></span></span>
+        
       </div>
     </div>
   </div>

@@ -235,20 +235,14 @@
     font-family: sans-serif;
 }
 
-.xxshipping_country_unite_wrapper_shipping_form .mw-ui-field-holder {
-    padding-left: 40px;
-    background-image: url('../img/Ellipse-91.png');
-    background-position: center left;
-    background-repeat: no-repeat;
-      
-
+.shipping_country_unite_wrapper_shipping_form .mw-ui-field-holder textarea.form-control {
+    resize: none;
+    height: 60px;
 }
+
 .shipping_country_unite_wrapper_shipping_form .mw-ui-field-holder {
     padding-left: 30px;
-    
-     position: relative;
-      
-
+    position: relative;
 }
 
 .shipping_country_unite_wrapper_shipping_form .mw-ui-field-holder:before {
@@ -260,7 +254,7 @@
     height: 40px;
     position: absolute;
     top: 10%;
-    left: -7px;
+    left: -6px;
     display: block;
 }
 
@@ -270,26 +264,57 @@
     overflow: hidden;
     display: none;
 }
+
 .shipping_country_unite_wrapper_shipping_form .mw-ui-field-holder .form-control {
     float: left;
     padding-left: 40px;
 }
 
-.shipping_country_unite_wrapper_shipping_form .mw-ui-field-holder .form-control-feedback{
+.shipping_country_unite_wrapper_shipping_form .mw-ui-field-holder .form-control-feedback {
     left: 0px;
     background-color: #015198;
     color: white;
 }
 
-.shipping_country_unite_wrapper_shipping_form_col_left, .shipping_country_unite_wrapper_shipping_form_col_right {
-        border-left: 1px solid #015198;
-    
+.shipping_country_unite_wrapper_shipping_form .mw-ui-field-holder textarea.form-control+.form-control-feedback {
+    height: 60px;
+    top: 0px;
+}
 
+.shipping_country_unite_wrapper_shipping_form_col_left,
+.shipping_country_unite_wrapper_shipping_form_col_right {
+    border-left: 1px solid #015198;
 }
 
 .shipping_country_unite_wrapper_shipping_form_col_left {
-    padding-right: 20px;
+    padding-right: 35px;
 }
+
+@media screen and (min-width: 810px) {
+    .shipping_country_unite_wrapper_shipping_form .unitile-mw-ui-field-holder-item-bg-element-col {
+        clear: both;
+        position: static;
+        z-index: 1;
+        display: block;
+        width: 100%;
+    }
+    .shipping_country_unite_wrapper_shipping_form .unitile-mw-ui-field-holder-item-bg-element-col .unitile-mw-ui-field-holder-bg-element-inner {
+        position: absolute;
+        bottom: -35px;
+        background-image: url('../img/11-128.png');
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 52px;
+        height: 60px;
+        left: -25px;
+        z-index: 2;
+    }
+    
+    .shipping_country_unite_wrapper_shipping_form_col_left .unitile-mw-ui-field-holder-item-bg-element-col .unitile-mw-ui-field-holder-bg-element-inner{
+    background-image: url('../img/Layer-81.png');
+}
+}
+
 
 
 /*Careers*/
