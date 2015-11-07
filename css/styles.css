@@ -225,6 +225,105 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e7eaec', e
 }
 
 
+
+
+
+
+
+
+
+
+/*Careers*/
+
+#careers-main .home-title p{
+   color: #686a6e;
+}
+
+
+.module-posts-template-careers-row {
+    border-top: 3px solid #00579b;
+    margin-top: 30px;
+}
+
+.career-post-item-link {
+    display: table;
+    height: 65px;
+    width: 100%;
+    background: white;
+    text-align: center;
+    vertical-align: middle;
+        border-bottom: 2px solid #00579b;
+
+}
+.career-post-item-link:hover {
+  background: #f2f6f9;
+    text-decoration: none;
+}
+.career-post-item-details-link {
+     display: table;
+    border-top: 1px solid #00579b;
+    width: 100%;
+    text-align: right;
+    
+    color: #00579b;
+font-family: "Helvetica",Arial;
+    font-style: italic;
+font-size: 12px;
+    padding-top: 5px;
+   
+  
+}
+.career-post-item-link span {
+     display: table-cell;
+    vertical-align: middle;
+
+}
+.career-post-item-reqs {
+    list-style: none;
+     
+}
+.career-post-item-reqs li {
+ border-top: 1px solid #cecece;
+    color: #7c7d7f;
+    vertical-align: middle;
+   
+    padding: 5px;
+    
+}
+
+/*Footer*/
+
+#footer .mw-subscribe-form-title {
+    color: #fff;
+font-family: "Helvetica";
+font-size: 20px;
+}
+#footer .mw-subscribe-form-email {
+    float: left;
+     background-color: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 0px;
+    box-sizing: border-box;
+    cursor: text;
+    max-width: 100%;
+    outline: medium none;
+    padding-left: 5px;
+    height: 31px;
+    background-color: #015198;
+    color: #fff;
+}
+#footer .mw-subscribe-form-btn {
+    float: left;
+    height: 31px;
+    background-color: #fff;
+    color: #004fb3;
+ font-weight: bold;
+  box-sizing:border-box;
+    text-transform: uppercase;
+    border-bottom: 2px solid #b6b6b6;
+}
+
+
 /*
 .category-tab-switch-link-holder-list {
     list-style: none;
