@@ -70,12 +70,16 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
 
 <div class="<?php print $config['module_class'] ?>">
   <div id="shipping_country_unite" class="shipping_country_unite_wrapper_shipping_form">
+    <div class="mw-row" style="margin:0px;">
+      <div class="mw-col" style="width:50%; margin:0px;">
+        <h4 class="box-style-1-heading ico-cart-white">Shipping Information</h4>
+      </div>
+      <div class="mw-col" style="width:50%;margin:0px;">
+        <h4 class="box-style-1-heading ico-none">Billing Information</h4>
+      </div>
+    </div>
     <div class="mw-row">
       <div class="mw-col shipping_country_unite_wrapper_shipping_form_col_left">
-        <h2 style="margin-top:0">
-          <?php _e("Shipping Information"); ?>
-        </h2>
-        <hr/>
         <div class="mw-ui-field-holder">
           <label>
             <?php _e("Choose country:"); ?>
@@ -180,10 +184,6 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
         </div>
         <span class="unitile-mw-ui-field-holder-item-bg-element-col"><span class="unitile-mw-ui-field-holder-bg-element-inner"></span></span> </div>
       <div class="mw-col shipping_country_unite_wrapper_shipping_form_col_right">
-        <h2 style="margin-top:0">
-          <?php _e("Billing Information"); ?>
-        </h2>
-        <hr/>
         <div class="mw-ui-field-holder">
           <label>
             <?php _e("Choose country:"); ?>

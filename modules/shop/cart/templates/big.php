@@ -14,7 +14,8 @@ description: Full width cart template
 
 <div class="mw-cart mw-cart-big mw-cart-<?php print $params['id']?> <?php print  $template_css_prefix;  ?>">
   <div class="mw-cart-title mw-cart-<?php print $params['id']?>">
-    <h4> My cart </h4>
+      <h4 class="box-style-1-heading ico-cart-white">My Cart</h4>
+
   </div>
   <?php if(is_array($data)) :?>
   <table class="table  mw-cart-table mw-cart-table-medium mw-cart-big-table">

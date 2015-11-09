@@ -309,12 +309,33 @@
         left: -25px;
         z-index: 2;
     }
-    
-    .shipping_country_unite_wrapper_shipping_form_col_left .unitile-mw-ui-field-holder-item-bg-element-col .unitile-mw-ui-field-holder-bg-element-inner{
-    background-image: url('../img/Layer-81.png');
-}
+    .shipping_country_unite_wrapper_shipping_form_col_left .unitile-mw-ui-field-holder-item-bg-element-col .unitile-mw-ui-field-holder-bg-element-inner {
+        background-image: url('../img/Layer-81.png');
+    }
 }
 
+.unite-order-summary-table-details {
+    padding-left: 10px;
+    padding-right: 10px;
+        border-left: 1px solid #00579b;
+    box-sizing: border-box;
+    
+
+}
+
+.unite-order-summary-table-details h5 {
+    color: #076daf;
+    font-family: "Myriad Pro", "Helvetica";
+    font-size: 14px;
+}
+
+.unite-order-summary-table-details h6 {
+    color: #797979;
+    font-family: "Myriad Pro", "Helvetica";
+    font-size: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dcdcdc;
+}
 
 
 /*Careers*/

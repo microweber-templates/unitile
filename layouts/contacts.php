@@ -141,19 +141,85 @@ $(document).ready(function(){
             </div>
         </div>
 
-        <div class="c-form">
 
-            <div class="s-field">
-                <span class="s-field-title">First Name</span>
-                <input type="text" name="First Name">
+
+    <div class="mw-ui-row">
+        <div class="mw-ui-col" style="width: 460px;">
+            <div class="mw-ui-col-container">
+
+            <div id="sayhello">
+
+
+Say Hello!
+Get In Touch
+
+Fill up this form to contact usif you have any futher questions.
+
+Our motivation "Perfection simplified" helps to craft meaningful experiences for the people around us,
+This mission inspires us to jump out of bed each day and guides every aspect of
+what we do.
+
+            </div>
+
+            </div>
+        </div>
+        <div class="mw-ui-col">
+            <div class="mw-ui-col-container">
+<div class="c-form" style="padding-top: 11px;">
+
+            <script>
+
+                $(document).ready(function(){
+                    $(".s-field").on('click', function(e){
+                        if(e.target.nodeName != 'INPUT'){
+                            $('input,textarea', this).focus();
+                        }
+                    });
+                    $('.s-field input,.s-field textarea').on('focus blur', function(e){
+                        $(this.parentNode)[e.type=='focus'?'addClass':'removeClass']('focused');
+                        $(this.parentNode)[this.value.replace(/ /g,'') != ''?'addClass':'removeClass']('hasValue');
+
+                    })
+                });
+
+            </script>
+
+            <div class="mw-ui-row">
+                <div class="mw-ui-col">
+                    <div class="mw-ui-col-container">
+                        <div class="s-field">
+                            <span class="s-field-title">First Name</span>
+                            <input type="text" name="First Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="mw-ui-col">
+                    <div class="mw-ui-col-container">
+                        <div class="s-field">
+                            <span class="s-field-title">Last Name</span>
+                            <input type="text" name="Last Name">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="s-field">
                 <span class="s-field-title">Email</span>
                 <span class="s-field-description">This Can Be Change Later</span>
                 <input type="text" name="Email">
             </div>
+            <div class="s-field s-area">
+                <span class="s-field-title">Message</span>
+                <textarea name="Message"></textarea>
+            </div>
 
         </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
 </div>
 
