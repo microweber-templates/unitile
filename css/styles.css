@@ -223,6 +223,8 @@
 
 /*Checkout*/
 
+
+
 .mw-checkout-holder .well {
     background: transparent;
     border: none;
@@ -275,7 +277,10 @@
     background-color: #015198;
     color: white;
 }
-
+.shipping_country_unite_wrapper_shipping_form .fa{
+    display: block;
+    line-height: 34px;
+}
 .shipping_country_unite_wrapper_shipping_form .mw-ui-field-holder textarea.form-control+.form-control-feedback {
     height: 60px;
     top: 0px;
@@ -301,7 +306,8 @@
     .shipping_country_unite_wrapper_shipping_form .unitile-mw-ui-field-holder-item-bg-element-col .unitile-mw-ui-field-holder-bg-element-inner {
         position: absolute;
         bottom: -35px;
-        background-image: url('../img/11-128.png');
+        xxbackground-image: url('../img/11-128.png');
+        background-image: url('../img/Layer-81.png');
         background-position: center top;
         background-repeat: no-repeat;
         width: 52px;
@@ -310,17 +316,16 @@
         z-index: 2;
     }
     .shipping_country_unite_wrapper_shipping_form_col_left .unitile-mw-ui-field-holder-item-bg-element-col .unitile-mw-ui-field-holder-bg-element-inner {
-        background-image: url('../img/Layer-81.png');
+        xxbackground-image: url('../img/Layer-81.png');
+        background-image: url('../img/11-128.png');
     }
 }
 
 .unite-order-summary-table-details {
     padding-left: 10px;
     padding-right: 10px;
-        border-left: 1px solid #00579b;
+    border-left: 1px solid #00579b;
     box-sizing: border-box;
-    
-
 }
 
 .unite-order-summary-table-details h5 {
@@ -337,7 +342,54 @@
     border-bottom: 1px solid #dcdcdc;
 }
 
+.mw-cart-big-summary .checkout-total-table td {
+    border-top: 0px solid #00579b;
+    color: #0067ad;
+    font-family: "Helvetica";
+    font-size: 14px;
+    font-weight: normal;
+}
 
+.mw-cart-big-summary .checkout-total-table td label {
+    font-weight: bold;
+    border-right: 1px solid #00579b;
+    padding-right: 10px;
+}
+
+.mw-cart-big-summary .checkout-total-table .grand-total-row {
+    border-top: 2px solid #015198;
+    font-size: 18px;
+    color: #015198;
+}
+
+.mw-cart-big-summary .checkout-total-table .grand-total-row label,
+.mw-cart-big-summary .checkout-total-table .grand-total-row .total_cost {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mw-cart-big-main-table-inner {
+     border: 1px solid #00579b;
+     border-top: 0px solid #00579b;
+}
+.mw-cart-big-summary {
+     
+    font-family: "Myriad Pro", "Helvetica";
+   
+}
+.mw-cart-big-summary-style-1 {
+      color: #0067ad;
+}
+.shipping_country_unite_wrapper_shipping_form_main {
+         border: 1px solid #00579b;
+    padding: 45px;
+
+}
+/*
+.mw-cart-big-summary-style-1 tr, .mw-cart-big-summary-style-1 td {
+    border: none;
+}
+*/
 /*Careers*/
 
 #careers-main .home-title p {

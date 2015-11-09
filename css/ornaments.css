@@ -53,10 +53,11 @@
     font-size: 22px;
     position: relative;
     border-bottom: 2px solid #0067ad;
-    padding-left: 40px;
+    padding-left: 45px;
     background-repeat: no-repeat;
     min-height: 35px;
     line-height: 33px;
+    margin: 0px;
 }
 
 .box-style-1-heading:after {

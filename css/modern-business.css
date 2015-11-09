@@ -777,6 +777,7 @@ span.bordered-bottom {
     border: 1px solid #154C94;
     height:245px;
     position: relative;
+    padding: 1px;
 }
 .contact-block + .contact-block{
     margin-left:10px;
@@ -802,6 +803,10 @@ span.bordered-bottom {
 .contact-block:hover:after{
     background-color: #1F60B9;
 }
+.contact-block:hover{
+    border-width: 2px;
+    padding: 0;
+}
 
 .contact-block li{
     padding-left: 20px;
@@ -813,18 +818,37 @@ span.bordered-bottom {
     z-index: 1;
     position: relative;
     background-color: white;
+    margin-top: 28px;
+    height: 170px;
+}
+
+.contact-block-bottom{
+    background-color: #F0F0F2;
+    height: 43px;
+    border-top: 1px solid #E3DBDA;
+    padding-left: 20px;
+    padding-top: 11px;
+}
+
+.contact-block:hover  .contact-block-content{
+       background-color: #F0F0F2;
+}
+.contact-block:hover  .contact-block-bottom{
+    background-color: white;
 }
 
 .contact-block-top{
     height:30px;
     text-align: center;
     background:#154C94;
-
-    position: relative;
-    z-index: 1;
+    position: absolute;
+    z-index: 2;
     color: white;
     text-align: center;
     padding-top: 4px;
+    top: 0;
+    left:0;
+    width: 100%;
 }
 
 .contact-block:hover .contact-block-top{
@@ -970,6 +994,8 @@ span.bordered-bottom {
     position: absolute;
     top: 15px;
     width: 100%;
+    outline: none;
+    box-shadow: none !important;
 }
 
 .s-area{
@@ -987,6 +1013,11 @@ span.bordered-bottom {
     text-transform: uppercase;
     color:#77787a;
     display: block;
+
+}
+
+.s-field.focused{
+    background-color: #EDEDEC;
 }
 
 .s-field.focused .s-field-title{
@@ -1000,6 +1031,17 @@ span.bordered-bottom {
 .s-field.focused .s-field-description, .s-field.hasValue .s-field-description{
    opacity: 0;
    visibility: hidden;
+}
+
+#contact_submit{
+    display: block;
+    float: right;
+    width: 144px;
+    height: 50px;
+    overflow: hidden;
+    background: url(../img/site/csubmit.png) no-repeat;
+    border: none;
+    cursor: pointer;
 }
 
 #sayhello{

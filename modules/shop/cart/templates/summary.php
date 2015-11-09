@@ -51,7 +51,7 @@ foreach($vals as $k=>$v){
 
 <div class="mw-cart mw-cart-big mw-cart-big-summary mw-cart-<?php print $params['id']?> <?php print  $template_css_prefix;  ?>">
   <div class="mw-cart-title mw-cart-<?php print $params['id']?>">
-    <h4 class="box-style-1-heading ico-cart-white">Summary</h4>
+    <h4 class="box-style-1-heading ico-cart-white">Order Summary</h4>
   </div>
   <div class="mw-ui-row">
     <div class="mw-ui-col" style="width: 70%">
@@ -128,22 +128,32 @@ foreach($vals as $k=>$v){
             }
 
             .cell-shipping-total, .cell-shipping-price{
-              text-align: right;
+              text-align: left;
             }
             .total_cost{
               font-weight: normal;
             }
 
         </style>
-            <col width="60%">
+            <colgroup>
             <col width="">
+            <col width="70%">
             <col width="">
+            </colgroup>
             <tbody>
+            <tr>
+                <td></td>
+                <td><label>
+                    <?php _e("Total"); ?>
+                  </label></td>
+                             <td  class="cell-shipping-price"><?php print currency_format(cart_sum()); ?></td>
+
+              </tr>
               <tr>
                 <td></td>
                 <td><label>
                     <?php _e("Shipping price"); ?>
-                    :</label></td>
+                  </label></td>
                 <td  class="cell-shipping-price"><div class="mw-big-cart-shipping-price" style="display:inline-block">
                     <module type="shop/shipping"  view="cost" />
                   </div></td>
@@ -151,17 +161,13 @@ foreach($vals as $k=>$v){
               <?php if (function_exists('cart_get_tax') and get_option('enable_taxes', 'shop')==1){ ?>
               <tr>
                 <td></td>
-                <td><label>
-                    <?php _e("Tax"); ?>
-                    :</label></td>
+                <td><label> Total VAT </label></td>
                 <td  class="cell-shipping-price"><?php print currency_format(cart_get_tax()); ?></td>
               </tr>
               <?php }  ?>
-              <tr>
+              <tr class="grand-total-row">
                 <td></td>
-                <td><label>
-                    <?php _e("Total Price"); ?>
-                    :</label></td>
+                <td><label>Grand Total </label></td>
                 <td  class="cell-shipping-total"><?php 
 		  $print_total=cart_total();
 		  
@@ -201,60 +207,59 @@ foreach($vals as $k=>$v){
     <div class="mw-ui-col" style="width: 30%">
       <div class="mw-ui-col-container">
         <div class="unite-order-summary-table-details">
-        <h4 class="box-style-1-heading ico-phone-white">Billing details</h4>
-        <?php if($vals["shipping_payment_name"]){ ?>
-        <h5>Name</h5>
-        <h6><?php print $vals["shipping_payment_name"]; ?></h6>
-        <?php } ?>
-        <?php if($vals["shipping_payment_phone"]){ ?>
-        <h5>Phone</h5>
-        <h6><?php print $vals["shipping_payment_phone"]; ?></h6>
-        <?php } ?>
-        <?php if($vals["shipping_payment_country"]){ ?>
-        <h5>Address</h5>
-        <h6><?php print $vals["shipping_payment_country"]; ?>
-          <?php if($vals["shipping_payment_state"]){ ?>
-          , <?php print $vals["shipping_payment_state"]; ?>
+          <h4 class="box-style-1-heading ico-phone-white">Billing details</h4>
+          <?php if($vals["shipping_payment_name"]){ ?>
+          <h5>Name</h5>
+          <h6><?php print $vals["shipping_payment_name"]; ?></h6>
           <?php } ?>
-          <?php if($vals["shipping_payment_city"]){ ?>
-          , <?php print $vals["shipping_payment_city"]; ?>
+          <?php if($vals["shipping_payment_phone"]){ ?>
+          <h5>Phone</h5>
+          <h6><?php print $vals["shipping_payment_phone"]; ?></h6>
           <?php } ?>
-          <?php if($vals["shipping_payment_zip"]){ ?>
-          , <?php print $vals["shipping_payment_zip"]; ?>
+          <?php if($vals["shipping_payment_country"]){ ?>
+          <h5>Address</h5>
+          <h6><?php print $vals["shipping_payment_country"]; ?>
+            <?php if($vals["shipping_payment_state"]){ ?>
+            , <?php print $vals["shipping_payment_state"]; ?>
+            <?php } ?>
+            <?php if($vals["shipping_payment_city"]){ ?>
+            , <?php print $vals["shipping_payment_city"]; ?>
+            <?php } ?>
+            <?php if($vals["shipping_payment_zip"]){ ?>
+            , <?php print $vals["shipping_payment_zip"]; ?>
+            <?php } ?>
+            <?php if($vals["shipping_payment_address"]){ ?>
+            , <?php print $vals["shipping_payment_address"]; ?>
+            <?php } ?>
+          </h6>
           <?php } ?>
-          <?php if($vals["shipping_payment_address"]){ ?>
-          , <?php print $vals["shipping_payment_address"]; ?>
+          <h4 class="box-style-1-heading ico-truck-white">Shipping details</h4>
+          <?php if($vals["shipping_first_name"]){ ?>
+          <h5>Name</h5>
+          <h6><?php print $vals["shipping_first_name"]; ?> <?php print $vals["shipping_last_name"]; ?></h6>
           <?php } ?>
-        </h6>
-        <?php } ?>
-        <h4 class="box-style-1-heading ico-truck-white">Shipping details</h4>
-        <?php if($vals["shipping_first_name"]){ ?>
-        <h5>Name</h5>
-        <h6><?php print $vals["shipping_first_name"]; ?> <?php print $vals["shipping_last_name"]; ?></h6>
-        <?php } ?>
-        <?php if($vals["shipping_phone"]){ ?>
-        <h5>Phone</h5>
-        <h6><?php print $vals["shipping_phone"]; ?></h6>
-        <?php } ?>
-        <?php if($vals["shipping_country"]){ ?>
-        <h5>Address</h5>
-        <h6><?php print $vals["shipping_country"]; ?>
-          <?php if($vals["shipping_state"]){ ?>
-          , <?php print $vals["shipping_state"]; ?>
+          <?php if($vals["shipping_phone"]){ ?>
+          <h5>Phone</h5>
+          <h6><?php print $vals["shipping_phone"]; ?></h6>
           <?php } ?>
-          <?php if($vals["shipping_city"]){ ?>
-          , <?php print $vals["shipping_city"]; ?>
+          <?php if($vals["shipping_country"]){ ?>
+          <h5>Address</h5>
+          <h6><?php print $vals["shipping_country"]; ?>
+            <?php if($vals["shipping_state"]){ ?>
+            , <?php print $vals["shipping_state"]; ?>
+            <?php } ?>
+            <?php if($vals["shipping_city"]){ ?>
+            , <?php print $vals["shipping_city"]; ?>
+            <?php } ?>
+            <?php if($vals["shipping_zip"]){ ?>
+            , <?php print $vals["shipping_zip"]; ?>
+            <?php } ?>
+            <?php if($vals["shipping_address"]){ ?>
+            , <?php print $vals["shipping_address"]; ?>
+            <?php } ?>
+          </h6>
           <?php } ?>
-          <?php if($vals["shipping_zip"]){ ?>
-          , <?php print $vals["shipping_zip"]; ?>
-          <?php } ?>
-          <?php if($vals["shipping_address"]){ ?>
-          , <?php print $vals["shipping_address"]; ?>
-          <?php } ?>
-        </h6>
-        <?php } ?>
-        
-</div>
+        </div>
       </div>
     </div>
   </div>

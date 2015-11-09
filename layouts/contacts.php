@@ -165,54 +165,60 @@ what we do.
         </div>
         <div class="mw-ui-col">
             <div class="mw-ui-col-container">
-<div class="c-form" style="padding-top: 11px;">
+                <form class="c-form" style="padding-top: 11px;">
+                    <script>
+                        $(document).ready(function(){
+                            $(".s-field").on('click', function(e){
+                                if(e.target.nodeName != 'INPUT'){
+                                    $('input,textarea', this).focus();
+                                }
+                            });
+                            $('.s-field input,.s-field textarea').on('focus blur', function(e){
+                                $(this.parentNode)[e.type=='focus'?'addClass':'removeClass']('focused');
+                                $(this.parentNode)[this.value.replace(/ /g,'') != ''?'addClass':'removeClass']('hasValue');
+                            });
 
-            <script>
 
-                $(document).ready(function(){
-                    $(".s-field").on('click', function(e){
-                        if(e.target.nodeName != 'INPUT'){
-                            $('input,textarea', this).focus();
-                        }
-                    });
-                    $('.s-field input,.s-field textarea').on('focus blur', function(e){
-                        $(this.parentNode)[e.type=='focus'?'addClass':'removeClass']('focused');
-                        $(this.parentNode)[this.value.replace(/ /g,'') != ''?'addClass':'removeClass']('hasValue');
-
-                    })
-                });
-
-            </script>
-
-            <div class="mw-ui-row">
-                <div class="mw-ui-col">
-                    <div class="mw-ui-col-container">
-                        <div class="s-field">
-                            <span class="s-field-title">First Name</span>
-                            <input type="text" name="First Name">
+                            $(".c-form").on('submit', function(){
+                               var data = {};
+                               $(".c-form input,.c-form textarea").each(function(){
+                                    data[this.name] = this.value;
+                               });
+                            });
+                        });
+                    </script>
+                    <div class="mw-ui-row">
+                        <div class="mw-ui-col">
+                            <div class="mw-ui-col-container">
+                                <div class="s-field">
+                                    <span class="s-field-title">First Name</span>
+                                    <input type="text" name="First Name" required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mw-ui-col">
+                            <div class="mw-ui-col-container">
+                                <div class="s-field">
+                                    <span class="s-field-title">Last Name</span>
+                                    <input type="text" name="Last Name" required="required">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="mw-ui-col">
-                    <div class="mw-ui-col-container">
-                        <div class="s-field">
-                            <span class="s-field-title">Last Name</span>
-                            <input type="text" name="Last Name">
-                        </div>
+                    <div class="s-field">
+                        <span class="s-field-title">Email</span>
+                        <span class="s-field-description">This Can Be Change Later</span>
+                        <input type="email" name="Email" required="required">
                     </div>
-                </div>
-            </div>
-            <div class="s-field">
-                <span class="s-field-title">Email</span>
-                <span class="s-field-description">This Can Be Change Later</span>
-                <input type="text" name="Email">
-            </div>
-            <div class="s-field s-area">
-                <span class="s-field-title">Message</span>
-                <textarea name="Message"></textarea>
-            </div>
-
-        </div>
+                    <div class="s-field s-area">
+                        <span class="s-field-title">Message</span>
+                        <textarea name="Message" required="required"></textarea>
+                    </div>
+                    <div class="cform-footer">
+                        <i> hereby certify that the information above is true and accurate.</i>
+                        <button type="submit" class="csubmit" id="contact_submit">&nbsp;</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

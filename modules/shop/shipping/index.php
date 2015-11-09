@@ -14,13 +14,13 @@ $shipping_options = mw('shop\shipping\shipping_api')->get_active();
         }
     </script>
 
-<div class="well">
+ 
   <?php if (isset($shipping_options[0]) and isset($shipping_options[0]['module_base'])): ?>
   <div id="mw-shipping-gateway-selected-<?php print $params['id']; ?>">
     <module type="<?php print $shipping_options[0]['module_base'] ?>"/>
   </div>
   <?php endif; ?>
-</div>
+ 
 <?php else : ?>
 <?php print lnotif("Click here to edit Shipping Options"); ?>
 <?php endif; ?>
