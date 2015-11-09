@@ -43,7 +43,7 @@ $(document).ready(function(){
         width="100%"
         height="350"
         frameborder="0"
-        style="border:0"
+        style="border:0;float: left;margin-bottom:-31px;"
         allowfullscreen>
     </iframe>
 
@@ -150,14 +150,16 @@ $(document).ready(function(){
             <div id="sayhello">
 
 
-Say Hello!
-Get In Touch
+                <div id="sayhello-title">
+                    <b>Say Hello!</b>
+                    <span>GET IN TOUCH</span>
+                </div>
 
-Fill up this form to contact usif you have any futher questions.
+                Fill up this form to contact usif you have any futher questions.
 
-Our motivation "Perfection simplified" helps to craft meaningful experiences for the people around us,
-This mission inspires us to jump out of bed each day and guides every aspect of
-what we do.
+                Our motivation "Perfection simplified" helps to craft meaningful experiences for the people around us,
+                This mission inspires us to jump out of bed each day and guides every aspect of
+                what we do.
 
             </div>
 

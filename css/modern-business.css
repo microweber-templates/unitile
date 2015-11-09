@@ -820,6 +820,7 @@ span.bordered-bottom {
     background-color: white;
     margin-top: 28px;
     height: 170px;
+    padding-top: 8px;
 }
 
 .contact-block-bottom{
@@ -1050,6 +1051,20 @@ span.bordered-bottom {
     background:url(../img/site/cbox.png) no-repeat;
     text-align: center;
     padding: 30px 30px 20px 20px;
+}
+
+#sayhello-title{
+    position: absolute;
+    text-align: center;
+    color: #015198;
+    font-size: 15px;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    padding-right: 17px;
+}
+#sayhello-title b{
+    display: block;
 }
 
 

@@ -220,10 +220,72 @@
     font-size: 15px;
 }
 
+.unitilile-product-gallery-holder {}
+
+.unitilile-product-gallery-holder .mw-rotator-template-inner a.rotator-paging-item-thumbnail {
+    width: 70px;
+    height: 70px;
+    border: 0px solid #aaa8a8;
+    border-radius: 0px;
+    background-size: 80%;
+}
+
+.unitilile-product-gallery-holder .mw-rotator-template-inner a.rotator-paging-item-thumbnail:after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url(../img/site/productmask.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/*
+.unitilile-product-gallery-holder .mw-rotator-template-inner a.rotator-paging-item-thumbnail:before {
+    content: '';
+    width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom-color: red;
+	position: relative;
+	top: -50px;
+}
+.unitilile-product-gallery-holder .mw-rotator-template-inner a.rotator-paging-item-thumbnail:after {
+	content: '';
+	position: absolute;
+	left: -50px;
+	top: 50px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top-color: red;
+}
+*/
+
+xx.unitilile-product-gallery-holder .rotator-paging-item-thumbnail {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: red;
+    position: relative;
+    top: -50px;
+}
+
+xx.unitilile-product-gallery-holder .rotator-paging-item-thumbnail:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    border: 50px solid transparent;
+    border-top-color: red;
+}
+
 
 /*Checkout*/
-
-
 
 .mw-checkout-holder .well {
     background: transparent;
@@ -277,10 +339,12 @@
     background-color: #015198;
     color: white;
 }
-.shipping_country_unite_wrapper_shipping_form .fa{
+
+.shipping_country_unite_wrapper_shipping_form .fa {
     display: block;
     line-height: 34px;
 }
+
 .shipping_country_unite_wrapper_shipping_form .mw-ui-field-holder textarea.form-control+.form-control-feedback {
     height: 60px;
     top: 0px;
@@ -369,27 +433,31 @@
 }
 
 .mw-cart-big-main-table-inner {
-     border: 1px solid #00579b;
-     border-top: 0px solid #00579b;
+    border: 1px solid #00579b;
+    border-top: 0px solid #00579b;
 }
-.mw-cart-big-summary {
-     
-    font-family: "Myriad Pro", "Helvetica";
-   
-}
-.mw-cart-big-summary-style-1 {
-      color: #0067ad;
-}
-.shipping_country_unite_wrapper_shipping_form_main {
-         border: 1px solid #00579b;
-    padding: 45px;
 
+.mw-cart-big-summary {
+    font-family: "Myriad Pro", "Helvetica";
 }
+
+.mw-cart-big-summary-style-1 {
+    color: #0067ad;
+}
+
+.shipping_country_unite_wrapper_shipping_form_main {
+    border: 1px solid #00579b;
+    padding: 45px;
+}
+
+
 /*
 .mw-cart-big-summary-style-1 tr, .mw-cart-big-summary-style-1 td {
     border: none;
 }
 */
+
+
 /*Careers*/
 
 #careers-main .home-title p {
