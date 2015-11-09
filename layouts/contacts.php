@@ -141,6 +141,20 @@ $(document).ready(function(){
             </div>
         </div>
 
+        <div class="c-form">
+
+            <div class="s-field">
+                <span class="s-field-title">First Name</span>
+                <input type="text" name="First Name">
+            </div>
+            <div class="s-field">
+                <span class="s-field-title">Email</span>
+                <span class="s-field-description">This Can Be Change Later</span>
+                <input type="text" name="Email">
+            </div>
+
+        </div>
+
 </div>
 
 <div class="cxtab">
