@@ -763,8 +763,29 @@ span.bordered-bottom {
 
 .icona{
     display: inline-block;
-    width: 25px;
     height:20px;
+    margin-right: 16px;
+    position: relative;
+    top: 2px;
+    width: 25px;
+}
+
+.icona-case{
+    background: url(../img/site/case1.png) no-repeat center
+}
+
+a.active .icona-case,
+a:hover .icona-case{
+    background: url(../img/site/case2.png) no-repeat center
+}
+
+.icona-phone{
+    background: url(../img/site/phone1.png) no-repeat center
+}
+
+a.active .icona-phone,
+a:hover .icona-phone{
+    background: url(../img/site/phone2.png) no-repeat center
 }
 
 .contact-blox{
@@ -809,9 +830,22 @@ span.bordered-bottom {
 }
 
 .contact-block li{
-    padding-left: 20px;
+    padding-left: 25px;
     padding-bottom: 10px;
     list-style: none;
+    position: relative;
+}
+
+
+.contact-block-bottom [class*='sp-icon-'],
+.contact-block li [class*='sp-icon-']{
+    position: absolute;
+    left: 6px;
+    top: 4px;
+}
+
+.contact-block-bottom [class*='sp-icon-']{
+    top: 17px;
 }
 
 .contact-block-content{
@@ -827,8 +861,9 @@ span.bordered-bottom {
     background-color: #F0F0F2;
     height: 43px;
     border-top: 1px solid #E3DBDA;
-    padding-left: 20px;
+    padding-left: 25px;
     padding-top: 11px;
+    position: relative;
 }
 
 .contact-block:hover  .contact-block-content{
@@ -945,14 +980,19 @@ span.bordered-bottom {
 
 .cxmenu{
    text-align: center;
+   border-bottom: 1px solid #0067AD;
 }
 
 .cxmenu a{
     height:37px;
+    width: 205px;
     font-size: 20px;
     text-align: center;
     display: inline-block;
     text-decoration: none;
+    padding: 6px;
+    border: 1px solid #0067AD;
+    border-bottom: none
 }
 
 .cxmenu a:hover,
@@ -968,6 +1008,8 @@ span.bordered-bottom {
 
 .cxmenu a:first-child{
     border-radius: 3px 0 0 0;
+    border-right: none;
+    margin-right: -5px;
 }
 .cxmenu a:last-child{
     border-radius: 0 3px 0 0;
@@ -1014,7 +1056,6 @@ span.bordered-bottom {
     text-transform: uppercase;
     color:#77787a;
     display: block;
-
 }
 
 .s-field.focused{
@@ -1034,6 +1075,10 @@ span.bordered-bottom {
    visibility: hidden;
 }
 
+#content{
+    background: url(../img/site/bg.jpg);
+}
+
 #contact_submit{
     display: block;
     float: right;
@@ -1050,7 +1095,7 @@ span.bordered-bottom {
     height: 227px;
     background:url(../img/site/cbox.png) no-repeat;
     text-align: center;
-    padding: 30px 30px 20px 20px;
+    padding: 60px 30px 20px 20px;
 }
 
 #sayhello-title{
@@ -1062,9 +1107,27 @@ span.bordered-bottom {
     left: 0;
     width: 100%;
     padding-right: 17px;
+    font-size: 25px;
 }
 #sayhello-title b{
     display: block;
+
 }
+
+[class*='sp-icon-']{
+    display: inline-block;
+    width:12px;
+    height: 15px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position:0 0;
+    background-image: url(../img/site/ikonki.png);
+}
+
+.sp-icon-pin{background-position:0 0;}
+.sp-icon-phone{background-position:0 -29px;}
+.sp-icon-mobile{background-position:0 -102px;}
+.sp-icon-letter{background-position:0 -74px;}
+.sp-icon-mail{background-position:0 -74px;}
 
 

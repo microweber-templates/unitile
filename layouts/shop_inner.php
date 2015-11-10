@@ -35,7 +35,7 @@
           <div class="sidebar-boxes-wrapper">
             <module type="shop/cart_add" template="sidebar" />
             <div class="sidebar-boxes-spacer"></div>
-            <module type="menu" template="collaterals" menu-name="collaterals-<?php print CONTENT_ID ?>" />
+            <module type="menu" template="collaterals" menu-name="collaterals" />
             <div class="sidebar-boxes-spacer"></div>
             <module type="staticbox/download"  />
           </div>

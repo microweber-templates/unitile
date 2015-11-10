@@ -27,18 +27,25 @@ else{
 ?>
 <?php
 $firstPrice = false;
+$showPrice = false;
+
  $count = 0;
   $num = count($data);
   if(is_array($data)):
 ?>
-
+<?php foreach($data  as $key => $v ){
+	
+	if(intval($v) > 0){
+		$showPrice = 1;
+	}
+	
+	} ?>
+ 
 <div class="sidebar-box sidebar-box-styled-add">
   <div class="sidebar-box-styled-add-item-title-holder">
-   
-<div class="sidebar-box-styled-add-item-title-holder-ornament-right"> </div>
+    <div class="sidebar-box-styled-add-item-title-holder-ornament-right"> </div>
     <h2 class="sidebar-box-styled-add-item-title"><?php print $title; ?></h2>
     <div class="sidebar-box-styled-add-item-title-holder-ornament"> </div>
-       
   </div>
   <div class="padding-element">
     <div class="sidebar-box-styled-add-item-price-holder">
@@ -57,3 +64,4 @@ $firstPrice = false;
     </div>
   </div>
 </div>
+ 

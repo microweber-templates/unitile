@@ -20,20 +20,21 @@ position: 7
 <script>
 
 $(document).ready(function(){
-    mw.tabs({
-        nav:'.cxmenu a',
-        tabs:'.cxtab'
-    })
+
 });
 
 
 </script>
 
+    <div style="text-align: center;padding-top: 18px;">
+        <img src="<?php print template_url(); ?>img/site/cctop.png">
+    </div>
 
-
-    <div class="cxmenu">
-        <a href="javascript:;"><span class="icona icona-phone"></span>Contact Us</a>
-        <a href="javascript:;"><span class="icona icona-case"></span>Business Partners</a>
+    <div class="container">
+        <div class="cxmenu">
+            <a href="contacts" class="active"><span class="icona icona-phone"></span>Contact Us</a>
+            <a href="business-partners"><span class="icona icona-case"></span>Business Partners</a>
+        </div>
     </div>
 
 <div class="cxtab">
@@ -56,12 +57,12 @@ $(document).ready(function(){
                    </div>
                    <div class="contact-block-content">
                        <ul>
-                           <li class="li-addr">Unit No. 2-G, Laxmi Industrial Estate, New Link Road, Andheri (W), Mumbai  400 053 INDIA.</li>
-                           <li class="li-mob">+91 99020 10917</li>
-                           <li class="li-phone">+91 22  2630 5270 / 72 / 73</li>
+                           <li><span class="sp-icon-pin"></span>Unit No. 2-G, Laxmi Industrial Estate, New Link Road, Andheri (W), Mumbai  400 053 INDIA.</li>
+                           <li><span class="sp-icon-mobile"></span>+91 99020 10917</li>
+                           <li><span class="sp-icon-phone"></span>+91 22  2630 5270 / 72 / 73</li>
                        </ul>
                    </div>
-               <div class="contact-block-bottom">info@united-group.in</div>
+               <div class="contact-block-bottom"><span class="sp-icon-mail"></span>info@united-group.in</div>
             </div>
             <div class="contact-block">
                    <div class="contact-block-top">
@@ -155,11 +156,14 @@ $(document).ready(function(){
                     <span>GET IN TOUCH</span>
                 </div>
 
-                Fill up this form to contact usif you have any futher questions.
+                <div style="text-align: center;padding: 5px 0;">
+                    <img src="<?php print template_url(); ?>img/site/httitle.png">
+                </div>
+                <p style="color: #015198;">Fill up this form to contact usif you have any futher questions. </p>
 
-                Our motivation "Perfection simplified" helps to craft meaningful experiences for the people around us,
+                <i>Our motivation "Perfection simplified" helps to craft meaningful experiences for the people around us,
                 This mission inspires us to jump out of bed each day and guides every aspect of
-                what we do.
+                what we do.</i>
 
             </div>
 
@@ -231,9 +235,6 @@ $(document).ready(function(){
 
 </div>
 
-<div class="cxtab">
-2
-</div>
 
 
 
