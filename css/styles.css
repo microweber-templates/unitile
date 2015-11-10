@@ -7,6 +7,23 @@
     margin-top: 0px;
 }
 
+
+a#login-register-link-header {
+     border: 0px;
+    padding: 0px;
+    color: #0067ad;
+font-family: "Helvetica";
+font-size: 14px;
+
+}
+
+
+
+
+
+
+
+
 .mw-checkout-holder h4 {
     color: #0067ad;
     font-family: "Helvetica";
@@ -343,6 +360,7 @@ a#category-tab-data-center-accessories {
 .mw-module-tabs-skin-default .mw-ui-box {
     box-shadow: 0px;
     border: none;
+    background-color: transparent;
 }
 
 

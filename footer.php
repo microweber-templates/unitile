@@ -66,4 +66,6 @@
     </div>
   </div>
 </div>
+<?php include template_dir(). "modals.php"; ?>
+
 </body></html>

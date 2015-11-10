@@ -1,0 +1,77 @@
+.user-section-styles .form-control {
+    border-radius: 0px;
+    box-shadow: 0px;
+    color: #a5a5a5;
+    font-family: "Helvetica";
+    font-size: 12px;
+    padding-left: 40px;
+}
+
+.user-section-styles .form-control-feedback {
+    left: 0px;
+    background-color: #015198;
+    color: white;
+}
+
+.user-section-styles textarea.form-control+.form-control-feedback {
+    height: 60px;
+    top: 0px;
+}
+
+.user-section-styles .btn-main-action {
+    background-color: #076daf;
+    color: white;
+    color: #fff;
+    font-family: "Helvetica";
+    text-transform: uppercase;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: 1px solid #015198;
+}
+
+.user-section-styles .social-logins-btns {
+    list-style: none;
+}
+
+.user-section-styles .social-logins-btns .mw-signin-with-google-li {
+    background-color: #dd4931;
+}
+
+.user-section-styles .social-logins-btns .mw-signin-with-linkedin-li {
+    background-color: #115e85;
+}
+
+.user-section-styles .social-logins-btns .mw-signin-with-twitter-li {
+    background-color: #149bca;
+}
+
+.user-section-styles .social-logins-btns li {
+    margin-top: 10px;
+    vertical-align: middle;
+    min-height: 40px;
+    background-color: #076daf;
+    margin-bottom: 10px;
+    position: relative;
+}
+.user-section-styles .social-logins-btns li:after {
+ content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #6ba7cf;
+    bottom: -3px;
+    left: 0px;
+}
+
+.user-section-styles .social-logins-btns li a {
+    width: 100%;
+    color: white;
+    display: inline-block;
+    height: 40px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 15px;
+    color: #fff;
+    font-family: "Helvetica";
+    font-size: 14px;
+}

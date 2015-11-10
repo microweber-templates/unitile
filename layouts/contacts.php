@@ -66,13 +66,14 @@ $(document).ready(function(){
             </div>
             <div class="contact-block">
                    <div class="contact-block-top">
-                      International Marketing Office
+                       Bengaluru
                       <span class="building1"></span>
                    </div>
                    <div class="contact-block-content">
+                        <span class="sbc-label">International Marketing Office</span>
                        <ul>
-                           <li>Gala No.58, Sy. No. 35/2, 6th Main, Singasandra, Hosur Main Road, Bengaluru - 560 068.</li>
-                           <li>+91 80 2573 0562/3359</li>
+                           <li><span class="sp-icon-pin"></span>Gala No.58, Sy. No. 35/2, 6th Main, Singasandra, Hosur Main Road, Bengaluru - 560 068.</li>
+                           <li><span class="sp-icon-phone"></span>+91 80 2573 0562/3359</li>
                        </ul>
                    </div>
                <div class="contact-block-bottom">info@united-group.in</div>

@@ -24,19 +24,18 @@
 <link rel="stylesheet" href="{TEMPLATE_URL}css/teamcard.css" type="text/css" media="all">
 <link rel="stylesheet" href="{TEMPLATE_URL}css/styles.css" type="text/css" media="all">
 <link rel="stylesheet" href="{TEMPLATE_URL}css/ornaments.css" type="text/css" media="all">
-
+<link rel="stylesheet" href="{TEMPLATE_URL}css/user_profile.css" type="text/css" media="all">
 <link rel="stylesheet" href="{TEMPLATE_URL}font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="{TEMPLATE_URL}js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="{TEMPLATE_URL}js/owl.carousel.2.0.0-beta.2.4/assets/owl.carousel.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="{TEMPLATE_URL}js/owl.carousel.2.0.0-beta.2.4/owl.carousel.min.js"></script>
 <script type="text/javascript" src="{TEMPLATE_URL}js/default.js"></script>
-    
 </head>
 <body>
 <nav role="navigation" class="navbar navbar-default navbar-static"  id="menu" >
   <div class="container">
-  <div id="element_1445104174650" style="height: auto;" class="mw-row">
+    <div id="element_1445104174650" style="height: auto;" class="mw-row">
       <div style="width: 26.4%; height: auto;" class="mw-col">
         <div class="mw-col-container"> <a href="<?php print site_url(); ?>"> <img class="" data-pin-nopin="true" alt="Logo image for Unitile company" src="<?php print template_url(); ?>img/logo_unitile.png"></a> </div>
       </div>
@@ -45,6 +44,11 @@
           <div id="main-sub-navigation-holder">
             <div class="main-sub-navigation-container">
               <ul id="main-sub-navigation" class="nav navbar-nav pull-right header-contact">
+                <?php if(is_logged()) { ?>
+                <li> <a id="login-register-link-header" href="<?php print site_url(); ?>profile"><i class="fa fa-fw fa-user"></i> Hello, <?php print user_name() ?></a></li>
+                <?php  } else { ?>
+                <li> <a id="login-register-link-header" href="#"><i class="fa fa-fw fa-user"></i> Login | Register</a></li>
+                <?php  }  ?>
                 <li> <i class="fa fa-fw fa-phone"></i>+91 22 2630 5270</li>
                 <li> <i class="fa fa-fw fa-envelope"></i>info@united-group.in</li>
                 <li class="download">downloads</li>
@@ -54,8 +58,7 @@
           <module type="menu" name="header_menu" id="main-navigation" template="topmenu" />
         </div>
       </div>
-    </div> 
-    
+    </div>
     <?php 
 	
 	/*<div class="edit" field="boostrap3-template-navbar-brand" rel="global"> 
@@ -76,6 +79,6 @@
     </div>*/
 	
 	
-	?> 
+	?>
   </div>
 </nav>
