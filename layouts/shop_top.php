@@ -109,4 +109,5 @@ $categories = get_categories($cat_params);
     </div>
   </div>
   <div class="margin-spacer-element-20"></div>
+
 </div>

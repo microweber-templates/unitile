@@ -2,6 +2,8 @@
 
 <section id="content" class="shop-page shop-page-inner">
   <?php include template_dir(). 'layouts' . DS."shop_top.php"; ?>
+    <div class="margin-spacer-element-20"></div>
+
   <div class="product-inner-container">
     <div class="container">
       <div class="row">

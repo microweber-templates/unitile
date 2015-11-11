@@ -16,6 +16,7 @@
 
 .sidebar-boxes-wrapper {
 	width: 230px;
+    margin-left: 25px;
 }
 .sidebar-boxes-spacer {
 	height: 35px;
@@ -24,6 +25,7 @@
 
 
 /* Add to cart box */
+
 
 
 
@@ -102,6 +104,9 @@
 	padding-left: 15px;
 	padding-right: 15px;
 }
+
+
+
 /* Collaterals box */
 .sidebar-collaterals-menu {
 	border-top: 1px solid #015198;
@@ -169,3 +174,63 @@
 	padding-bottom:10px;
 	margin-left:15px;
 }
+
+
+
+
+
+
+
+/* Top ornament of boxes */
+
+
+.sidebar-box-styled-add, .sidebar-collaterals-menu,.sidebar-box-download {
+    position: relative;
+}
+.sidebar-box-styled-add:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -30px;
+    background-image: url(../img/site/box-ornament-4.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+    height: 60px;
+    width: 60px;
+    display: block;
+}
+
+.sidebar-collaterals-menu:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -30px;
+    background-image: url(../img/site/box-ornament-1.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+    height: 60px;
+    width: 60px;
+    display: block;
+}
+.sidebar-box-download:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -30px;
+    background-image: url(../img/site/box-ornament-2.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+    height: 60px;
+    width: 60px;
+    display: block;
+}
+
+.sidebar-box-download-title, .sidebar-box-styled-add-item-title {
+    position: relative;
+    z-index: 1;
+    padding-left: 20px !important;
+}
+
+
+
+ 
