@@ -14,9 +14,12 @@ $cat_params['parent_id'] = 0;
 $cat_params['rel_id'] = intval(MAIN_PAGE_ID);
 
 
- 
+ $par_cat_id = false;
 $categories = get_categories($cat_params);
-
+ $cur_cat=get_category_by_id(category_id());
+ if(isset($cur_cat['parent_id'])){
+ $par_cat_id = $cur_cat['parent_id'];	 
+ }
  
 ?>
     <script>
@@ -38,9 +41,9 @@ $categories = get_categories($cat_params);
     <div id="shop-category-tab-nav" class="shop-category-tab-nav">
       <div class="mw-ui-row">
         <?php foreach($categories as $category){ ?>
-        <div class="mw-ui-col category-tab-switch-link-holder <?php if(category_id()==$category['id']) { ?> tab-link-active<?php } ?>"> <a href="javascript:;" id="category-tab-<?php print  url_title($category['title']) ?>" class="category-tab-switch-link"><?php print ($category['title']) ?></a> </div>
+        <div class="mw-ui-col category-tab-switch-link-holder <?php if(category_id()==$category['id'] or $par_cat_id == $category['id']) { ?> tab-link-active<?php } ?>"> <a href="javascript:;" id="category-tab-<?php print  url_title($category['title']) ?>" class="category-tab-switch-link"><?php print ($category['title']) ?></a> </div>
         <?php } ?>
-        </ol>
+         
       </div>
       <?php } ?>
     </div>
@@ -57,7 +60,7 @@ $categories = get_categories($cat_params);
  	$is_tab_active = false;
 	$cur_cat = category_id();
 	if($cur_cat != false){
-			if(category_id()==$category['id']){
+			if(category_id()==$category['id'] or $par_cat_id == $category['id']){
 				$is_tab_active = true;
 			}
 	} else {
@@ -73,16 +76,21 @@ $categories = get_categories($cat_params);
           <?php if(!empty($sub_categories)){ ?>
           <?php foreach($sub_categories as $sub_category){ ?>
           <?php $sub_posts = get_content('limit=100&category='.$sub_category['id']); ?>
-          <div class="mw-ui-col">
-            <ul class="shop-top-nav-cat-sub-menu">
-              <li> <a href="javascript:;"><?php print  $sub_category['title'] ?></a> </li>
+          <div class="mw-ui-col <?php if(category_id()==$sub_category['id']) { ?> link-active<?php } ?>">
+          <div href="javascript:;" class="shop-top-nav-cat-sub-menu-open-link"><?php print  $sub_category['title'] ?>
+          
+          
+          <ul class="shop-top-nav-cat-sub-menu">
               <?php if(!empty($sub_posts)){ ?>
               <?php foreach($sub_posts as $post){ ?>
-              <li> <a class="shop-top-posts-list-category-row-sub-post-item" href="<?php print content_link( $post['id'] ) ?>"><?php print  $post['title'] ?></a></li>
+              <li> <a class="shop-top-posts-list-category-row-sub-post-item" href="<?php print content_link( $post['id'] ) ?>"><span class="mw-icon mw-icon-arrowright"></span><span><?php print  $post['title'] ?></span></a></li>
               <?php $skip_posts[] = $post['id']; ?>
               <?php } ?>
               <?php } ?>
             </ul>
+          
+          </div>
+            
           </div>
           <?php } ?>
           <?php } ?>

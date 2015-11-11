@@ -7,22 +7,13 @@
     margin-top: 0px;
 }
 
-
 a#login-register-link-header {
-     border: 0px;
+    border: 0px;
     padding: 0px;
     color: #0067ad;
-font-family: "Helvetica";
-font-size: 14px;
-
+    font-family: "Helvetica";
+    font-size: 14px;
 }
-
-
-
-
-
-
-
 
 .mw-checkout-holder h4 {
     color: #0067ad;
@@ -169,7 +160,7 @@ font-size: 14px;
 .shop-category-tab-nav a {
     color: #5b5b5b;
     font-family: "Helvetica";
-    font-size: 15px;
+    font-size: 18px;
     padding-left: 10px;
     padding-right: 10px;
     line-height: 36px;
@@ -197,7 +188,7 @@ font-size: 14px;
 }
 
 .shop-top-posts-list-category-row-holder-items {
-    max-width: 840px;
+    max-width: 1200px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -211,6 +202,8 @@ font-size: 14px;
     border-left: 1px solid #cccccc;
     padding-top: 5px;
     padding-bottom: 5px;
+    background: white;
+    vertical-align: middle;
 }
 
 .shop-top-posts-list-category-row .mw-ui-col:last-child {
@@ -247,24 +240,89 @@ a#category-tab-raised-access-floor-systems {
     background: url(../img/icon/tab2.png);
     background-repeat: no-repeat;
     background-size: 16px 16px;
+    background-position: left center;
 }
 
 .tab-link-active #category-tab-raised-access-floor-systems {
     background: url(../img/icon/tab2-active.png);
     background-repeat: no-repeat;
     background-size: 16px 16px;
+    background-position: left center;
 }
 
 a#category-tab-data-center-accessories {
     background: url(../img/icon/tab1.png);
     background-repeat: no-repeat;
     background-size: 16px 16px;
+    background-position: left center;
 }
 
 .tab-link-active #category-tab-data-center-accessories {
     background: url(../img/icon/tab1-active.png);
     background-repeat: no-repeat;
     background-size: 16px 16px;
+    background-position: left center;
+}
+
+.shop-top-nav-cat-sub-menu-open-link {
+    position: relative;
+    /** Make it fit tightly around it's children */
+    display: inline-block;
+    width: 100%;
+}
+
+.shop-top-nav-cat-sub-menu-open-link .mw-icon {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.shop-top-nav-cat-sub-menu-open-link .mw-icon-arrowright {
+    margin-right: 5px;
+}
+
+.shop-top-nav-cat-sub-menu-open-link .shop-top-nav-cat-sub-menu {
+    position: absolute;
+    /**
+     * Set the top of the dropdown menu to be positioned 100%
+     * from the top of the container, and aligned to the left.
+     */
+    top: 100%;
+    left: 0;
+    /** Allow no empty space between this and .dropdown */
+    margin: 0;
+    display: none;
+    width: 100%;
+    z-index: 10;
+}
+
+.shop-top-nav-cat-sub-menu-open-link:hover .shop-top-nav-cat-sub-menu {
+    /** Show dropdown menu */
+    display: block;
+}
+
+.shop-top-nav-cat-sub-menu {
+    list-style: none;
+}
+
+.shop-top-nav-cat-sub-menu li {
+    line-height: 35px;
+    display: block;
+    text-align: left;
+}
+
+.shop-top-nav-cat-sub-menu li a {
+    color: #076daf;
+    display: block;
+    font-size: 15px;
+    width: 100%;
+    background: white;
+    border: 1px solid #cacaca;
+    padding-left: 10px;
+}
+
+.shop-top-nav-cat-sub-menu li a:hover {
+    background: #f2f6f9;
+    text-decoration: none;
 }
 
 .unitilile-product-gallery-holder {}
@@ -369,6 +427,56 @@ a#category-tab-data-center-accessories {
 .mw-checkout-holder .well {
     background: transparent;
     border: none;
+}
+
+.mw-checkout-holder .step-btn-holder {
+    width: 100%;
+    text-align: center;
+}
+
+.mw-checkout-holder .step-btn {
+    width: 235px;
+    display: inline-block;
+    background-color: #076daf;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: 1px solid #076daf;
+    border-top: none;
+}
+
+.mw-checkout-holder .step-btn.step-btn-left {
+    background-color: #f1f5f9;
+    color: #0067ad;
+    border: 1px solid #d2cccc;
+    border-top: none;
+}
+
+.mw-checkout-holder .step-btn.step-btn-left {
+    margin-right: 10px;
+}
+
+.mw-checkout-holder .step-btn.step-btn-right {
+    margin-left: 10px;
+}
+
+.mw-checkout-holder .step-btn.step-btn-left span {
+    background-image: url("../img/site/submenu1.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 20px;
+}
+
+.mw-checkout-holder .step-btn.step-btn-right span {
+    background-image: url("../img/site/submenu2-right-white.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
 }
 
 .mw-checkout-holder .form-control {
@@ -485,6 +593,19 @@ a#category-tab-data-center-accessories {
     border-bottom: 1px solid #dcdcdc;
 }
 
+.cart-header-small a {
+    color: #919294;
+}
+
+.cart-header-small .badge-notify {
+    background: #076daf;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    font-size: 7px;
+    font-family: sans-serif;
+}
+
 .mw-cart-big-summary .checkout-total-table td {
     border-top: 0px solid #00579b;
     color: #0067ad;
@@ -503,6 +624,10 @@ a#category-tab-data-center-accessories {
     border-top: 2px solid #015198;
     font-size: 18px;
     color: #015198;
+}
+
+.mw-cart-big-summary-inner-content-holder {
+    border: 1px solid #00579b;
 }
 
 .mw-cart-big-summary .checkout-total-table .grand-total-row label,

@@ -76,7 +76,7 @@ $(document).ready(function(){
                            <li><span class="sp-icon-phone"></span>+91 80 2573 0562/3359</li>
                        </ul>
                    </div>
-               <div class="contact-block-bottom">info@united-group.in</div>
+               <div class="contact-block-bottom"><span class="sp-icon-mail"></span>info@united-group.in</div>
             </div>
             <div class="x-title">
                <div class="x-title-content">Head Office</div>
@@ -85,58 +85,65 @@ $(document).ready(function(){
         <div class="contact-blox" style="float: right">
             <div class="contact-block">
                    <div class="contact-block-top">
-                      Head Office Mumbai
+                      Hyderabad
                       <span class="building2"></span>
                    </div>
                    <div class="contact-block-content">
                        <ul>
-                           <li class="li-addr">Unit No. 2-G, Laxmi Industrial Estate, New Link Road, Andheri (W), Mumbai  400 053 INDIA.</li>
-                           <li class="li-mob">+91 99020 10917</li>
-                           <li class="li-phone">+91 22  2630 5270 / 72 / 73</li>
+                           <li class="li-addr"><span class="sp-icon-pin"></span>Plot No. 280, Telecom Nagar, 1st Floor,
+Gachibowli Village,   Serilingampally Mandal,
+R.R. District, Hyderabad     500019</li>
+
                        </ul>
                    </div>
-               <div class="contact-block-bottom">info@united-group.in</div>
+               <div class="contact-block-bottom"><span class="sp-icon-mail"></span>info@united-group.in</div>
             </div>
             <div class="contact-block">
                    <div class="contact-block-top">
-                      Head Office Mumbai
+                      Chennai
                       <span class="building2"></span>
                    </div>
                    <div class="contact-block-content">
                        <ul>
-                           <li class="li-addr">Unit No. 2-G, Laxmi Industrial Estate, New Link Road, Andheri (W), Mumbai  400 053 INDIA.</li>
-                           <li class="li-mob">+91 99020 10917</li>
-                           <li class="li-phone">+91 22  2630 5270 / 72 / 73</li>
+                           <li class="li-addr"><span class="sp-icon-pin"></span>S-1, Shastri Nagar, IInd Avenue,  M.G.Road, Adyar, Chennai  600020</li>
+
                        </ul>
                    </div>
-               <div class="contact-block-bottom">info@united-group.in</div>
+               <div class="contact-block-bottom"><span class="sp-icon-mail"></span>info@united-group.in</div>
             </div>
             <div class="contact-block">
                    <div class="contact-block-top">
-                      Head Office Mumbai
+                      Delhi
                       <span class="building2"></span>
                    </div>
                    <div class="contact-block-content">
                        <ul>
-                           <li class="li-addr">Unit No. 2-G, Laxmi Industrial Estate, New Link Road, Andheri (W), Mumbai  400 053 INDIA.</li>
-                           <li class="li-mob">+91 99020 10917</li>
-                           <li class="li-phone">+91 22  2630 5270 / 72 / 73</li>
+                            <li class="li-phone">
+                            <span class="sp-icon-mail"></span>
+                                No.398/7, Block – A, Ground Floor,
+                                Road No.2,
+                                Mahipalpur Extn.
+                                New Delhi  110037.
+                            </li>
                        </ul>
                    </div>
-               <div class="contact-block-bottom">info@united-group.in</div>
+               <div class="contact-block-bottom"><span class="sp-icon-mail"></span>info@united-group.in</div>
             </div>
             <div class="contact-block">
                    <div class="contact-block-top">
-                      International Marketing Office
+                      Delhi
                       <span class="building2"></span>
                    </div>
                    <div class="contact-block-content">
                        <ul>
-                           <li>Gala No.58, Sy. No. 35/2, 6th Main, Singasandra, Hosur Main Road, Bengaluru - 560 068.</li>
-                           <li>+91 80 2573 0562/3359</li>
+                           <li><span class="sp-icon-pin"></span>Survey No.62/1P, 1,2 & 3.,Village?Vankas, Taluka?
+                                Umbergaon,District ? Valsad ? 396150,
+                                Gujarat
+                           </li>
+                           <li><span class="sp-icon-phone"></span>+91 2603290088 / 333 / 555</li>
                        </ul>
                    </div>
-               <div class="contact-block-bottom">info@united-group.in</div>
+               <div class="contact-block-bottom"><span class="sp-icon-mail"></span>info@united-group.in</div>
             </div>
             <div class="x-title">
                <div class="x-title-content">Regizonal Offices</div>
@@ -160,6 +167,7 @@ $(document).ready(function(){
                 <div style="text-align: center;padding: 5px 0;">
                     <img src="<?php print template_url(); ?>img/site/httitle.png">
                 </div>
+
                 <p style="color: #015198;">Fill up this form to contact usif you have any futher questions. </p>
 
                 <i>Our motivation "Perfection simplified" helps to craft meaningful experiences for the people around us,

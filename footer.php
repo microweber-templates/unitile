@@ -66,6 +66,7 @@
     </div>
   </div>
 </div>
+<?php if(!is_logged()) { ?>
 <?php include template_dir(). "modals.php"; ?>
-
+<?php  } ?>
 </body></html>

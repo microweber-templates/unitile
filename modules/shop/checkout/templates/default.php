@@ -11,47 +11,73 @@ description: Default cart template
 */
  
 ?>
+<div class="container">
+  <div class="margin-spacer-element-20"></div>
+   <div class="margin-spacer-element-20"></div>
+</div>
 <?php if($requires_registration and is_logged() == false): ?>
 <module type="users/register" />
 <?php else: ?>
 <?php if ($payment_success == false): ?>
+<?php 
+$shop_page = get_content('is_shop=1');     
+$step = 1;
+
+if(isset($_GET['step'])){
+	$step = intval($_GET['step']);
+}
+
+$cart = get_cart();
+
+?>
 
 <div class="mw-checkout-holder">
+  <?php if ($cart == false): ?>
+  <?php if (is_array($shop_page)): ?>
+  <h4 class="alert alert-warning"> Your cart is empty </h4>
+  <a href="<?php print page_link($shop_page[0]['id']); ?>" class="btn btn-default pull-left"
+                   type="button">
+  <?php _e("Continue Shopping"); ?>
+  </a>
+  <?php endif; ?>
+  <?php else: ?>
   <form class="mw-checkout-form" id="checkout_form_<?php print $params['id'] ?>" method="post"
           action="<?php print api_link('checkout') ?>">
     <?php $cart_show_enanbled = get_option('data-show-cart', $params['id']); ?>
     <?php if ($cart_show_enanbled != 'n'): ?>
     <br />
+    <?php if($step == 1): ?>
     <module type="shop/cart" template="big" id="cart_checkout_<?php print $params['id'] ?>"
                     data-checkout-link-enabled="n"/>
+    <div class="step-btn-holder">
+      <?php if (is_array($shop_page)): ?>
+      <a href="<?php print page_link($shop_page[0]['id']); ?>" class="step-btn step-btn-left"> <span>Continue Shopping</span></a>
+      <?php endif; ?>
+      <a href="?step=2" class="step-btn step-btn-right"><span>Proceed Checkout</span></a> </div>
     <?php endif;?>
-    
-    
-     <div class="mw-ui-row shipping-and-payment mw-shop-checkout-personal-info-holder">
-       
-      <?php if ($cart_show_shipping != 'n'): ?>
+    <?php endif; ?>
+    <?php if($step == 2): ?>
+    <div class="mw-ui-row shipping-and-payment mw-shop-checkout-personal-info-holder">
       <div class="mw-ui-col mw-shop-checkout-shipping-holder">
         <div class="mw-ui-col-container">
           <module type="shop/shipping"/>
         </div>
       </div>
-      <?php endif;?>
     </div>
-    
-    
-       <module type="shop/cart" template="summary" id="cart_checkout_<?php print $params['id'] ?>"
+    <div class="step-btn-holder"> <a href="?step=1" class="step-btn step-btn-left xpull-left"> <span>Back</span></a> <a href="?step=3" class="step-btn step-btn-right xpull-right"><span>Save and Continue</span></a> </div>
+    <?php endif; ?>
+    <?php if($step == 3): ?>
+    <module type="shop/cart" template="summary" id="cart_checkout_<?php print $params['id'] ?>"
                     data-checkout-link-enabled="n"/>
-    
+    <div class="step-btn-holder"> <a href="?step=2" class="step-btn step-btn-left xpull-left"> <span>Back</span></a> <a href="?step=4" class="step-btn step-btn-right xpull-right"><span>Continue</span></a> </div>
+    <?php endif; ?>
+    <?php if($step == 4): ?>
     <div class="mw-ui-row shipping-and-payment mw-shop-checkout-payments-info-holder">
-       
-       
-      <?php if ($cart_show_payments != 'n'): ?>
       <div class="mw-ui-col">
         <div class="mw-ui-col-container mw-shop-checkout-payments-holder">
           <module type="shop/payments"/>
         </div>
       </div>
-      <?php endif;?>
     </div>
     <div class="alert hide"></div>
     <div class="mw-cart-action-holder">
@@ -93,12 +119,19 @@ $( document ).ready(function() {
       </div>
       <br>
       <?php endif; ?>
-      <?php $shop_page = get_content('is_shop=1');      ?>
-      <button class="btn btn-warning pull-right mw-checkout-btn"
+      <div style="display:none">
+        <module type="shop/shipping"/>
+      </div>
+      <div class="step-btn-holder">
+        <?php if (is_array($shop_page)): ?>
+        <a href="?step=3" class="step-btn step-btn-left"> <span>Cart summary</span></a>
+        <?php endif; ?>
+        <button class="step-btn step-btn-right mw-checkout-btn"
                     onclick="mw.cart.checkout('#checkout_form_<?php print $params['id'] ?>');"
                     type="button" id="complete_order_button" <?php if($tems): ?> disabled="disabled"   <?php endif; ?>>
-      <?php _e("Complete order"); ?>
-      </button>
+        <?php _e("Complete order"); ?>
+        </button>
+      </div>
       <?php if (is_array($shop_page)): ?>
       <a href="<?php print page_link($shop_page[0]['id']); ?>" class="btn btn-default pull-left"
                    type="button">
@@ -107,7 +140,9 @@ $( document ).ready(function() {
       <?php endif; ?>
       <div class="clear"></div>
     </div>
+    <?php endif; ?>
   </form>
+  <?php endif; ?>
 </div>
 <div class="mw-checkout-responce"></div>
 <?php else: ?>

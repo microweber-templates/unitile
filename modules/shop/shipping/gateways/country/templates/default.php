@@ -274,7 +274,7 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
 </div>
 <script type="text/javascript">
 
-    function mw_shipping_set_vals(data){
+    function mw_shipping_set_vals(data,reload_modules){
 
 
 
@@ -284,12 +284,14 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
         $.post( "<?php print $config['module_api']; ?>/shipping_to_country/set", data)
             .done(function( msg ) {
 
-                if(msg.shipping_country != undefined){
-                    //	 		 mw.$("[name='country']").val(this.shipping_country)
-                }
-                mw.reload_module('shop/cart');
+
+				if(reload_modules){
+				mw.reload_module('shop/cart');
                 mw.reload_module('shop/shipping');
                 mw.reload_module('<?php print $config['module']; ?>');
+				}
+               
+             
 
             });
     }
@@ -297,9 +299,16 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
 
 
     $(document).ready(function(){
-        mw.$(".mw-checkout-fields").change(function() {
-            var data = mw.form.serialize('#shipping_country_unite');
-            mw_shipping_set_vals(data);
+        mw.$(".mw-checkout-fields").on('change paste',function() {
+			var data = mw.form.serialize('#shipping_country_unite');
+
+			if(this.nodeName == "SELECT"){
+				mw_shipping_set_vals(data,true);
+
+			} else {
+				mw_shipping_set_vals(data,false);
+
+			}
         });
     });
 

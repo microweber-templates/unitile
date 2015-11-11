@@ -14,11 +14,10 @@ description: Page with right sidebar
 
 ?>
 <?php include template_dir(). "header.php"; ?>
-
+ 
 <div id="content">
-  <div class="container">
-    <module type="breadcrumb" template="unitile-breadcrumb" />
-  </div>
+  <?php include template_dir(). "top_bar_on_pages.php"; ?>
+
   <div class="container styled-headings">
     <div class="row">
       <div class="col-sm-9 sidebar-lined-border-right">

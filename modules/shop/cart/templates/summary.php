@@ -53,7 +53,7 @@ foreach($vals as $k=>$v){
   <div class="mw-cart-title mw-cart-<?php print $params['id']?>">
     <h4 class="box-style-1-heading ico-cart-white">Order Summary</h4>
   </div>
-  <div class="mw-ui-row">
+  <div class="mw-ui-row mw-cart-big-summary-inner-content-holder">
     <div class="mw-ui-col" style="width: 70%">
       <div class="mw-ui-col-container">
         <?php if(is_array($data)) :?>
@@ -141,13 +141,12 @@ foreach($vals as $k=>$v){
             <col width="">
             </colgroup>
             <tbody>
-            <tr>
+              <tr>
                 <td></td>
                 <td><label>
                     <?php _e("Total"); ?>
                   </label></td>
-                             <td  class="cell-shipping-price"><?php print currency_format(cart_sum()); ?></td>
-
+                <td  class="cell-shipping-price"><?php print currency_format(cart_sum()); ?></td>
               </tr>
               <tr>
                 <td></td>

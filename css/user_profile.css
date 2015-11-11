@@ -29,49 +29,125 @@
     border: 1px solid #015198;
 }
 
-.user-section-styles .social-logins-btns {
-    list-style: none;
-}
-
-.user-section-styles .social-logins-btns .mw-signin-with-google-li {
-    background-color: #dd4931;
-}
-
-.user-section-styles .social-logins-btns .mw-signin-with-linkedin-li {
-    background-color: #115e85;
-}
-
-.user-section-styles .social-logins-btns .mw-signin-with-twitter-li {
-    background-color: #149bca;
-}
-
 .user-section-styles .social-logins-btns li {
     margin-top: 10px;
-    vertical-align: middle;
-    min-height: 40px;
-    background-color: #076daf;
-    margin-bottom: 10px;
-    position: relative;
-}
-.user-section-styles .social-logins-btns li:after {
- content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background: #6ba7cf;
-    bottom: -3px;
-    left: 0px;
 }
 
 .user-section-styles .social-logins-btns li a {
     width: 100%;
     color: white;
     display: inline-block;
-    height: 40px;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 15px;
+    height: 48px;
+    padding:5px 15px 10px 65px;
     color: #fff;
     font-family: "Helvetica";
-    font-size: 14px;
+    font-size: 20px;
+    background: url(../img/site/soclogin.jpg) no-repeat;
+}
+
+.user-section-styles .social-logins-btns li a.mw-signin-with-twitter{
+    background-position: 0 -65px;
+}
+.user-section-styles .social-logins-btns li a.mw-signin-with-google{
+    background-position: 0 -129px;
+}
+
+.user-section-styles .social-logins-btns li a.mw-signin-with-linkedin{
+    background-position: 0 -195px;
+}
+
+.user-section-styles .social-logins-btns li a span{
+    display: none;
+}
+
+#cstlogintop{
+    width:297px;
+    height: 122px;
+    background: url(../img/site/logtpng.png) no-repeat;
+    position: absolute;
+    top: -101px;
+    left: 50%;
+    margin-left: -149px;
+    z-index: 2;
+}
+#cstlogintoptitle{
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    color: #999999;
+     z-index: 2;
+}
+
+#cstlogintoptitle span{
+    color: #0067AD;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.login-modal-content{
+    padding: 5px;
+}
+
+.login-modal-container{
+    position: relative;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #176096;
+    padding: 55px 0 15px;
+}
+
+.social-login h5{
+    font-family: helvetica;
+    font-size: 20px;
+    color: #0067ad;
+}
+
+
+
+.lm-left{
+    float: left;
+    width: 585px;
+}
+
+
+.lm-right{
+    float: right;
+    width: 305px;
+    padding: 35px 0 35px 70px;
+    background: url(../img/site/mdlm.jpg) no-repeat 0 50%;
+}
+
+.login-modal-content-tabs-links-holder{
+    position: relative;
+    height: 40px;
+    border-bottom: 1px solid #D8CDCA;
+    padding: 0 25px;
+}
+
+.login-modal-tab-link{
+    display: inline-block;
+     height: 40px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    top: -1px;
+    background: white;
+    position: relative;
+    padding: 10px 35px;
+    font-family: helvetica;
+    text-transform: uppercase;
+    color: rgba(153, 153, 153, 1);
+    outline: none !important;
+}
+
+.login-modal-tab-link.active{
+  border-color: #D8CDCA;
+  color: #0067ad;
+  height: 41px;
+}
+
+.login-modal-tab{
+    padding: 15px 30px;
 }
