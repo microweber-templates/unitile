@@ -1,12 +1,13 @@
 .team-member-post-link-image {
     display: block;
-    width: 180px;
+    xxwidth: 180px;
     height: 270px;
     background-color: #efecec;
     position: relative;
     text-align: center;
     border: 1px solid #076daf;
     background-size: cover;
+    background-position: center center;
 }
 
 .team-member-post-link-image-2 {
