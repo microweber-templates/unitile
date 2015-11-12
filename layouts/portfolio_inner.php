@@ -1,6 +1,8 @@
 <?php include template_dir(). "header.php"; ?>
 
 <div id="content">
+<?php include template_dir(). "top_bar_on_pages.php"; ?>
+
   <div class="container"> 
     
     <!-- Portfolio Item Heading -->

@@ -25,6 +25,7 @@
 <link rel="stylesheet" href="{TEMPLATE_URL}css/styles.css" type="text/css" media="all">
 <link rel="stylesheet" href="{TEMPLATE_URL}css/ornaments.css" type="text/css" media="all">
 <link rel="stylesheet" href="{TEMPLATE_URL}css/user_profile.css" type="text/css" media="all">
+<link rel="stylesheet" href="{TEMPLATE_URL}css/responsive.css" type="text/css" media="all">
 <link rel="stylesheet" href="{TEMPLATE_URL}font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="{TEMPLATE_URL}js/bootstrap.min.js"></script>
@@ -47,7 +48,7 @@
                 <?php if(is_logged()) { ?>
                 <li> <a id="login-register-link-header" href="<?php print site_url(); ?>profile"><i class="fa fa-fw fa-user"></i> Hello, <?php print user_name() ?></a></li>
                 <?php  } else { ?>
-                <li> <a id="login-register-link-header" href="<?php print site_url(); ?>login"><i class="fa fa-fw fa-user"></i> Login | Register</a></li>
+                <li> <a id="login-register-link-header" href="<?php print site_url(); ?>login" onclick='$("#login-overlay-footer").toggle(); return false;'><i class="fa fa-fw fa-user"></i> Login | Register</a></li>
                 <?php  }  ?>
                 <li> <i class="fa fa-fw fa-phone"></i>+91 22 2630 5270</li>
                 <li> <i class="fa fa-fw fa-envelope"></i>info@united-group.in</li>

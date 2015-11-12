@@ -1,0 +1,15 @@
+@media screen and (max-width: 480px) {
+    #main-sub-navigation-holder {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .top-menu  .home-btn{
+        display: none;
+    }
+     .top-menu {
+         bottom: -10px;
+    }
+}
+

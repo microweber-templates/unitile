@@ -66,7 +66,7 @@ $(document).ready(function(){
 		+ ' </div>';
         + ' </div>';
 		Alert(modal_html)
-	mw.load_module('shop/cart','#mw-product-added-popup', false,{template:'small'});	
+	mw.load_module('shop/cart','#mw-product-added-popup', false,{template:'small'});
 	
 	setTimeout(function(){
 			 
@@ -77,6 +77,15 @@ $(document).ready(function(){
 	});
  
 
+
+   $(".lmclose").on('click', function(){
+    $(".login-overlay").hide()
+   })
+
+   $(".reset-password-link").on('click', function(){
+     LoginTabs.set(2)
+    return false;
+   })
 
 
 });

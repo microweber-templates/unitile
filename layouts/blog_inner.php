@@ -1,6 +1,8 @@
 <?php include template_dir(). "header.php"; ?>
 
 <div class="container" id="blog-container">
+<?php include template_dir(). "top_bar_on_pages.php"; ?>
+
   <div id="blog-content-<?php print CONTENT_ID; ?>">
     <div class="row">
       <div class="col-sm-9" id="blog-main-inner">

@@ -3,9 +3,11 @@
 
 <div class="module-forgot-password user-section-styles">
   <div id="form-holder{rand}">
-    <h4>
+    <h2 class="r-title">Forgot password</h2>
+    <h4 class="ct-em-title">
       <?php if(!isset($form_title) or $form_title == false): ?>
-      <?php _e("Enter your username or email"); ?>
+Please enter your email id for unitile
+to send your new password.
       <?php else: ?>
       <?php  print $form_title; ?>
       <?php endif; ?>
@@ -25,7 +27,9 @@
         </div>
       </div>
       <br>
-      <button type="submit" class="btn btn-default pull-right btn-main-action"><?php print $form_btn_title; ?></button>
+      <div class="xc-btn">
+            <button type="submit">SUBMIT</button>
+          </div>
     </form>
     <div class="alert" style="margin: 0;display: none;"></div>
   </div>

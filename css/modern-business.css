@@ -1121,6 +1121,7 @@ a:hover .icona-phone{
 
 #content{
     background: url(../img/site/bg.jpg);
+    padding-bottom: 30px;
 }
 
 #contact_submit{
@@ -1196,3 +1197,58 @@ a:hover .icona-phone{
 .login-modal-content-tabs-links-holder a{
     display: inline-block;
 }
+
+.lmclose{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 3;
+    display: block;
+    height:54px;
+    width:54px;
+    background: url(../img/site/modalclose.png) no-repeat;
+    cursor: pointer;
+}
+
+.xc-btn{
+    height:40px;
+    display: block;
+    background: url(../img/site/edbtn.png) no-repeat right top;
+    text-align: right;
+}
+
+.xc-btn > *{
+    display: inline-block;
+    width: 128px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.reset-password-link{
+    float: right;
+    font-size: 14px;
+    font-family: Helvetica;
+    margin: -10px 0 10px;
+}
+
+#mw-login{
+    width: 325px;
+    margin: 50px auto;
+}
+.c-title{
+    color: rgba(1, 81, 151, 1);
+}
+
+.r-title{
+    color: rgba(1, 81, 151, 1);
+    font-size: 19px;
+    text-transform: uppercase;
+
+}
+

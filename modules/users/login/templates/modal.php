@@ -41,8 +41,8 @@ description: Login default
             ?</a>
             <div class="alert" style="margin: 0;display: none;"></div>
           </div>
-          <div class="control-group form-group">
-            <input class="btn pull-right btn-main-action" type="submit" value="<?php _e("Login"); ?>" />
+          <div class="xc-btn">
+            <button type="submit">LOGIN</button>
           </div>
         </div>
         <?php /*
