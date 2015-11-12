@@ -36,4 +36,9 @@ return;
 
 
  ?>
-<div class="team-member-post-inner-title-and-email"><?php print $title; ?></div>
+<div class="team-member-post-inner-title-and-email">
+<?php print $title; ?>
+<br />
+<?php print $email; ?>
+
+</div>
