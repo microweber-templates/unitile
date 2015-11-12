@@ -1,6 +1,5 @@
 .team-member-post-link-image {
     display: block;
-    xxwidth: 180px;
     height: 270px;
     background-color: #efecec;
     position: relative;
@@ -59,18 +58,22 @@
     display: none;
 }
 
+.team-member-post-link-image-2 .team-member-post-link-title-content {
+    font-size: 12px;
+    display: none;
+}
+
+.team-member-post-link-image-2:hover .team-member-post-link-title-content {
+    display: block;
+}
+
 
 /*//:hover*/
-
-
 
 .team-member-post-link-image:hover .team-member-post-link-title {
     display: block;
     height: 100%;
     position: relative;
-
-
-
 }
 
 .team-member-post-link-image:hover .team-member-post-link-title .team-member-post-link-title-content {
@@ -89,6 +92,7 @@
     margin-left: 4px;
     margin-right: 4px;
 }
+
 
 /* end :hover */
 

@@ -36,8 +36,7 @@ $data2 = array_slice($data, 3,count($data));
         foreach ($data1 as $item):
         $count++;
     ?>
-    
-<?php 
+  <?php 
 $title = false;
 $email = false;
 $data_fields = content_data($item['id']);
@@ -48,31 +47,18 @@ if(isset($data_fields['team_member_email'])){
 $email = $data_fields['team_member_email'];
 }
  ?>
-    
-    
-  <div class="col-sm-4" > <a class="team-member-post-link-image" href="<?php print $item['link'] ?>" style="background-image: url(<?php print get_picture($item['id']);?>);"> <span class="team-member-post-link-title">
-  <span class="team-member-post-link-title-content">
-  <span class="team-member-post-link-title-name">
-  <?php print $item['title'] ?>
-  </span>
-  <?php if ($title): ?>
-    <span class="team-member-post-link-sub-title-position">
-  <?php print $title ?>
-  </span>
-   <?php endif; ?>
-   
-   
-   <?php if ($email): ?>
-    <span class="team-member-post-link-sub-title-email">
-  <?php print $email ?>
-  </span>
-   <?php endif; ?>
-   
-  </span>
+  <div class="col-sm-4" > <a class="team-member-post-link-image" href="<?php print $item['link'] ?>" style="background-image: url(<?php print get_picture($item['id']);?>);"> 
   
-
+  <div class="sidebar-box-styled-add-item-title-holder-ornament-right"></div>
   
-  </span> </a> </div>
+  <span class="team-member-post-link-title"> <span class="team-member-post-link-title-content"> <span class="team-member-post-link-title-name"> <?php print $item['title'] ?> </span>
+    <?php if ($title): ?>
+    <span class="team-member-post-link-sub-title-position"> <?php print $title ?> </span>
+    <?php endif; ?>
+    <?php if ($email): ?>
+    <span class="team-member-post-link-sub-title-email"> <?php print $email ?> </span>
+    <?php endif; ?>
+    </span> </span> </a> </div>
   <?php endforeach; ?>
   <?php endif; ?>
 </div>
@@ -84,7 +70,29 @@ $email = $data_fields['team_member_email'];
         foreach ($data2 as $item):
         $count++;
     ?>
-  <div class="col-sm-3" > <a class="team-member-post-link-image-2 <?php if($count % 4 == 0) { ?> fourth <?php } ?>" href="<?php print $item['link'] ?>" style="background-image: url(<?php print get_picture($item['id']);?>);"> </a> </div>
+    
+      <?php 
+$title = false;
+$email = false;
+$data_fields = content_data($item['id']);
+if(isset($data_fields['team_member_title'])){
+$title = $data_fields['team_member_title'];
+}
+if(isset($data_fields['team_member_email'])){
+$email = $data_fields['team_member_email'];
+}
+ ?>
+ 
+ 
+  <div class="col-sm-3" > <a class="team-member-post-link-image-2 <?php if($count % 4 == 0) { ?> fourth <?php } ?>" href="<?php print $item['link'] ?>" style="background-image: url(<?php print get_picture($item['id']);?>);">  <div class="sidebar-box-styled-add-item-title-holder-ornament-right"></div> 
+  
+  
+  <span class="team-member-post-link-title"> <span class="team-member-post-link-title-content"> <span class="team-member-post-link-title-name"> <?php print $item['title'] ?> </span>
+   
+    </span> </span>
+  
+  
+  </a> </div>
   <?php endforeach; ?>
   <?php endif; ?>
 </div>
