@@ -1,15 +1,14 @@
 <?php include template_dir(). "header.php"; ?>
 
 <div id="content">
-<?php include template_dir(). "top_bar_on_pages.php"; ?>
-
+  <?php include template_dir(). "top_bar_on_pages.php"; ?>
   <div class="container"> 
     
     <!-- Portfolio Item Heading -->
     <div class="edit"  field="content_header_text" rel="content">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="page-header">Page Heading <small>Secondary Text</small> </h1>
+          <h2 class="edit heading-style-projects"  field="title" rel="content">Project inner page</h2>
         </div>
       </div>
     </div>
@@ -25,19 +24,18 @@
         </div>
         <div class="col-md-4">
           <module type="pictures" template="bootstrap_carousel"  rel="content"  />
-          
           <div class="edit"  field="project_details" rel="content">
-          <div class="project-details-inner-block">
-            <h3 class="project-details-inner-block-title">Project Details</h3>
-            <div class="project-details-inner-block-content">
-            <ul>
-              <li>Lorem Ipsum</li>
-              <li>Dolor Sit Amet</li>
-              <li>Consectetur</li>
-              <li>Adipiscing Elit</li>
-            </ul>
+            <div class="project-details-inner-block">
+              <h3 class="project-details-inner-block-title">Project Details</h3>
+              <div class="project-details-inner-block-content">
+                <ul>
+                  <li>Lorem Ipsum</li>
+                  <li>Dolor Sit Amet</li>
+                  <li>Consectetur</li>
+                  <li>Adipiscing Elit</li>
+                </ul>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>

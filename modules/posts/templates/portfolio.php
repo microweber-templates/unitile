@@ -22,7 +22,7 @@ $len =  count($data);
 ?>
 <?php if($count == 1 or ($count-1) % 3 == 0) { ?>
 
-<div class="row">
+<div class="row margin-bottom-20">
   <?php } ?>
   <div class="col-md-4 portfolio-item">
     <?php if($item['link']):  ?>

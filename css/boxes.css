@@ -157,7 +157,9 @@
 .sidebar-collaterals-menu .sidebar-collaterals-menu-li {
     padding-left: 10px;
 }
-
+.sidebar-collaterals-menu .sidebar-collaterals-menu-li.active {
+    background: white;
+}
 .sidebar-collaterals-menu .sidebar-collaterals-menu-li a {
     color: #736e6e;
     font-size: 16px;

@@ -60,11 +60,16 @@
 
 .team-member-post-link-image-2 .team-member-post-link-title-content {
     font-size: 12px;
-    display: none;
+     
 }
 
-.team-member-post-link-image-2:hover .team-member-post-link-title-content {
-    display: block;
+.team-member-post-link-image-2 .team-member-post-link-title {
+     min-height: 25px;
+    visibility: hidden;
+}
+
+.team-member-post-link-image-2:hover .team-member-post-link-title {
+   visibility: visible;
 }
 
 
