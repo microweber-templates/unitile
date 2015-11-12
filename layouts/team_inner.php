@@ -14,7 +14,9 @@
               <div class="mw-col-container">
                 <div>
                   <h1>Name</h1>
-                  <p>Managing Director</p>
+                  
+                  
+                   <module type="job_title" content-id="<?php print content_id() ?>" />
                   <h4>Civil Engineer, <em>University of Mumbai</em></h4>
                    <p><strong>Moiz Rajkotwala</strong> has been associated with the United Group since 1994 when the construction business was in a emerging stage in India. Before joining the United Group, since 1982, he was associated as a General Civil Contractor for Defence Service projects for the government. Subsequently, he decided to join United Group, which was founded in 1992.</p>
                    
