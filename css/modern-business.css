@@ -619,7 +619,43 @@ span.bordered-bottom {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+    position: relative;
 }
+.products-layout-img-bg-holder:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(35, 146, 222, 0.15);
+    display: none;
+}
+.products-layout-img-bg-holder:after{
+    display: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    border: 2px solid #2392DE;
+    content: "+";
+    font-weight: bold;
+    color:#2392DE;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin: -22px 0 0 -22px;
+    font-size: 43px;
+    line-height: 38px;
+    z-index: 2;
+}
+
+
+a:hover .products-layout-img-bg-holder:before,
+a:hover .products-layout-img-bg-holder:after{
+    display: block;
+}
+
 .pbtn {
 	display: inline-block;
 	font-size: 20px;
@@ -1254,5 +1290,15 @@ a:hover .icona-phone{
 
 .ct-em-title{
 
+}
+
+.user_registration_form_holder .mw-captcha-img,
+.mw-forgot-pass-wrapper .mw-captcha-img{
+    float: right;
+}
+
+.mw-forgot-pass-wrapper{
+    max-width: 330px;
+    margin:auto;
 }
 

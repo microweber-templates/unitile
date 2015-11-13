@@ -30,7 +30,7 @@ description: Page with 2 sidebars
           <p>You can edit this text</p>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-3 sidebar-boxes-wrapper">
         <div class="edit"  field="sidebar" rel="inherit">
           <module type="staticbox"  template="iso" />
         </div>

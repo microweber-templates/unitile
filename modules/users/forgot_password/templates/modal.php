@@ -6,7 +6,7 @@
     <h2 class="r-title">Forgot password</h2>
     <h4 class="ct-em-title">
       <?php if(!isset($form_title) or $form_title == false): ?>
-Please enter your email id for unitile
+Please enter your email id for unitile<br>
 to send your new password.
       <?php else: ?>
       <?php  print $form_title; ?>
