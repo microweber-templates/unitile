@@ -36,7 +36,7 @@
 <body>
 <nav role="navigation" class="navbar navbar-default navbar-static"  id="menu" >
   <div class="container">
-    <div id="element_1445104174650" style="height: auto;" class="mw-row">
+    <div id="menurow" style="height: auto;" class="mw-row">
       <div style="width: 26.4%; height: auto;" class="mw-col">
         <div class="mw-col-container"> <a href="<?php print site_url(); ?>"> <img class="" data-pin-nopin="true" alt="Logo image for Unitile company" src="<?php print template_url(); ?>img/logo_unitile.png"></a> </div>
       </div>

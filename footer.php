@@ -4,30 +4,25 @@
     <div class="container">
       <div  rel="global" field="bootstrap3-site-footer">
         <div class="mw-row" style="height: auto;" id="element_1445281031537">
-          <div class="mw-col" style="width: 40.3333%; height: auto;">
+          <div class="mw-col" style="width: 55%; height: auto;">
             <div class="mw-col-container">
-              <table class="footer-menu-table">
-                <tbody>
-                  <tr>
-                    <td><a href="#">Home</a></td>
-                    <td><a href="#">Products</a></td>
-                    <td><a href="#">Applications</a></td>
-                    <td><a href="#">Network</a></td>
-                    <td><a href="#">News</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="#">About Us</a></td>
-                    <td><a href="#">Manufacturing Unit</a></td>
-                    <td><a href="#">Clients</a></td>
-                    <td><a href="#">Career</a></td>
-                    <td><a href="#">Contact Us</a></td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="footer-menu-table">
+                    <span><a href="<?php print site_url(); ?>">Home</a></span>
+                    <span><a href="<?php print site_url(); ?>shop">Products</a></span>
+                    <span><a href="<?php print site_url(); ?>applications">Applications</a></span>
+                    <span><a href="<?php print site_url(); ?>network">Network</a></span>
+                    <span><a href="<?php print site_url(); ?>news">News</a></span>
+
+                    <span><a href="<?php print site_url(); ?>about-us">About Us</a></span>
+                    <span><a href="<?php print site_url(); ?>manifacturing-unit">Manufacturing Unit</a></span>
+                    <span><a href="<?php print site_url(); ?>clients">Clients</a></span>
+                    <span><a href="<?php print site_url(); ?>careers">Career</a></span>
+                    <span><a href="<?php print site_url(); ?>contacts">Contact Us</a></span>
+              </div>
               <br>
             </div>
           </div>
-          <div class="mw-col" style="width: 31.1333%; height: auto;">
+          <div class="mw-col" style="width: 25%; height: auto;">
             <div class="mw-col-container">
             <div>
                 <h4  style="margin-bottom: 0px;
@@ -37,7 +32,7 @@
               <module type="subscribe" id="subscribe_footer"  />
             </div>
           </div>
-          <div class="mw-col" style="width: 28.5333%; height: auto;">
+          <div class="mw-col" style="width: 20%; height: auto;">
             <div class="mw-col-container">
               <div>
                 <h4  style="margin-bottom: 0px;

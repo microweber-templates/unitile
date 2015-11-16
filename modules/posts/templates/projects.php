@@ -24,9 +24,9 @@ $len =  count($data);
 ?>
 <?php if($count == 1 or ($count-1) % 3 == 0) { ?>
 
-<div class="row padding-left-no padding-bottom-30">
+<div class="mrojects">
   <?php } ?>
-  <div class="col-md-4 project-small-item">
+  <div class=" project-small-item">
     <?php if($item['link']):  ?>
     <a href="<?php print $item['link'] ?>" class="project-small-list-item-img" style="background-image:url('<?php print $item['tn_image']; ?>')"><span><?php print $item['title'] ?></span></a>
     <?php endif; ?>

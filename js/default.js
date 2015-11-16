@@ -10,7 +10,22 @@
 $(window).load(function(){
 
     $(".xslider").owlCarousel({
-        items:4
+        items:4,
+        responsive:{
+            990:{
+                items:4
+            },
+            700:{
+                items:3
+            },
+            500:{
+                items:2
+            },
+            400:{
+                items:1
+            }
+
+        }
     })
     $(".cslider").owlCarousel({
         items:1,
@@ -88,7 +103,22 @@ $(document).ready(function(){
    $(".reset-password-link").on('click', function(){
      LoginTabs.set(2)
     return false;
-   })
+   });
 
+
+   xmobilemenu = '<option value="#" selected>Menu</option><option value="'+mw.settings.site_url+'">Home</option>';
+   mw.$("#main-navigation .module-navigation > ul > li > a").each(function(){
+        xmobilemenu += '<option value="'+this.href+'">'+this.innerHTML+'</option>';
+   });
+   xmobilemenu = '<select id="mobilemenu" class="mw-ui-field">' + xmobilemenu + '</select>';
+
+
+   $("#main-navigation").append(xmobilemenu);
+
+   $("#mobilemenu").on('change',function(){
+        setTimeout(function(){
+            window.location.href = this.value;
+        }, 78)
+   });
 
 });
