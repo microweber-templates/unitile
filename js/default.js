@@ -13,7 +13,10 @@ $(window).load(function(){
         items:4
     })
     $(".cslider").owlCarousel({
-        items:1
+        items:1,
+        nav:true,
+        dots:false,
+        loop:true
     })
 
    // Simple way to enable the 'placeholder' attribute for browsers that doesn't support it
@@ -69,7 +72,7 @@ $(document).ready(function(){
 	mw.load_module('shop/cart','#mw-product-added-popup', false,{template:'small'});
 	
 	setTimeout(function(){
-			 
+
  
 	}, 10)
 

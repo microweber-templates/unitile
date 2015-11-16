@@ -1302,3 +1302,51 @@ a:hover .icona-phone{
     margin:auto;
 }
 
+.cslider .owl-next,
+.cslider .owl-prev{
+    display: block;
+    width:27px;
+    height: 27px;
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.cslider .owl-next{
+    background-image: url(../img/site/aer.png);
+    right:0;
+}
+.cslider .owl-prev{
+    background-image: url(../img/site/aer2.png);
+    left:0;
+}
+
+img{
+    max-width: 100%;
+}
+
+@media (max-width:990px){
+    .baner-text{
+        max-width: 90%;
+        width: auto;
+        left: auto;
+    }
+
+    #welcome-layout .col-md-4.col-sm-4{
+        width: 100% !important;
+        float: none !important;
+    }
+
+    #home-products-1 .col-md-3.col-sm-3{
+        width: 100% !important;
+        float: none !important;
+        max-width: 300px;
+        margin: 0 auto 130px;
+    }
+
+}
+
