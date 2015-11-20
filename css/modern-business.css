@@ -698,7 +698,7 @@ a:hover .products-layout-img-bg-holder:after{
 .products-layout .mw-row.row a:hover .pbtns {
 	border-color: #226BAD;
 }
-.products-layout a:hover {
+.products-layout a:hover, .products-layout a.active {
 	background: #086daf !important;
 	color: #fff;
 	border-bottom: 1px solid #086daf;
@@ -1469,5 +1469,59 @@ img{
     width: 100%;
 }
 
+}
+
+#planehr{
+    position:relative;
+}
+
+#planehr:after{
+    position: absolute;
+    content:"";
+    bottom: 0;
+    right: 0;
+    width:31px;
+    height: 23px;
+    margin-right: -24px;
+    background:url(../img/plane1.png) no-repeat;
+}
+
+#arrhr{
+    position: relative;
+}
+
+
+#arrhr:after{
+    position: absolute;
+    content:"";
+    top: 100%;
+    right: 0;
+    width:13px;
+    height: 9px;
+    margin-top: -1px;
+    background:url(../img/arr1.png) no-repeat;
+}
+
+.shop-top-nav-cat-sub-menu-open-link{
+    background: url(../img/arr2.png) no-repeat right center;
+}
+
+#footer-top-wrapper{
+    position: relative;
+}
+
+#bttop{
+    position: absolute;
+    display: block;
+    width: 67px;
+    height:45px;
+    background: url(../img/btop.png) no-repeat;
+    cursor: pointer;
+    top: -34px;
+    right: 20px;
+}
+
+#footer-bottom{
+    padding-top: 16px;
 }
 

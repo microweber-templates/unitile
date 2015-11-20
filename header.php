@@ -48,11 +48,13 @@
                 <?php if(is_logged()) { ?>
                 <li> <a id="login-register-link-header" href="<?php print site_url(); ?>profile"><i class="fa fa-fw fa-user"></i> Hello, <?php print user_name() ?></a></li>
                 <?php  } else { ?>
-                <li> <a id="login-register-link-header" href="<?php print site_url(); ?>login" onclick='$("#login-overlay-footer").toggle(); return false;'><i class="fa fa-fw fa-user"></i> Login | Register</a></li>
+                <li> <a id="login-register-link-header" href="<?php print site_url(); ?>login" onclick='$("#login-overlay-footer").toggle(); return false;'><i class="fa fa-fw fa-user"></i>
+                    <span onclick="LoginTabs.set(0)">Login </span>|<span onclick="LoginTabs.set(1)"> Register </span>
+                    </a></li>
                 <?php  }  ?>
                 <li> <i class="fa fa-fw fa-phone"></i>+91 22 2630 5270</li>
                 <li> <i class="fa fa-fw fa-envelope"></i>info@united-group.in</li>
-                               
+
                          <li>       
                                 <module type="shop/cart" id="small_cart_header" template="header_small" />
                                 </li>

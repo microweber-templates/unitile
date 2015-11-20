@@ -1,6 +1,7 @@
 
 <div id="footer">
   <div id="footer-top-wrapper">
+  <span onclick="mw.tools.scrollTo('#menu');" id="bttop"></span>
     <div class="container">
       <div  rel="global" field="bootstrap3-site-footer">
         <div class="mw-row" style="height: auto;" id="element_1445281031537">
@@ -26,8 +27,8 @@
             <div class="mw-col-container">
             <div>
                 <h4  style="margin-bottom: 0px;
-"><span class="" style="font-size: 24px;"><font face="Helvetica" color="#ffffff">Subscribe to Newsletter</font></span></h4>
-                <hr   style="margin-top: 2px;">
+"><span class="" style="font-size: 20px;"><font face="Helvetica" color="#ffffff">Subscribe to Newsletter</font></span></h4>
+                <hr  style="margin-top: 2px;" id="planehr">
               </div>
               <module type="subscribe" id="subscribe_footer"  />
             </div>
@@ -36,8 +37,8 @@
             <div class="mw-col-container">
               <div>
                 <h4  style="margin-bottom: 0px;
-"><span class="" style="font-size: 24px;"><font face="Helvetica" color="#ffffff">Get Social</font></span></h4>
-                <hr   style="margin-top: 2px;">
+"><span class="" style="font-size: 20px;"><font face="Helvetica" color="#ffffff">Get Social</font></span></h4>
+                <hr   style="margin-top: 2px;" id="arrhr">
               </div>
               <module type="social_links" id="social_links_footer" />
             </div>

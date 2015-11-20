@@ -136,7 +136,8 @@
          mw.tabs({
             nav:'#hpt-nav a',
             tabs:'.xprotab'
-         });
+         })
+         .set(0);
       });
 
 
@@ -158,7 +159,7 @@
 
       
       <?php
-	  
+
 	  /*
 	  
 	  
