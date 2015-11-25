@@ -12,6 +12,13 @@ position: 4
 
 
 ?>
+<?php
+if(url_param('section') and url_param('category')){
+	include template_dir(). 'layouts' . DS."shop_category.php";	
+return ;
+}
+
+ ?>
 <?php include template_dir(). "header.php"; ?>
 
 <section id="content">
