@@ -8,8 +8,10 @@
     .top-menu  .home-btn{
         display: none;
     }
-     .top-menu {
+ 
+}
+@media screen and (max-width: 860px) {
+    .top-menu {
          bottom: -10px;
     }
 }
-
