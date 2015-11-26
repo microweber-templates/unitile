@@ -157,9 +157,11 @@
 .sidebar-collaterals-menu .sidebar-collaterals-menu-li {
     padding-left: 10px;
 }
+
 .sidebar-collaterals-menu .sidebar-collaterals-menu-li.active {
     background: white;
 }
+
 .sidebar-collaterals-menu .sidebar-collaterals-menu-li a {
     color: #736e6e;
     font-size: 16px;
@@ -171,11 +173,10 @@
     font-size: 12px;
     margin-right: 10px;
 }
+
 .sidebar-collaterals-menu-no-icon .sidebar-collaterals-menu-li a:before {
     content: ">";
- 
 }
-
 
 .sidebar-collaterals-menu .sidebar-collaterals-menu-li a:hover {
     color: #076daf;
@@ -203,19 +204,19 @@
     padding-bottom: 10px;
     margin-left: 15px;
 }
-.sidebar-box-download-sub-title a{
-   color: #fff;
-}
 
+.sidebar-box-download-sub-title a {
+    color: #fff;
+}
 
 .sidebar-box-download-sub-box {
     color: #fff;
     font-size: 15px;
-   
     margin-left: 15px;
 }
-.sidebar-box-download-sub-box a{
-   color: #fff;
+
+.sidebar-box-download-sub-box a {
+    color: #fff;
 }
 
 
@@ -252,9 +253,9 @@
     width: 60px;
     display: block;
 }
-.sidebar-collaterals-menu-no-icon:after {
-     display: none;
 
+.sidebar-collaterals-menu-no-icon:after {
+    display: none;
 }
 
 .sidebar-box-download:after {
@@ -289,4 +290,47 @@
     z-index: 1;
     padding-left: 20px !important;
 }
- 
+
+.sidebar-box-download2 {
+    background-color: transparent;
+    color: #015198;
+}
+
+.sidebar-box-download2.sidebar-box-download:after {
+    left: 0px;
+}
+
+.sidebar-box-download2 .sidebar-box-download-title {
+    color: #015198;
+    border-bottom: 1px solid #015198;
+    line-height: 40px;
+    margin-left: 30px;
+}
+
+.sidebar-box-download2 .sidebar-box-download-title span {
+    margin-left: 25px;
+}
+
+
+
+
+.sidebar-box-download2 table {
+  border-collapse: collapse;
+}
+.sidebar-box-download2 table td, .sidebar-box-download2 table th {
+  border: 1px solid #dfdfdf;
+}
+.sidebar-box-download2 table tr:first-child td {
+  border-top: 0;
+}
+.sidebar-box-download2 table tr:last-child td {
+  border-bottom: 0;
+}
+.sidebar-box-download2 table tr td:first-child,
+.sidebar-box-download2 table tr th:first-child {
+  border-left: 0;
+}
+.sidebar-box-download2 table tr td:last-child,
+.sidebar-box-download2 table tr th:last-child {
+  border-right: 0;
+}

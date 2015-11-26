@@ -76,7 +76,10 @@ $categories = get_categories($cat_params);
           <?php foreach($sub_categories as $sub_category){ ?>
           <?php $sub_posts = get_content('limit=100&category='.$sub_category['id']); ?>
           <div class="mw-ui-col <?php if(category_id()==$sub_category['id']) { ?> link-active<?php } ?>">
-            <div href="javascript:;" class="shop-top-nav-cat-sub-menu-open-link"><?php print  $sub_category['title'] ?>
+            <div  class="shop-top-nav-cat-sub-menu-open-link">
+            <a href="<?php print page_link() ?>/section:<?php print  url_title($sub_category['title']) ?>/category:<?php print $sub_category['id'] ?>/">	<?php print  $sub_category['title'] ?></a>
+		
+            
               <ul class="shop-top-nav-cat-sub-menu">
                 <?php if(!empty($sub_posts)){ ?>
                 <?php foreach($sub_posts as $post){ ?>

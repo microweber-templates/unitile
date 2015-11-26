@@ -21,7 +21,7 @@ description: Default cart template
       <a href="http://www.unitileindia.com/pdfs/iso_certificates14001_2004.pdf" target="_blank">OHSAS 18001:2007 </a> <br />
     </div>
   </div>
-  <div class="sidebar-box-1-padding"> <a class=""><img width="100%" class="img-responsive" src="<?php print template_url() ?>img/sertification.jpg" /></a> </div>
+  <div class="sidebar-box-1-padding"> <a href="http://www.unitileindia.com/pdfs/iso_certificates.pdf" target="_blank"><img width="100%" class="img-responsive" src="<?php print template_url() ?>img/sertification.jpg" /></a> </div>
       <div class="sidebar-box-download-sub-box text-center"> email: <a href="mailto:sales@united-group.in">sales@united-group.in</a>
     </div>
 </div>

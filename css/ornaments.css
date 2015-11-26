@@ -120,3 +120,68 @@
     display: none;
     background: none;
 }
+
+
+/* ICONS */
+
+.horizontal-menu .menu_element_link.menu-item-id-75:before,
+.horizontal-menu .menu_element_link.menu-item-id-77:before,
+.horizontal-menu .menu_element_link.menu-item-id-78:before,
+.horizontal-menu .menu_element_link.menu-item-id-75:before,
+.horizontal-menu .menu_element_link.menu-item-id-76:before {
+    content: '';
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    
+    margin-right: 3px;
+    position: relative;
+    top: 1px;
+}
+
+.horizontal-menu .menu_element_link.menu-item-id-75:before {
+    background: rgba(0, 0, 0, 0) url("../img/icon/munit1.png") no-repeat scroll left center;
+    background-size: cover;
+}
+
+.horizontal-menu .menu_element_link.active.menu-item-id-75:before {
+    background: rgba(0, 0, 0, 0) url("../img/icon/munit1_active.png") no-repeat scroll left center;
+    background-size: cover;
+}
+
+.horizontal-menu .menu_element_link.menu-item-id-76:before {
+    background: rgba(0, 0, 0, 0) url("../img/icon/munit2.png") no-repeat scroll left center;
+    background-size: cover;
+}
+
+.horizontal-menu .menu_element_link.active.menu-item-id-76:before {
+    background: rgba(0, 0, 0, 0) url("../img/icon/munit2_active.png") no-repeat scroll left center;
+    background-size: cover;
+}
+.horizontal-menu .menu_element_link.menu-item-id-77:before {
+    background: rgba(0, 0, 0, 0) url("../img/icon/munit3.png") no-repeat scroll left center;
+    background-size: cover;
+}
+
+.horizontal-menu .menu_element_link.active.menu-item-id-77:before {
+    background: rgba(0, 0, 0, 0) url("../img/icon/munit3_active.png") no-repeat scroll left center;
+    background-size: cover;
+}
+.horizontal-menu .menu_element_link.menu-item-id-78:before {
+    background: rgba(0, 0, 0, 0) url("../img/icon/munit4.png") no-repeat scroll left center;
+    background-size: cover;
+}
+
+.horizontal-menu .menu_element_link.active.menu-item-id-78:before {
+    background: rgba(0, 0, 0, 0) url("../img/icon/munit4_active.png") no-repeat scroll left center;
+    background-size: cover;
+}
+/*
+.horizontal-menu .menu_element_link.menu-item-id-75 {
+   background: rgba(0, 0, 0, 0) url("../img/icon/tab2.png") no-repeat scroll 12px center / 16px 16px;
+    padding-left: 30px;
+}
+.horizontal-menu .menu_element_link.menu-item-id-76 {
+   background: rgba(0, 0, 0, 0) url("../img/icon/tab2.png") no-repeat scroll 12px center / 16px 16px;
+    padding-left: 30px;
+}*/
