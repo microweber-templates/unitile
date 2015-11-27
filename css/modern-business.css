@@ -215,8 +215,12 @@ textarea {
     overflow: hidden;
     line-height: 115px;
     margin-top: -13px;
+    display: inline-block;
 }
-
+.download a{
+    xsssvisibility: hidden;
+    
+}
 .module-navigation a {
     color: #444343;
     font-size: 14px;

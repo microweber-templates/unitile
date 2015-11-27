@@ -55,7 +55,8 @@
                 <li>
                   <module type="shop/cart" id="small_cart_header" template="header_small" />
                 </li>
-                <li class="download">downloads</li>
+          <li>
+                <a class="download" target="_blank" href="http://www.unitileindia.com/pdfs/unitile_catalogue.pdf"></a></li>
               </ul>
             </div>
           </div>
