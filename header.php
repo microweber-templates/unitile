@@ -48,17 +48,13 @@
                 <?php if(is_logged()) { ?>
                 <li> <a id="login-register-link-header" href="<?php print site_url(); ?>profile"><i class="fa fa-fw fa-user"></i> Hello, <?php print user_name() ?></a></li>
                 <?php  } else { ?>
-                <li> <a id="login-register-link-header" href="<?php print site_url(); ?>login" onclick='$("#login-overlay-footer").toggle(); return false;'><i class="fa fa-fw fa-user"></i>
-                    <span onclick="LoginTabs.set(0)">Login </span>|<span onclick="LoginTabs.set(1)"> Register </span>
-                    </a></li>
+                <li> <a id="login-register-link-header" href="<?php print site_url(); ?>login" onclick='$("#login-overlay-footer").toggle(); return false;'><i class="fa fa-fw fa-user"></i> <span onclick="LoginTabs.set(0)">Login </span>|<span onclick="LoginTabs.set(1)"> Register </span> </a></li>
                 <?php  }  ?>
                 <li> <i class="fa fa-fw fa-phone"></i>+91 22 2630 5270</li>
                 <li> <i class="fa fa-fw fa-envelope"></i>info@united-group.in</li>
-
-                         <li>       
-                                <module type="shop/cart" id="small_cart_header" template="header_small" />
-                                </li>
-
+                <li>
+                  <module type="shop/cart" id="small_cart_header" template="header_small" />
+                </li>
                 <li class="download">downloads</li>
               </ul>
             </div>
@@ -67,26 +63,5 @@
         </div>
       </div>
     </div>
-    <?php 
-	
-	/*<div class="edit" field="boostrap3-template-navbar-brand" rel="global"> 
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand"  href="<?php print site_url(); ?>">
-          <img src="{TEMPLATE_URL}img/logo_unitile.png" alt="Logo image for Unitile company" />
-        </a>
-      </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <module type="menu" name="header_menu" id="main-navigation" template="topmenu" />
-      </div> 
-    </div>*/
-	
-	
-	?>
   </div>
 </nav>

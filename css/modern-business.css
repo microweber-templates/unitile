@@ -934,11 +934,13 @@ a:hover .products-layout-img-bg-holder:after {
     color: #fff;
 }
 
+/*
 .footer-menu-table span {
     display: inline-block;
     float: left;
     width: 20%;
 }
+*/
 
 .footer-menu-table a {
     color: #fff;
@@ -1582,13 +1584,16 @@ img {
 
 @media (max-width:1150px) {
     .footer-menu-table span {
+/*
         display: inline-block;
         float: left;
         width: 30%;
+*/
     }
     #footer .mw-row .mw-col:first-child {
         width: 40% !important;
     }
+    
 }
 
 @media (max-width:990px) {
@@ -1602,6 +1607,15 @@ img {
         width: 100% !important;
         display: block !important;
     }
+    
+    #footer {
+        background-image: none;
+        background-color: #1b448f ;
+    }
+    #planehr {
+        display: none;
+    }
+    
     nav#menu {
         background: white;
     }
@@ -1696,6 +1710,7 @@ img {
 
 #footer-top-wrapper {
     position: relative;
+    margin-top: 15px;
 }
 
 #bttop {

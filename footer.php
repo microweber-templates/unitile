@@ -1,46 +1,48 @@
 
 <div id="footer">
-  <div id="footer-top-wrapper">
-  <span onclick="mw.tools.scrollTo('#menu');" id="bttop"></span>
+  <div id="footer-top-wrapper"> <span onclick="mw.tools.scrollTo('#menu');" id="bttop"></span>
     <div class="container">
       <div  rel="global" field="bootstrap3-site-footer">
-        <div class="mw-row" style="height: auto;" id="element_1445281031537">
-          <div class="mw-col" style="width: 55%; height: auto;">
-            <div class="mw-col-container">
-              <div class="footer-menu-table">
-                    <span><a href="<?php print site_url(); ?>">Home</a></span>
-                    <span><a href="<?php print site_url(); ?>shop">Products</a></span>
-                    <span><a href="<?php print site_url(); ?>applications">Applications</a></span>
-                    <span><a href="<?php print site_url(); ?>network">Network</a></span>
-                    <span><a href="<?php print site_url(); ?>news">News</a></span>
-
-                    <span><a href="<?php print site_url(); ?>about-us">About Us</a></span>
-                    <span><a href="<?php print site_url(); ?>manifacturing-unit">Manufacturing Unit</a></span>
-                    <span><a href="<?php print site_url(); ?>clients">Clients</a></span>
-                    <span><a href="<?php print site_url(); ?>careers">Career</a></span>
-                    <span><a href="<?php print site_url(); ?>contacts">Contact Us</a></span>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="footer-menu-table">
+              <div class="row">
+                <div class="col-md-3"> <span><a href="<?php print site_url(); ?>">Home</a></span> </div>
+                <div class="col-md-3"> <span><a href="<?php print site_url(); ?>shop">Products</a></span> </div>
+                <div class="col-md-3"> <span><a href="<?php print site_url(); ?>applications">Applications</a></span> </div>
+                <div class="col-md-3"> <span><a href="<?php print site_url(); ?>network">Network</a></span> </div>
               </div>
-              <br>
+              <div class="row">
+                <div class="col-md-3"> <span><a href="<?php print site_url(); ?>news">News</a></span> </div>
+                <div class="col-md-3"> <span><a href="<?php print site_url(); ?>about-us">About Us</a></span> </div>
+                <div class="col-md-3"> <span><a href="<?php print site_url(); ?>careers">Career</a></span> </div>
+                <div class="col-md-3"> <span><a href="<?php print site_url(); ?>clients">Clients</a></span> </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3"><span><a href="<?php print site_url(); ?>manifacturing-unit">Manufacturing</a></span> </div>
+                <div class="col-md-3"> <span><a href="<?php print site_url(); ?>contacts">Contact Us</a></span> </div>
+                <div class="col-md-3"> </div>
+                <div class="col-md-3"> </div>
+              </div>
             </div>
           </div>
-          <div class="mw-col" style="width: 25%; height: auto;">
-            <div class="mw-col-container">
-            <div>
-                <h4  style="margin-bottom: 0px;
+          <div class="col-md-7">
+            <div class="row">
+              <div class="col-md-6">
+                <div>
+                  <h4  style="margin-bottom: 0px;
 "><span class="" style="font-size: 20px;"><font face="Helvetica" color="#ffffff">Subscribe to Newsletter</font></span></h4>
-                <hr  style="margin-top: 2px;" id="planehr">
+                  <hr  style="margin-top: 2px;" id="planehr">
+                </div>
+                <module type="subscribe" id="subscribe_footer"  />
               </div>
-              <module type="subscribe" id="subscribe_footer"  />
-            </div>
-          </div>
-          <div class="mw-col" style="width: 20%; height: auto;">
-            <div class="mw-col-container">
-              <div>
+              <div class="col-md-6"> <div>
                 <h4  style="margin-bottom: 0px;
 "><span class="" style="font-size: 20px;"><font face="Helvetica" color="#ffffff">Get Social</font></span></h4>
                 <hr   style="margin-top: 2px;" id="arrhr">
               </div>
-              <module type="social_links" id="social_links_footer" />
+              <module type="social_links" id="social_links_footer" /> </div>
+              
             </div>
           </div>
         </div>
@@ -54,7 +56,6 @@
           <div class="col-md-12">
             <center>
               <div class="edit" rel="footer" field="footer-copyright" style="color:white; font-size:12px;">&copy; <span class="unselectable" contentEditable="false"><?php print date('Y'); ?></span> Unitileindia. All Rights Reserved | Designed and Devoloped by <a href="#"><img src="{TEMPLATE_URL}img/logo-design.png"></a></div>
-              <div class="col-md-4"></div>
             </center>
           </div>
         </div>

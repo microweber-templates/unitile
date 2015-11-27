@@ -116,8 +116,9 @@ $(document).ready(function(){
    $("#main-navigation").append(xmobilemenu);
 
    $("#mobilemenu").on('change',function(){
+	    window.location.href = this.value;
         setTimeout(function(){
-            window.location.href = this.value;
+           
         }, 78)
    });
 
