@@ -29,11 +29,9 @@ max-width:100%
       <?php endif; ?>
       <div class="col-md-8 mw-post-list-blog-post-details">
         <div class="mw-post-list-blog-content">
-          
-            <?php if(!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
-            <h2 class="heading-style-projects"><a href="<?php print $item['link'] ?>"><?php print $item['title'] ?></a></h2>
-            <?php endif; ?>
-
+          <?php if(!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
+          <h2 class="heading-style-projects"><a href="<?php print $item['link'] ?>"><?php print $item['title'] ?></a></h2>
+          <?php endif; ?>
           <?php if(!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
           <p class="description" itemprop="headline"><?php print $item['description'] ?></p>
           <?php endif; ?>

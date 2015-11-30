@@ -18,12 +18,12 @@
       <div class="baner-text">
         <h1>Evolving workplaces, evolve nations. Stellar Raised access floor systems</h1>
         <p>Raised floor installation for emergency control rooms, telecommunication central offices, operation control centers has become essential for heavy duty, maintenance-free and a durable structural element of the facility. Incorporation of Raised flooring access systems, and our cavalry of UNITILE ensures a safe and better environment to accommodate the needs of tomorrow. The combination of a wide range of access panels in conjunction with an exquisite range provides the most economic series of performance grades, capable of performing in the most demanding applications at different areas of businesses.</p>      
-        <p class="pull-right margin-none"><a class="btn btn-primary btn-sm" href="#" role="button">»</a></p>
+        <p class="pull-right margin-none"><a class="btn btn-primary btn-sm" href="<?php print site_url('shop') ?>" role="button">»</a></p>
       </div>
     </div>
   </div>
 </div>
-<div class="welcome edit" id="welcome-layout"  rel="page" field="content">
+<div class="welcome" id="welcome-layout"  rel="page" field="content">
   <div class="container">
     <div class="mw-row row clearfix">
       <div class="mw-col home-title col-md-12 edit">
@@ -64,7 +64,7 @@
                 </ul>
               </div>
               <div class="btn-group pull-right">
-                <button  type="button" class="btn btn-default" href="#">View details  &nbsp;&nbsp;&nbsp;<span class="fa fa-chevron-right"></span></button>
+                <a  type="button" class="btn btn-default" href="<?php print site_url('about-us') ?>">View details  &nbsp;&nbsp;&nbsp;<span class="fa fa-chevron-right"></span></a>
               </div>
             </div>
           </div>
@@ -119,115 +119,12 @@
 </div>
 <!-- End Video Layout -->
 <!-- Star Products Layout -->
-<div class="container products-layout" id="products-layout"  rel="page" field="content">
-  <div class="container">
-    <div class="element">
-      <center>
-        <h3 align="center" class="symbol">PRODUCTS</h3>
-        <span class="products-title-under"></span>
-      </center>
 
 
-      <div id="home-p-tabs">
 
-      <script>
+<?php include(__DIR__.DS.'home_products.php'); ?>  
 
-      $(document).ready(function(){
-         mw.tabs({
-            nav:'#hpt-nav a',
-            tabs:'.xprotab'
-         })
-         .set(0);
-      });
-
-
-      </script>
-
-        <div id="hpt-nav">
-
-            <a href="javascript:;" id="hpt-raised">Raised Access Floor Systems</a>
-            <a href="javascript:;" id="htp-data">Data Center Accessories</a>
-
-        </div>
-
-      </div>
- <div class="xprotab">
-       <module type="shop/products" limit=4 hide_paging=true id="home-products-1" />
-      </div>
-      <div class="xprotab" style="display:none">
-             <module type="shop/products" limit=4 hide_paging=true id="home-products-2" />
-
-      
-      <?php
-
-	  /*
-	  
-	  
-	  <div class="mw-row row">
-        <div class="col-md-3 col-sm-3">
-          <center>
-            <a href="#">
-              <img src="{TEMPLATE_URL}img/product_img_1.jpg" class="img img-responsive">
-              <h5>Unitile Steel Cementitious</h5>
-              <p>Unitile steel cementitious panels are non-combustible in nature and are coated with electrostatic epoxy paint with folded edges along the perimeter. Not only it enhances the load carrying performance of the system but also provides a squeak free floor.</p>
-              <div class="pbtns">
-                <span class="pbtn" href="#">Read more</span>
-              </div>
-            </a>
-          </center>
-        </div>
-        <div class="col-md-3 col-sm-3">
-          <center>
-            <a href="#">
-              <img src="{TEMPLATE_URL}img/product_img_1.jpg" class="img img-responsive">
-              <h5>Unitile Wood Core</h5>
-              <p>Unitile Wood Core Floor panels consists of engineered modular panels constructed around a high density chipboard core . This unique engineering exhibits fine dimensional tolerances for modular control, accurate alignment of grids & inter-changeability of panels.</p>
-              <div class="pbtns">
-                <span class="pbtn" href="#">Read more</span>
-              </div>
-            </a>
-          </center>
-        </div>
-        <div class="col-md-3 col-sm-3">
-          <center>
-            <a href="#">
-              <img src="{TEMPLATE_URL}img/product_img_2.jpg" class="img img-responsive">
-              <h5>Unitile Calcium Sulphate</h5>
-              <p>Unitile Calcium sulphate floor panels’ base & top surface of the core is factory bonded using an appropriate combination of surface finishes such as Aluminum, Galvanized sheet steel, High Pressure Laminate offering an excellent acoustical sound deadening value.</p>
-              <div class="pbtns">
-                <span class="pbtn" href="#">Read more</span>
-              </div>
-            </a>
-          </center>
-        </div>
-        <div class="col-md-3 col-sm-3">
-          <center>
-            <a href="#">
-              <img src="{TEMPLATE_URL}img/product_img_3.jpg" class="img img-responsive">
-              <h5>Unitile Topstone</h5>
-              <p>Unitile Calcium sulphate floor panels’ base & top surface of the core is factory bonded using an appropriate combination of surface finishes such as Aluminum, Galvanized sheet steel, High Pressure Laminate offering an excellent acoustical sound deadening value.</p>
-              <div class="pbtns">
-                <span class="pbtn" href="#">Read more</span>
-              </div>
-            </a>
-          </center>
-        </div>
-      </div>
-	  
-	  
-	  */
-	  
-	  
-	  
-	   ?>
-      
-      
-      
-      </div>
-     
-    </div>
-  </div>
-</div>  
+  
 <!-- End Products Layout -->
 <!-- Start Project Layout -->
 <div class="container edit" id="project-layout"  rel="page" field="content">
