@@ -43,11 +43,13 @@
             <div class="sidebar-boxes-spacer"></div>
             <module type="staticbox" template="presence"  />
             <?php } else  { ?>
-            <module type="shop/cart_add" template="sidebar" />
-            <div class="sidebar-boxes-spacer"></div>
-            <module type="menu" template="collaterals" menu-name="collaterals" />
-            <div class="sidebar-boxes-spacer"></div>
-            <module type="staticbox"  />
+            <div class="edit"  field="product_sidebar" rel="content">
+              <module type="shop/cart_add" template="sidebar" />
+              <div class="sidebar-boxes-spacer"></div>
+              <module type="menu" template="collaterals" menu-name="collaterals" />
+              <div class="sidebar-boxes-spacer"></div>
+              <module type="staticbox"  />
+            </div>
             <?php } ?>
           </div>
         </div>

@@ -78,10 +78,46 @@ a#login-register-link-header {
     background-size: cover;
     background-color: #efecec;
     position: relative;
+	background-size:cover;
+	background-position:center;
 }
 
-.portfolio-item .post-list-item-img span {
+.portfolio-item .post-list-item-img .portfolio-item-title {
     position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(239, 236, 236, 0.7);
+    color: #0067ad;
+    font-family: "Helvetica";
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.portfolio-item .portfolio-item-desc {
+	display:none;
+}
+.portfolio-item:hover .portfolio-item-title{
+	position: absolute;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(239, 236, 236, 0.7);
+    color: #0067ad;
+    font-family: "Helvetica";
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px;
+	display:block;
+}
+.portfolio-item:hover .portfolio-item-desc {
+	display:block;
+	list-style-position:inside;
+	color:#333;
+	font-size:14px;
+}
+
+.portfolio-item:hover xxxxxx.posrtfolio-item-desc{
+	position: absolute;
     bottom: 0px;
     width: 100%;
     background-color: rgba(239, 236, 236, 0.7);
@@ -101,6 +137,7 @@ a#login-register-link-header {
     background-color: #efecec;
     position: relative;
 }
+
 
 .project-small-item .project-small-list-item-img span {
     display: none;
@@ -305,9 +342,14 @@ a#category-tab-data-center-accessories {
     /** Allow no empty space between this and .dropdown */
     margin: 0;
     display: none;
-    width: 100%;
+    min-width: 100%;
     z-index: 10;
+	white-space:nowrap;
+	
+
 }
+
+
 
 .shop-top-nav-cat-sub-menu-open-link:hover .shop-top-nav-cat-sub-menu {
     /** Show dropdown menu */
@@ -332,6 +374,7 @@ a#category-tab-data-center-accessories {
     background: white;
     border: 1px solid #cacaca;
     padding-left: 10px;
+	padding-right:10px;
 }
 
 .shop-top-nav-cat-sub-menu li a:hover {
@@ -399,6 +442,19 @@ a#category-tab-data-center-accessories {
     width: 100%;
     text-align: center;
     border-top: none;
+}
+
+
+.mw-ui-box-tab-content ul {
+	
+list-style-position:inside;
+    list-style-image: url('../img/bullet.gif');
+
+    
+	
+}
+.mw-ui-box-tab-content ul li{ 
+ line-height:24px;
 }
 
 .mw-module-tabs-skin-default .mw-ui-btn-nav-tabs .mw-ui-btn {

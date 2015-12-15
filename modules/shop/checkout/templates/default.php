@@ -11,9 +11,10 @@ description: Default cart template
 */
  
 ?>
+
 <div class="container">
   <div class="margin-spacer-element-20"></div>
-   <div class="margin-spacer-element-20"></div>
+  <div class="margin-spacer-element-20"></div>
 </div>
 <?php if($requires_registration and is_logged() == false): ?>
 <module type="users/register" />
@@ -30,7 +31,6 @@ if(isset($_GET['step'])){
 $cart = get_cart();
 
 ?>
-
 <div class="mw-checkout-holder">
   <?php if ($cart == false): ?>
   <?php if (is_array($shop_page)): ?>
@@ -41,6 +41,43 @@ $cart = get_cart();
   </a>
   <?php endif; ?>
   <?php else: ?>
+  <script>
+$(document).ready(function(){
+    $("#checkout_form_<?php print $params['id'] ?>").validationEngine('attach', {promptPosition : "centerRight", scroll: false});
+	
+	
+	
+	
+	$( ".step-next-btn-validate" ).click(function( event ) {
+ 
+		
+	var is_valid = $("#checkout_form_<?php print $params['id'] ?>").validationEngine('validate')	
+	 if(!is_valid){
+      event.stopPropagation();
+  	 event.preventDefault();
+  
+	 }
+     });
+	
+	
+	 
+	
+	
+ 	
+	
+	
+   });
+
+ 
+   
+   
+   
+
+
+
+
+
+</script>
   <form class="mw-checkout-form" id="checkout_form_<?php print $params['id'] ?>" method="post"
           action="<?php print api_link('checkout') ?>">
     <?php $cart_show_enanbled = get_option('data-show-cart', $params['id']); ?>
@@ -64,7 +101,7 @@ $cart = get_cart();
         </div>
       </div>
     </div>
-    <div class="step-btn-holder"> <a href="?step=1" class="step-btn step-btn-left xpull-left"> <span>Back</span></a> <a href="?step=3" class="step-btn step-btn-right xpull-right"><span>Save and Continue</span></a> </div>
+    <div class="step-btn-holder"> <a href="?step=1" class="step-btn step-btn-left xpull-left"> <span>Back</span></a> <a href="?step=3"   class="step-next-btn-validate step-btn step-btn-right xpull-right"><span>Save and Continue</span></a> </div>
     <?php endif; ?>
     <?php if($step == 3): ?>
     <module type="shop/cart" template="summary" id="cart_checkout_<?php print $params['id'] ?>"

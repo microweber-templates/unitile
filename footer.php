@@ -1,6 +1,6 @@
 
 <div id="footer">
-  <div id="footer-top-wrapper"> <span onclick="mw.tools.scrollTo('#menu');" id="bttop"></span>
+  <div id="footer-top-wrapper"> <a href="#menu" id="bttop"></a>
     <div class="container">
       <div  rel="global" field="bootstrap3-site-footer">
         <div class="row">

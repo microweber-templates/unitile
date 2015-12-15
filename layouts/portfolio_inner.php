@@ -24,10 +24,10 @@
         </div>
         <div class="col-md-4">
           <module type="pictures" template="bootstrap_carousel"  rel="content"  />
-          <div class="edit"  field="project_details" rel="content">
-            <div class="project-details-inner-block">
-              <h3 class="project-details-inner-block-title">Project Details</h3>
-              <div class="project-details-inner-block-content">
+          <div class="project-details-inner-block">
+            <h3 class="project-details-inner-block-title edit"   field="project_details_title" rel="content">Project Details</h3>
+            <div class="project-details-inner-block-content">
+              <div class="edit"  field="project_details_text" rel="content">
                 <ul>
                   <li>Lorem Ipsum</li>
                   <li>Dolor Sit Amet</li>

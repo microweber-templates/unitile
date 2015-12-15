@@ -12,7 +12,7 @@
 
 ?>
 <?php include template_dir(). "header.php"; ?>
-<div class="jumbotron edit">
+<div class="jumbotron edit home-baner">
   <div class="container">
     <div class="row">
       <div class="baner-text">
@@ -23,7 +23,7 @@
     </div>
   </div>
 </div>
-<div class="welcome" id="welcome-layout"  rel="page" field="content">
+<div class="welcome edit" id="welcome-layout"  rel="page" field="content-welcome">
   <div class="container">
     <div class="mw-row row clearfix">
       <div class="mw-col home-title col-md-12 edit">
@@ -42,7 +42,7 @@
             <h3 class="home-title"><i class="fa fa-fw about-icon pull-left"></i><span class="bordered-bottom"> ABOUT US </span></h3>
             <p> UNITILE is name to reckon within the field of modern Construction & Building Materials industry in India. Since the inception in 1994, over two decades, Comprehensive experience has been the key for UNITILE to successful and efficacious flooring solutions for the modernised world. Providing exceptional product quality , industry leading delivery times and an unsurpassed technical support services has backed up our revolution for modern structure of today’s data centre ...</p>
             <div class="btn-group pull-right">
-              <button  type="button" class="btn btn-default" href="#">View details  &nbsp;&nbsp;&nbsp;<span class="fa fa-chevron-right"></span></button>
+              <a  type="button" class="btn btn-default" href="#">View details  &nbsp;&nbsp;&nbsp;<span class="fa fa-chevron-right"></span></a>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@
 			
 			?>
             <div class="btn-group pull-right">
-              <button  type="button" class="btn btn-default" href="#">View details  &nbsp;&nbsp;&nbsp;<span class="fa fa-chevron-right"></span></button>
+              <a  type="button" class="btn btn-default" href="#">View details  &nbsp;&nbsp;&nbsp;<span class="fa fa-chevron-right"></span></a>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@
   </div>
 </div>
 <!-- Start Video Layout -->
-<div class="video edit" id="video-layout"  rel="page" field="content">
+<div class="video edit" id="video-layout"  rel="page" field="content-video">
   <div class="container">
     <div class="mw-row row">
       <div class="col-md-6 col-sm-6 right-border">
@@ -127,7 +127,7 @@
   
 <!-- End Products Layout -->
 <!-- Start Project Layout -->
-<div class="container edit" id="project-layout"  rel="page" field="content">
+<div class="container edit" id="project-layout"  rel="page" field="content-projects">
   <div class="container">
     <div class="mw-row">
       <div class="col-md-8 col-sm-8" >
@@ -185,7 +185,7 @@
 </div>
 <!-- End Project Layout -->
 <!-- Start Client Layout  -->
-<div class="container edit" id="clients-layout"  rel="page" field="content">
+<div class="container edit" id="clients-layout"  rel="page" field="content-clients">
   <div class="container">
     <center>
       <h3>CLIENTS</h3>

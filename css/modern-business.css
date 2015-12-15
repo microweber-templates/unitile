@@ -243,9 +243,9 @@ textarea {
     background: #076DAF;
     opacity: 0.6;*/
 }
-
-.jumbotron {
-    background: url('../img/baner.jpg') no-repeat;
+ 
+.jumbotron.home-baner {
+    background: url('../img/home.jpg') no-repeat;
     min-height: 547px;
     display: block;
     position: relative;

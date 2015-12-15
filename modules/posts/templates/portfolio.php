@@ -20,13 +20,41 @@ $len =  count($data);
 
     $count++;
 ?>
+
+
 <?php if($count == 1 or ($count-1) % 3 == 0) { ?>
 
 <div class="row margin-bottom-20">
   <?php } ?>
+  
+  <?php
+  $desc = false;
+  $edit_field_val = mw()->content_manager->edit_field('field=project_details_text&fxull=true&rel_type=content&rel_id='.$item['id']); 
+  if($edit_field_val){
+	   $desc = $edit_field_val;
+ 
+  }
+  
+  ?>
+  
+  
   <div class="col-md-4 portfolio-item">
     <?php if($item['link']):  ?>
-    <a href="<?php print $item['link'] ?>" class="post-list-item-img" style="background-image:url('<?php print $item['tn_image']; ?>')"><span><?php print $item['title'] ?></span></a>
+    <a href="<?php print $item['link'] ?>" class="post-list-item-img" style="background-image:url('<?php print $item['tn_image']; ?>')">
+    
+    <span class="portfolio-item-title"><?php print $item['title'] ?>
+    
+    
+    
+    
+    <?php if($desc): ?>
+    <span class="portfolio-item-desc"><?php print $desc ?></span>
+    <?php endif; ?>
+    
+    
+    </span>
+    
+    </a>
     <?php endif; ?>
     
   </div>

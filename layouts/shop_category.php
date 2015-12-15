@@ -19,35 +19,25 @@
                   <h2 class="edit product-inner-page-title">Category page</h2>
                   <hr>
                   <div class="product-description">
-                    
-                      <p class="element">This text is set by default and is suitable for edit in real time. By default the drag and drop core feature will allow you to position it anywhere on the site. Get creative &amp; <strong style="font-weight: 600">Make Web</strong>.</p>
-                
+                    <p class="element">This text is set by default and is suitable for edit in real time. By default the drag and drop core feature will allow you to position it anywhere on the site. Get creative &amp; <strong style="font-weight: 600">Make Web</strong>.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
-        </div>
+        </div> 
         <!------------ Sidebar -------------->
-        <div class="col-sm-4 sidebar-lined-border-left">
+        <div class="col-sm-4 sidebar-lined-border-left"> 
           <?php $data_fields_values = mw()->data_fields_manager->get_values('rel_type=categories&rel_id='.category_id()); ?>
           <div class="sidebar-boxes-wrapper">
-            <?php if(isset($data_fields_values['sidebar']) and trim($data_fields_values['sidebar']) == 'no_cart') { ?>
-            <div class="sidebar-boxes-spacer"></div>
-            <module type="menu" template="collaterals" menu-name="collaterals" />
-            <div class="sidebar-boxes-spacer"></div>
-            <module type="staticbox"  />
-            <div class="sidebar-boxes-spacer"></div>
-            <module type="staticbox" template="presence"  />
-            <?php } else  { ?>
-            <div class="sidebar-boxes-spacer"></div>
-            <module type="menu" template="collaterals" menu-name="collaterals" />
-            <div class="sidebar-boxes-spacer"></div>
-            <module type="staticbox" template="presence"  />
-            <div class="sidebar-boxes-spacer"></div>
-            <module type="staticbox"  />
-            <?php } ?>
+               <div class="edit"  field="product_sidebar_category" rel="caregory_<?php print category_id() ?>">
+              <div class="sidebar-boxes-spacer"></div>
+              <module type="menu" template="collaterals" menu-name="collaterals" />
+              <div class="sidebar-boxes-spacer"></div>
+              <module type="staticbox" id="staticbox_<?php print category_id() ?>"  /> 
+              <div class="sidebar-boxes-spacer"></div>
+              <module type="staticbox" template="presence" id="staticbox_presence_<?php print category_id() ?>"  />
+            </div>
           </div>
         </div>
       </div>

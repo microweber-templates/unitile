@@ -23,12 +23,18 @@ $len =  count($data);
     $count++;
 ?>
 <?php if($count == 1 or ($count-1) % 3 == 0) { ?>
+<?php
 
+$link = $item['link'];
+if(isset($item['parent']) and $item['parent'] != 0){
+	$link = page_link($item['parent']); 
+}
+ ?>
 <div class="mrojects">
   <?php } ?>
   <div class=" project-small-item">
     <?php if($item['link']):  ?>
-    <a href="<?php print $item['link'] ?>" class="project-small-list-item-img" style="background-image:url('<?php print $item['tn_image']; ?>')"><span><?php print $item['title'] ?></span></a>
+    <a href="<?php print $link ?>" class="project-small-list-item-img" style="background-image:url('<?php print $item['tn_image']; ?>')"><span><?php print $item['title'] ?></span></a>
     <?php endif; ?>
   </div>
   <?php if($count % 3 == 0 or $count == $len){ ?>

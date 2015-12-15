@@ -32,10 +32,18 @@
 <link rel="stylesheet" href="{TEMPLATE_URL}js/owl.carousel.2.0.0-beta.2.4/assets/owl.carousel.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="{TEMPLATE_URL}js/owl.carousel.2.0.0-beta.2.4/owl.carousel.min.js"></script>
 <script type="text/javascript" src="{TEMPLATE_URL}js/default.js"></script>
+
+<script type="text/javascript" src="{TEMPLATE_URL}js/validation-engine/js/languages/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="{TEMPLATE_URL}js/validation-engine/js/jquery.validationEngine.js"></script>
+
+<link rel="stylesheet" href="{TEMPLATE_URL}js/validation-engine/css/validationEngine.jquery.css" rel="stylesheet" type="text/css">
+
+
+
 </head>
 <body>
 <nav role="navigation" class="navbar navbar-default navbar-static"  id="menu" >
-  <div class="container">
+  <div class="container" id="site-header-container">
     <div id="menurow" style="height: auto;" class="mw-row">
       <div style="width: 26.4%; height: auto;" class="mw-col">
         <div class="mw-col-container"> <a href="<?php print site_url(); ?>"> <img class="" data-pin-nopin="true" alt="Logo image for Unitile company" src="<?php print template_url(); ?>img/logo_unitile.png"></a> </div>
