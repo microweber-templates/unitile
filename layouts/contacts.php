@@ -180,7 +180,13 @@ R.R. District, Hyderabad     500019</li>
         </div>
         <div class="mw-ui-col">
             <div class="mw-ui-col-container">
-                <form class="c-form" style="padding-top: 11px;">
+            <module type="contact_form" id="contact_form_main_on_page" />
+                <?php
+				
+				
+				/*
+				
+				<form class="c-form" style="padding-top: 11px;">
                     <script>
                         $(document).ready(function(){
                             $(".s-field").on('click', function(e){
@@ -234,6 +240,11 @@ R.R. District, Hyderabad     500019</li>
                         <button type="submit" class="csubmit" id="contact_submit">&nbsp;</button>
                     </div>
                 </form>
+				
+				*/
+				
+				
+				?>
             </div>
         </div>
     </div>

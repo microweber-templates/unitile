@@ -109,6 +109,9 @@ $(document).ready(function(){
     <div class="step-btn-holder"> <a href="?step=2" class="step-btn step-btn-left xpull-left"> <span>Back</span></a> <a href="?step=4" class="step-btn step-btn-right xpull-right"><span>Continue</span></a> </div>
     <?php endif; ?>
     <?php if($step == 4): ?>
+    
+    
+    
     <div class="mw-ui-row shipping-and-payment mw-shop-checkout-payments-info-holder">
       <div class="mw-ui-col">
         <div class="mw-ui-col-container mw-shop-checkout-payments-holder">
@@ -119,6 +122,18 @@ $(document).ready(function(){
     <div class="alert hide"></div>
     <div class="mw-cart-action-holder">
       <hr/>
+            <script>
+
+
+
+$( document ).ready(function() {
+      
+      mw.cart.checkout('#checkout_form_<?php print $params['id'] ?>');
+      });
+
+
+    
+    </script>
       <?php
 $tems = get_option('shop_require_terms', 'website') == 1;	
  

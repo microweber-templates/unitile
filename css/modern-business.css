@@ -245,12 +245,55 @@ textarea {
 }
  
 .jumbotron.home-baner {
-    background: url('../img/home.jpg') no-repeat;
+    /*background: url('../img/home.jpg') no-repeat;*/
+	background: url('../img/home2.jpg') no-repeat;
     min-height: 547px;
     display: block;
     position: relative;
     margin: auto;
+	background-size:cover;
+	
+	transition: background-image 0.5s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+	
+	
+/*	-webkit-transition: background-image 0.5s ease-in-out;
+transition: background-image 0.5s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;*/
+  
+/*  animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: infinite;
+animation-direction: alternate;*/
+
+
 }
+
+
+ @keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+ 
+
 
 
 /* Home Page Carousel */

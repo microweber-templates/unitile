@@ -38,8 +38,32 @@
 
 <link rel="stylesheet" href="{TEMPLATE_URL}js/validation-engine/css/validationEngine.jquery.css" rel="stylesheet" type="text/css">
 
+<link rel="stylesheet" href="{TEMPLATE_URL}css/icons.css" type="text/css" media="all" data-iconset=true>
 
+<script>
+  var img_array = ['home.jpg', 'home2.jpg', 'home3.jpg'];
+    var home_banner_index = 0;
 
+    function fadeToNext() {
+        home_banner_index = (home_banner_index + 1) % img_array.length;
+ 		 
+		   $('.jumbotron.home-baner' ).css( "background-image", "url({TEMPLATE_URL}img/" + img_array[home_banner_index] + ")" );
+
+		 
+   
+        waitNext();
+    }  
+
+    function waitNext() {
+        setTimeout(function() {
+            fadeToNext();
+        }, 5000);
+    }
+$(document).ready(function(){
+waitNext(); 
+});
+
+</script>
 </head>
 <body>
 <nav role="navigation" class="navbar navbar-default navbar-static"  id="menu" >

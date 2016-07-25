@@ -151,7 +151,7 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
               <input name="email" class="field-full form-control mw-checkout-fields validate[required,custom[email]]" placeholder="<?php _e("Email"); ?>" type="text"
                                value="<?php if (isset($vals['shipping_email'])) {
                                    print $vals['shipping_email'];
-                               } ?>"/>
+                               } ?>" title="email"/>
               <i class="glyphicon glyphicon-user fa fa-paper-plane form-control-feedback"></i> </div>
           </div>
           <div class="mw-ui-field-holder">
@@ -159,10 +159,10 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
               <?php _e("Phone"); ?>
             </label>
             <div class="form-group has-feedback has-feedback-left">
-              <input name="phone" class="field-full form-control mw-checkout-fields" placeholder="<?php _e("Phone"); ?>" type="text"
+              <input name="phone" class="field-full form-control mw-checkout-fields validate[required]" placeholder="<?php _e("Phone"); ?>" type="text"
                                value="<?php if (isset($vals['shipping_phone'])) {
                                    print $vals['shipping_phone'];
-                               } ?>"/>
+                               } ?>" title="phone" />
               <i class="glyphicon glyphicon-user fa fa-phone form-control-feedback"></i> </div>
           </div>
           <div class="mw-ui-field-holder">
@@ -171,13 +171,13 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
               <input name="zip" class="field-full form-control mw-checkout-fields" type="text"
                                value="<?php if (isset($vals['shipping_zip'])) {
                                    print $vals['shipping_zip'];
-                               } ?>"/>
+                               } ?>" title="zip"/>
               <i class="glyphicon glyphicon-user fa fa-asterisk form-control-feedback"></i> </div>
           </div>
           <div class="mw-ui-field-holder">
             <div class="form-group has-feedback has-feedback-left">
               <label> address </label>
-              <textarea class="field-full form-control mw-checkout-fields" name="address"><?php if (isset($vals['shipping_address'])) {
+              <textarea class="field-full form-control mw-checkout-fields validate[required]" name="address"><?php if (isset($vals['shipping_address'])) {
                                    print $vals['shipping_address'];
                                } ?> 
 </textarea>
@@ -190,7 +190,7 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
               <?php _e("Choose country:"); ?>
             </label>
             <div class="form-group has-feedback has-feedback-left">
-              <select name="payment_country" class="field-full form-control mw-checkout-fields">
+              <select name="payment_country" class="field-full form-control mw-checkout-fields validate[required]" title="<?php _e("Choose country:"); ?>">
                 <option value="">
                 <?php _e("Choose country"); ?>
                 </option>
@@ -207,7 +207,7 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
           <div class="mw-ui-field-holder">
             <label> payment_state </label>
             <div class="form-group has-feedback has-feedback-left">
-              <select name="payment_state" class="field-full form-control mw-checkout-fields">
+              <select name="payment_state" class="field-full form-control mw-checkout-fields validate[required]">
                 <option value="">
                 <?php _e("Choose state"); ?>
                 </option>
@@ -221,7 +221,7 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
           <div class="mw-ui-field-holder">
             <label>payment_city </label>
             <div class="form-group has-feedback has-feedback-left">
-              <input name="payment_city" class="field-full form-control mw-checkout-fields" placeholder="<?php _e("Billing City"); ?>" type="text"
+              <input name="payment_city" class="field-full form-control mw-checkout-fields validate[required]" placeholder="<?php _e("Billing City"); ?>" type="text"
                                value="<?php if ($vals['shipping_payment_city']) {
                                    print $vals['shipping_payment_city'];
                                } ?>"/>
@@ -232,7 +232,7 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
               <?php _e("Full Name"); ?>
             </label>
             <div class="form-group has-feedback has-feedback-left">
-              <input name="payment_name" class="field-full form-control mw-checkout-fields" placeholder="<?php _e("Billing Name"); ?>" type="text"
+              <input name="payment_name" class="field-full form-control mw-checkout-fields validate[required]" placeholder="<?php _e("Billing Name"); ?>" type="text"
                                value="<?php if (isset($vals['shipping_payment_name'])) {
                                    print $vals['shipping_payment_name'];
                                } ?>"/>
@@ -243,7 +243,7 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
               <?php _e("Phone"); ?>
             </label>
             <div class="form-group has-feedback has-feedback-left">
-              <input name="payment_phone" class="field-full form-control mw-checkout-fields" placeholder="<?php _e("Billing Phone"); ?>" type="text"
+              <input name="payment_phone" class="field-full form-control mw-checkout-fields validate[required]" placeholder="<?php _e("Billing Phone"); ?>" type="text"
                                value="<?php if (isset($vals['shipping_payment_phone'])) {
                                    print $vals['shipping_payment_phone'];
                                } ?>"/>
@@ -252,7 +252,7 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
           <div class="mw-ui-field-holder">
             <label> payment_zip </label>
             <div class="form-group has-feedback has-feedback-left">
-              <input name="payment_zip" class="field-full form-control mw-checkout-fields" placeholder="<?php _e("Billing zip"); ?>" type="text"
+              <input name="payment_zip" class="field-full form-control mw-checkout-fields validate[required]" placeholder="<?php _e("Billing zip"); ?>" type="text"
                                value="<?php if (isset($vals['shipping_payment_zip'])) {
                                    print $vals['shipping_payment_zip'];
                                } ?>"/>
@@ -261,7 +261,7 @@ $billing_states = mw()->forms_manager->states_list($billing_selected_country);
           <div class="mw-ui-field-holder">
             <label> payment_address </label>
             <div class="form-group has-feedback has-feedback-left">
-              <textarea class="field-full form-control mw-checkout-fields" placeholder="<?php _e("Billing Address"); ?>" name="payment_address"><?php if (isset($vals['shipping_payment_address'])) {
+              <textarea class="field-full form-control mw-checkout-fields validate[required]" placeholder="<?php _e("Billing Address"); ?>" name="payment_address"><?php if (isset($vals['shipping_payment_address'])) {
                                    print $vals['shipping_payment_address'];
                                } ?>
 </textarea>

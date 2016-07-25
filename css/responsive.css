@@ -1,17 +1,66 @@
 @media screen and (max-width: 480px) {
-    #main-sub-navigation-holder {
-        display: none;
-    }
+#main-sub-navigation-holder {
+	display: none;
 }
-
-@media screen and (max-width: 1100px) {
-    .top-menu  .home-btn{
-        display: none;
-    }
- 
+}
+ @media screen and (max-width: 1100px) {
+.top-menu .home-btn {
+	display: none;
+}
 }
 @media screen and (max-width: 860px) {
-    .top-menu {
-         bottom: -10px;
-    }
+.top-menu {
+	bottom: -10px;
+}
+}
+ @media screen and (max-width: 860px) {
+.mw-module-tabs-skin-default .mw-ui-btn-nav-tabs a {
+	display: block !important;
+	vertical-align: middle;
+}
+.contact-blox {
+	margin-top: 60px;
+}
+.contact-block {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	width: auto;
+}
+#sayhello {
+	background: none;
+	width: auto;
+	height: auto;
+}
+.cxmenu a {
+	display: block;
+	width: 100%;
+}
+#mobilemenu {
+	text-transform: uppercase;
+}
+.mw-cart-big-table thead {
+	display: none;
+}
+.mw-cart-big-table > tbody > tr > td, .checkout-total-table > tbody > tr > td {
+	display: block;
+}
+.mw-cart-big-summary > tbody > tr > td {
+	display: block;
+	width: 150%;
+}
+.mw-checkout-holder .step-btn {
+	display: block;
+	width: 100%;
+	margin: 0px;
+}
+.mw-checkout-holder .step-btn.step-btn-right {
+	margin-left: 0px;
+}
+.shipping_country_unite_wrapper_shipping_form_col_left {
+	padding-right: 0px;
+}
+.mw-cart-big-summary .checkout-total-table td label {
+    border-right: 0px solid #00579b;
+    
+}
 }

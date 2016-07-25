@@ -133,8 +133,10 @@ a#login-register-link-header {
     width: 100%;
     display: block;
     background-repeat: no-repeat;
-    background-size: cover;
+    xxxbackground-size: cover;
+	background-size: contain;
     background-color: #efecec;
+	background-position:center center;
     position: relative;
 }
 
@@ -952,4 +954,8 @@ list-style-position:inside;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.right-Co1, .right-Co2, .right-Co3{
+    display: none;    
 }

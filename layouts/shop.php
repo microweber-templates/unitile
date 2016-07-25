@@ -13,7 +13,7 @@ position: 4
 
 ?>
 <?php
-if(url_param('section') and url_param('category')){
+if(url_param('section') and get_category_id_from_url()){
 	include template_dir(). 'layouts' . DS."shop_category.php";	
 return ;
 }
